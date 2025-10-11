@@ -80,7 +80,7 @@ sections:
   - block: collection
     id: courses
     content:
-      title: 3-2 강의
+      title: '📚 3-2 강의'
       subtitle: '3학년 2학기에 수강하는 과목들'
       text: ''
       # Page type to display. E.g. post, talk, publication...
@@ -105,9 +105,9 @@ sections:
       view: card
       # Reduce spacing
       spacing:
-        padding: [0, 0, 0, 0]
+        padding: [50, 0, 0, 0]
 
-        
+
   # - block: cta-card
   #   demo: true # Only display this section in the Hugo Blox Builder demo site
   #   content:
