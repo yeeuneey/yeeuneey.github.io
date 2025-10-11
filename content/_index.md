@@ -78,7 +78,7 @@ sections:
 
 
   - block: collection
-    id: courses
+    id: current-courses
     content:
       title: '📚 3-2 강의'
       subtitle: '3학년 2학기에 수강하는 과목들'
