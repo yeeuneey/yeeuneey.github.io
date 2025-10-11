@@ -5,8 +5,10 @@ type: course
 tags: ["1-2"]
 
 image:
-  filename: "media/cpp.jpg"
+  filename: "uploads/media/cpp.jpg"
   focal_point: "Center"
+  preview_only: true
+featured: true
 
 goals:
   - "Goal 1️⃣ : 언어기초를 공부한 학생을 대상으로 C++ 언어의 프로그래밍 문법을 학습한다."
