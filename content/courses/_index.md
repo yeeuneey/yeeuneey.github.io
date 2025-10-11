@@ -49,7 +49,7 @@ sections:
       show_title: true
       show_read_more: false
       show_date: false
-      show_summary: true
+      show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
 
@@ -70,7 +70,7 @@ sections:
       show_title: true
       show_read_more: false
       show_date: false
-      show_summary: true
+      show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
 
@@ -91,7 +91,7 @@ sections:
       show_title: true
       show_read_more: false
       show_date: false
-      show_summary: true
+      show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
 
@@ -112,7 +112,7 @@ sections:
       show_title: true
       show_read_more: false
       show_date: false
-      show_summary: true
+      show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
 
@@ -133,7 +133,7 @@ sections:
       show_title: true
       show_read_more: false
       show_date: false
-      show_summary: true
+      show_summary: false
       spacing:
         padding: [40, 0, 60, 0]
 ---
