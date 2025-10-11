@@ -4,14 +4,6 @@ summary: "3학년 2학기까지 수강한 전공 과목들"
 type: landing
 layout: list
 
-# cascade:
-#   - target:
-#       path: '{/courses/*/**}'
-#     type: course
-#     params:
-#       show_breadcrumb: true
-#       show_author: false
-
 sections:
 
   # 상단 소개 섹션
@@ -53,6 +45,8 @@ sections:
     design:
       view: carousel
       columns: 2
+      show_image: true
+      show_title: true
       show_read_more: false
       show_date: false
       show_summary: true
@@ -72,6 +66,8 @@ sections:
     design:
       view: carousel
       columns: 2
+      show_image: true
+      show_title: true
       show_read_more: false
       show_date: false
       show_summary: true
@@ -91,6 +87,8 @@ sections:
     design:
       view: carousel
       columns: 2
+      show_image: true
+      show_title: true
       show_read_more: false
       show_date: false
       show_summary: true
@@ -110,6 +108,8 @@ sections:
     design:
       view: carousel
       columns: 2
+      show_image: true
+      show_title: true
       show_read_more: false
       show_date: false
       show_summary: true
@@ -129,6 +129,8 @@ sections:
     design:
       view: carousel
       columns: 2
+      show_image: true
+      show_title: true
       show_read_more: false
       show_date: false
       show_summary: true
