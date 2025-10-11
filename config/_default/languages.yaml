@@ -3,18 +3,19 @@
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
 # Default language
-en:
-  languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+ko:
+ languageCode: ko
+ contentDir: content/ko
+ title: 김예은의 포트폴리오
+ params:
+   description: 김예은의 포트폴리오 웹 사이트...
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
+# en:
+#  languageCode: en
+#  contentDir: content/en
+#  title: Yeeun-Kim's Portfolio
 #  params:
-#    description: Site description in Chinese...
+#    description: Portfolio website of Yeeun Kim...
 #  menu:
 #    main:
 #      - name: 传
