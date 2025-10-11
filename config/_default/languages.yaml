@@ -5,7 +5,7 @@
 # Default language
 ko:
  languageCode: ko
- contentDir: content/ko
+#  contentDir: content/ko
  title: 김예은의 포트폴리오
  params:
    description: 김예은의 포트폴리오 웹 사이트...
