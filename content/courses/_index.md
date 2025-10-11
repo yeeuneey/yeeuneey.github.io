@@ -43,8 +43,11 @@ sections:
       count: 0
       order: asc
     design:
-      view: carousel
-      columns: 2
+      view: slider
+      height: 420px
+      interval: 3000
+      buttons: true
+      indicators: true
       show_image: true
       show_title: true
       show_read_more: false
@@ -52,7 +55,6 @@ sections:
       show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
-
 
   - block: collection
     id: courses2-1
@@ -64,8 +66,11 @@ sections:
       count: 0
       order: asc
     design:
-      view: carousel
-      columns: 2
+      view: slider
+      height: 420px
+      interval: 3000
+      buttons: true
+      indicators: true
       show_image: true
       show_title: true
       show_read_more: false
@@ -73,7 +78,6 @@ sections:
       show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
-
 
   - block: collection
     id: courses2-2
@@ -85,8 +89,11 @@ sections:
       count: 0
       order: asc
     design:
-      view: carousel
-      columns: 2
+      view: slider
+      height: 420px
+      interval: 3000
+      buttons: true
+      indicators: true
       show_image: true
       show_title: true
       show_read_more: false
@@ -94,7 +101,6 @@ sections:
       show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
-
 
   - block: collection
     id: courses3-1
@@ -106,8 +112,11 @@ sections:
       count: 0
       order: asc
     design:
-      view: carousel
-      columns: 2
+      view: slider
+      height: 420px
+      interval: 3000
+      buttons: true
+      indicators: true
       show_image: true
       show_title: true
       show_read_more: false
@@ -115,7 +124,6 @@ sections:
       show_summary: false
       spacing:
         padding: [40, 0, 0, 0]
-
 
   - block: collection
     id: courses3-2
@@ -127,8 +135,11 @@ sections:
       count: 0
       order: asc
     design:
-      view: carousel
-      columns: 2
+      view: slider
+      height: 420px
+      interval: 3000
+      buttons: true
+      indicators: true
       show_image: true
       show_title: true
       show_read_more: false
