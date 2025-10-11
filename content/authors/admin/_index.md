@@ -52,7 +52,7 @@ interests:
 education:
   - area: 컴퓨터인공지능학부
     institution: 전북대학교
-    date_start: 2023-03-02 ~
+    date_start: 2023-03-02
     summary: |
       클라우드 컴퓨팅, 웹 개발, 인공지능, 보안 분야에 관심을 두고 학습 중.
 
@@ -142,6 +142,6 @@ languages:
 #       Recognized for contributions to scaling laws in deep learning.
 ---
 
-김예은은 전북대학교 컴퓨터인공지능학부생 3학년입니다. 
-클라우드 컴퓨팅·웹 개발·인공지능·보안에 폭넓은 관심이 있습니다.
-더불어, 관심 분야의 기술을 금융 IT에 적용하는 학습을 하는 중입니다.
+김예은은 전북대학교 컴퓨터인공지능학부생 3학년입니다. <br>
+클라우드 컴퓨팅·웹 개발·인공지능·보안에 폭넓은 관심이 있습니다. <br>
+더불어, 관심 분야의 기술을 금융 IT에 적용하는 학습을 하는 중입니다. <br>
