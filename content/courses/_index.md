@@ -20,7 +20,7 @@ sections:
 
   # 강의 목록 섹션
   - block: markdown
-    id: all-courses-intro
+    id: completed
     content:
       title: "모든 강의 보기"
       subtitle: "1학년부터 3학년까지 수강한 전공 과목"
