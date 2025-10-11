@@ -5,7 +5,7 @@ type: course
 tags: ["1-2"]
 
 image:
-  filename: "uploads/cpp.jpg"
+  filename: "media/cpp.jpg"
   focal_point: "Center"
 
 goals:
