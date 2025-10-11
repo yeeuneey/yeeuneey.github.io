@@ -25,9 +25,11 @@ main:
       - name: 수강 중
         url: /#current-courses   # 소개 페이지의 특정 섹션으로 스크롤 이동
         weight: 41
+        parent: courses
       - name: 수강 완료
         url: /courses/#completed  # 강의 페이지의 특정 섹션으로 이동
         weight: 42
+        parent: courses
 
   - name: 연락
     url: contact/
