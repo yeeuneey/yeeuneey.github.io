@@ -44,10 +44,10 @@ profiles:
     label: Instagram
 
 interests:
-  - 클라우드 컴퓨팅
-  - 웹 개발 (Front-end & Back-end)
-  - 인공지능
-  - 보안
+  - '[클라우드 컴퓨팅](https://www.google.com/search?q=클라우드+컴퓨팅)'
+  - '[웹 개발 (Front-end & Back-end)](https://www.google.com/search?q=웹+개발+Front-end+Back-end)'
+  - '[인공지능](https://www.google.com/search?q=인공지능)'
+  - '[보안](https://www.google.com/search?q=보안)'
 
 education:
   - area: 컴퓨터인공지능학부
