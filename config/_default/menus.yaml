@@ -17,27 +17,17 @@ main:
     weight: 30
 
   - name: 강의
-    # identifier: courses
     url: courses/
     weight: 40
-  - parent: courses
+  - name: 수강 중
+    parent: 강의
     name: 수강 중
     url: /#current-courses
     weight: 41
-  - parent: courses
-    name: 수강 완료
+  - name: 수강 완료
+    parent: 강의
     url: /courses/completed/
     weight: 42
-    # hasChildren: true
-    # children:
-    #   - name: 수강 중
-    #     url: /#current-courses   # 소개 페이지의 특정 섹션으로 스크롤 이동
-    #     weight: 41
-    #     parent: courses
-    #   - name: 수강 완료
-    #     url: /courses/#completed  # 강의 페이지의 특정 섹션으로 이동
-    #     weight: 42
-    #     parent: courses
 
   - name: 연락
     url: contact/
