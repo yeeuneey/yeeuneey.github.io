@@ -31,7 +31,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: envelope
-    url: 'https://mail.google.com/mail/?view=cm&fs=1&to=202312632@jbnu.ac.kr'
+    url: mailto:202312632@jbnu.ac.kr
     label: Gmail
   - icon: brands/github
     url: https://github.com/yeeuneey
