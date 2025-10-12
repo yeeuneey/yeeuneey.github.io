@@ -60,5 +60,4 @@ features:
   privacy_pack:
     enable: false
 
-favicon:
-  logo: "media/logo.webp"
+favicon: "images/logo.webp"
