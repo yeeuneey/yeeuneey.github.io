@@ -1,14 +1,65 @@
-.navbar .dropdown:hover>.dropdown-menu {
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+/* 드롭다운 박스 스타일 */
+.navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: all 0.25s ease-in-out;
+    border-radius: 10px;
+    background-color: rgba(255, 248, 239, 0.97);
+    box-shadow: 0 8px 20px rgba(80, 50, 30, 0.12);
+    border: none;
+    padding: 8px 0;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: rgba(222, 184, 135, 0.2);
+    color: #7b4b2a !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .dropdown:hover>a,
+.navbar .dropdown:hover>button {
+    color: #7b4b2a !important;
+    position: relative;
+}
+
+.navbar .dropdown>a::after,
+.navbar .dropdown>button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #d4a373;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar .dropdown:hover>a::after,
+.navbar .dropdown:hover>button::after {
+    width: 100%;
+}
+
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .navbar .dropdown-menu {
-    transition: all 0.2s ease-in-out;
-    margin-top: 0;
+    animation: dropdownFadeIn 0.25s ease-out;
 }
 
-.navbar .dropdown:hover .dropdown-menu.show {
-    display: block !important;
+@media (max-width: 991px) {
+    .navbar .dropdown:hover>.dropdown-menu {
+        display: none !important;
+    }
 }
