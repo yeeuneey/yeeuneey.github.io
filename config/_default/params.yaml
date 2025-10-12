@@ -35,8 +35,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      filename: 'kye3.png'
-      height: 80
+      filename: 'starlogo.png'
 
 # Site footer
 footer:
