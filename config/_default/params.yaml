@@ -34,6 +34,7 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
+    show_logo: true
     logo:
       text: '김예은의 포트폴리오'
 
@@ -58,3 +59,6 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+favicon:
+  logo: "media/logo.webp"
