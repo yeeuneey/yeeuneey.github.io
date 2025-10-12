@@ -16,7 +16,7 @@ sections:
       spacing:
         padding: [40, 0, 20, 0]
 
-  - block: map
+  - block: markdown
     id: map
     content:
       title: "📍 위치"
