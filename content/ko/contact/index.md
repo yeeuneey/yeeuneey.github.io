@@ -15,4 +15,22 @@ sections:
     design:
       spacing:
         padding: [40, 0, 20, 0]
+
+  - block: map
+    id: map
+    content:
+      title: "📍 위치"
+      text: "전북대학교 공과대학 7호관, 백제대로 567, 덕진구, 전주시"
+      html: |
+        <iframe 
+         src="https://naver.me/5BceEAne"
+         width="100%" 
+         height="400" 
+         style="border:0; border-radius: 12px;" 
+         allowfullscreen 
+         loading="lazy">
+         </iframe>
+      design:
+         spacing:
+            padding: [20, 0, 60, 0]
 ---
