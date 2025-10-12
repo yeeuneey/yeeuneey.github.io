@@ -35,7 +35,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      filename: 'logo.webp'
+      filename: "/images/logo.webp"
       height : 50
 
 # Site footer
