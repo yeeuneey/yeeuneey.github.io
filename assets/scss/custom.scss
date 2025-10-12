@@ -1,0 +1,7 @@
+/* 로고 관련 */
+.navbar-brand img,
+.site-logo img {
+    height: 100px !important;
+    width: auto !important;
+    image-rendering: -webkit-optimize-contrast;
+}
