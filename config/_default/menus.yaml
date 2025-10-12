@@ -36,4 +36,5 @@ main:
     weight: 50
 
   - name: 오시는 길
-    url: 
+    url: /#map-contact
+    weight: 60
