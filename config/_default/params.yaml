@@ -35,8 +35,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      filename: "/images/logo.webp"
-      height : 50
+      text: "김예은의 포트폴리오"
 
 # Site footer
 footer:
