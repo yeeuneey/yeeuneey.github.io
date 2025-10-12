@@ -82,7 +82,7 @@ sections:
     content:
       title: '📚 3-2 강의'
       subtitle: '3학년 2학기에 수강하는 과목들'
-      text: ''
+      text: '현재 다음 과목들을 수강하는 중입니다.'
       # Page type to display. E.g. post, talk, publication...
       page_type: blog
       # Choose how many pages you would like to display (0 = all pages)
