@@ -1,5 +1,14 @@
-.navbar .dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+.navbar .dropdown:hover>.dropdown-menu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.navbar .dropdown-menu {
+    transition: all 0.2s ease-in-out;
+    margin-top: 0;
+}
+
+.navbar .dropdown:hover .dropdown-menu.show {
+    display: block !important;
 }
