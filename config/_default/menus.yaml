@@ -34,7 +34,3 @@ main:
   - name: 연락
     url: contact/
     weight: 50
-
-  - name: 오시는 길
-    url: /#map-contact
-    weight: 60
