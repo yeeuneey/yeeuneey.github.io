@@ -5,19 +5,16 @@
 # Default language
 ko:
  languageCode: ko
-#  contentDir: content/ko
+ contentDir: content/ko
+ weight: 1
  title: 김예은의 포트폴리오
  params:
    description: 김예은의 포트폴리오 웹 사이트...
 
-# en:
-#  languageCode: en
-#  contentDir: content/en
-#  title: Yeeun-Kim's Portfolio
-#  params:
-#    description: Portfolio website of Yeeun Kim...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+en:
+ languageCode: en
+ contentDir: content/en
+ weight: 2
+ title: Yeeun-Kim's Portfolio
+ params:
+   description: Portfolio website of Yeeun Kim...

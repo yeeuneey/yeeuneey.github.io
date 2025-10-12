@@ -20,7 +20,7 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: 취미
+      title: Skills & Hobbies
       username: admin
     design:
       show_skill_percentage: false
@@ -28,8 +28,8 @@ sections:
     content:
       title: Awards
       username: admin
-  - block: 언어
+  - block: resume-languages
     content:
-      title: 
+      title: Languages
       username: admin
 ---
