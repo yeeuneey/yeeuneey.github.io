@@ -55,9 +55,6 @@ sitemap:
   _merge: deep
 
 markup:
-  _merge: deep
-  highlight:
-    lineNos: false
   goldmark:
     renderer:
       unsafe: true
