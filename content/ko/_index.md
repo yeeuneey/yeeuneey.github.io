@@ -32,8 +32,8 @@ sections:
     content:
       title: "연구"
       text: |
-        아래에서 금융 IT와 관련된
-        **핵심 기술**과 **관련 강의**를 함께 확인하세요!
+        아래에서 제 관심 연구 분야인 금융 IT와 관련된
+        **핵심 기술**과 **관련 과목**을 함께 확인하세요!
 
   - block: collection
     id: tech
