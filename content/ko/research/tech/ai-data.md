@@ -1,7 +1,7 @@
 ---
 title: "인공지능 & 빅데이터 🤖"
 summary: "금융 데이터 분석과 예측의 핵심, AI와 빅데이터 기술"
-type: project
+type: tech
 image:
   filename: "uploads/media/ai_bigdata.jpg"
   focal_point: "Center"

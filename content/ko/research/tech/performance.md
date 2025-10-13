@@ -1,7 +1,7 @@
 ---
 title: "고성능 컴퓨팅의 기반 ⚡"
 summary: "대규모 금융 연산을 위한 자료구조와 알고리즘 최적화"
-type: project
+type: tech
 image:
   filename: "uploads/media/hpc.jpg"
   focal_point: "Center"

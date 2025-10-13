@@ -1,7 +1,7 @@
 ---
 title: "차세대 보안 기술 🛡️"
 summary: "클라우드·오픈뱅킹 환경의 지능형 보안 체계"
-type: project
+type: tech
 image:
   filename: "uploads/media/security.jpg"
   focal_point: "Center"

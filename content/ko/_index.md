@@ -145,7 +145,7 @@ sections:
     content:
       title: "금융 IT를 이끄는 핵심 기술"
       subtitle: "금융 산업의 디지털 혁신을 주도하는 5가지 핵심 기술 역량을 소개합니다."
-      page_type: research/tech
+      page_type: tech
       count: 5
       order: asc
       text: |
@@ -164,7 +164,7 @@ sections:
     content:
       title: "역량의 발판이 되는 핵심 전공 과목"
       subtitle: "금융 IT 기술의 근간이 되는 탄탄한 전공 지식을 소개합니다."
-      page_type: courses/research
+      page_type: course
       count: 5
       order: asc
       text: |

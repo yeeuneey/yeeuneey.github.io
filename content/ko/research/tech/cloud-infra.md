@@ -1,7 +1,7 @@
 ---
 title: "클라우드 컴퓨팅 ☁️"
 summary: "금융 시스템의 확장성과 유연성을 위한 핵심 인프라"
-type: project
+type: tech
 image:
   filename: "uploads/media/cloud_computing.jpg"
   focal_point: "Center"
