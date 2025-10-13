@@ -138,20 +138,22 @@ sections:
       title: "연구"
       text: |
         아래에서 금융 IT와 관련된
-        **기술**과 **관련 강의**를 함께 확인하세요!
+        **핵심 기술**과 **관련 강의**를 함께 확인하세요!
 
   - block: collection
     id: tech
     content:
       title: "금융 IT를 이끄는 핵심 기술"
       subtitle: "금융 산업의 디지털 혁신을 주도하는 5가지 핵심 기술 역량을 소개합니다."
-      count: 5
-      order: asc
       text: |
         각 카드를 클릭해 해당 기술의 세부 연구 내용을 확인하세요.
+      count: 0
+      sort_by: "weight"
       filters:
         folders: ["research/tech"]
-      sort_by: "weight"
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
       design:
         view: card
         columns: 3
@@ -167,9 +169,13 @@ sections:
       order: asc
       text: |
         각 카드를 클릭해 해당 과목과 기술의 연결고리 설명을 확인하세요. 
+      count: 0
+      sort_by: "weight"
       filters:
         folders: ["courses/research"]
-      sort_by: "weight"
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
       design:
         view: card
         columns: 3
