@@ -64,4 +64,13 @@ sections:
     design:
       view: article-grid
       columns: 3
+      
+  - block: markdown
+    content:
+      text: |
+        <style>
+        .article-grid {
+          justify-content: center;
+        }
+        </style>
 ---
