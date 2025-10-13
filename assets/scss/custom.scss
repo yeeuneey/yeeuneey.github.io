@@ -1,0 +1,27 @@
+a {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+  color: #ffcc00; 
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icons a:hover {
+  transform: scale(1.25);
+}
+
+.navbar-brand img {
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-origin: center;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.25) rotate(-5deg);
+  filter: drop-shadow(0 0 8px rgba(255, 200, 0, 0.5));
+}
