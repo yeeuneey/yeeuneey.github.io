@@ -6,8 +6,8 @@ title: 김예은
 name_pronunciation: 金叡恩
 
 # Full name (for SEO)
-first_name: Yeeun
-last_name: Kim
+first_name: 김
+last_name: 예은
 
 # Status emoji
 status:
@@ -54,25 +54,26 @@ education:
     institution: 전북대학교
     date_start: 2023-03-02
     summary: |
-      클라우드 컴퓨팅, 웹 개발, 인공지능, 보안 분야에 관심을 두고 학습 중.
+      ''
 
-# work:
-#   - position: Senior AI Research Scientist
-#     company_name: Meta AI
-#     company_url: 'https://ai.meta.com/'
-#     company_logo: ''
-#     date_start: 2020-01-01
-#     date_end: ''
-#     summary: |2-
-#       Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-#   - position: AI Research Intern
-#     company_name: OpenAI
-#     company_url: 'https://openai.com/'
-#     company_logo: ''
-#     date_start: 2019-06-01
-#     date_end: 2019-12-31
-#     summary: |
-#       Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+work:
+  - position: 제2대 과 학생회 기획부원
+    company_name: 전북대학교 컴퓨터인공지능학부
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-12-01
+    date_end: 2024-11-30
+    summary: |
+      학부 사업 및 행사의 전반적인 기획과 운영 업무를 담당함.
+
+  - position: WHO 동아리
+    company_name: 전북대학교 컴퓨터인공지능학부
+    company_url: ''
+    company_logo: ''
+    date_start: 2023-03-02
+    date_end: 2023-12-31
+    summary: |
+      서버구현 및 관리, 앱 개발을 위한 스터디 활동 위주의 과 동아리
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
