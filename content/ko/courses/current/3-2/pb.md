@@ -2,7 +2,7 @@
 title: "초급프로젝트"
 summary: ""
 type: course
-tags: ["2-2"]
+tags: ["3-2"]
 
 image:
   filename: "uploads/media/intro_project.jpg"
