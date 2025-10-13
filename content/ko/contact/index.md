@@ -25,8 +25,29 @@ sections:
           전북대학교 공과대학 7호관, 백제대로 567, 덕진구, 전주시
         </p>
 
-        <div class="map-container">
+        <style>
+          /* 기본 (PC) */
+          .map-frame {
+            width: 600px;
+            height: 450px;
+            border: 0;
+            border-radius: 12px;
+            display: inline-block;
+          }
+
+          /* 모바일 */
+          @media (max-width: 768px) {
+            .map-frame {
+              width: 100%;
+              height: 400px;
+              display: block;
+            }
+          }
+        </style>
+
+        <div style="text-align:center; overflow:hidden;">
           <iframe
+            class="map-frame"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.0540515781927!2d127.13295709890805!3d35.84552462693218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702330dc920b9d%3A0x1d0d425396006646!2z7KCE67aB64yA7ZWZ6rWQIOqzteqzvOuMgOs2VmSA37Zi46rSA!5e0!3m2!1sko!2skr!4v1760322660618!5m2!1sko!2skr"
             allowfullscreen=""
             loading="lazy"
@@ -35,6 +56,5 @@ sections:
         </div>
     design:
       spacing:
-        padding: [10, 0, 30, 0]
-
+        padding: [8, 0, 60, 0]
 ---
