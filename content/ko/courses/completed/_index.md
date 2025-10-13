@@ -17,17 +17,17 @@ sections:
         김예은이 전북대학교 컴퓨터인공지능학부에 재학하면서  
         3학년 2학기까지 수강한 모든 전공 과목들을 한눈에 볼 수 있습니다.  
 
-        - [수강 중인 강의로 이동](/#current-courses)
+        - <strong>[수강 중인 강의로 이동](/#current-courses)</strong>
         - 수강 완료한 강의 보기  
           <div style="margin-left: 24px; margin-top: 6px;">
             <p style="color:#666; font-size:0.5em; margin-bottom:6px;">
               각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.05em; font-weight: 500; color:#444;">
-              <li><a href="#courses1-2">1-2</a></li>
-              <li><a href="#courses2-1">2-1</a></li>
-              <li><a href="#courses2-2">2-2</a></li>
-              <li><a href="#courses3-1">3-1</a></li>
+              <li><a href="#courses1-2"><strong>1-2</strong></a></li>
+              <li><a href="#courses2-1"><strong>2-1</strong></a></li>
+              <li><a href="#courses2-2"><strong>2-2</strong></a></li>
+              <li><a href="#courses3-1"><strong>3-1</strong></a></li>
             </ul>
           </div>
     design:
