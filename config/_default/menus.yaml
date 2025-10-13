@@ -16,21 +16,39 @@ main:
     url: projects/
     weight: 30
 
+  - name: 연구
+    identifier: 연구
+    url: /#research
+    weight: 40
+    hasChildren: true
+  - name: 기술
+    parent: 연구
+    url: /#tech
+    weight: 41
+  - name: 관련 강의
+    parent: 연구
+    url: /#related-courses
+    weight: 42
+
   - name: 강의
     identifier: 강의
     url: courses/
-    weight: 40
+    weight: 50
     hasChildren: true
+  - name: 전체 강의
+    parent: 강의
+    url: /courses/
+    weight: 51
   - name: 수강 중
     parent: 강의
-    name: 수강 중
-    url: /#current-courses
-    weight: 41
+    url: /courses/current/
+    weight: 52
   - name: 수강 완료
     parent: 강의
     url: /courses/completed/
-    weight: 42
+    weight: 52
+
 
   - name: 연락
     url: contact/
-    weight: 50
+    weight: 60

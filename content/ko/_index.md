@@ -78,36 +78,36 @@ sections:
   #     view: card
 
 
-  - block: collection
-    id: current-courses
-    content:
-      title: '📚 3-2 강의'
-      subtitle: '3학년 2학기에 수강하는 과목들'
-      text: '현재 다음 과목들을 수강하는 중입니다.'
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 6
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      colums: 2
-      # Reduce spacing
-      spacing:
-        padding: [50, 0, 0, 0]
+  # - block: collection
+  #   id: current-courses
+  #   content:
+  #     title: '📚 3-2 강의'
+  #     subtitle: '3학년 2학기에 수강하는 과목들'
+  #     text: '현재 다음 과목들을 수강하는 중입니다.'
+  #     # Page type to display. E.g. post, talk, publication...
+  #     page_type: blog
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 6
+  #     # Filter on criteria
+  #     filters:
+  #       author: ''
+  #       category: ''
+  #       tag: ''
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ''
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     view: card
+  #     colums: 2
+  #     # Reduce spacing
+  #     spacing:
+  #       padding: [50, 0, 0, 0]
 
 
   # - block: cta-card
@@ -130,4 +130,51 @@ sections:
   #       # Card background color (CSS class)
   #       css_class: 'bg-primary-300'
   #       css_style: ''
+
+
+  - block: markdown
+    id: research
+    content:
+      title: "연구"
+      text: |
+        아래에서 금융 IT와 관련된
+        **기술**과 **관련 강의**를 함께 확인하세요!
+
+  - block: collection
+    id: tech
+    content:
+      title: "금융 IT를 이끄는 핵심 기술"
+      subtitle: "금융 산업의 디지털 혁신을 주도하는 5가지 핵심 기술 역량을 소개합니다."
+      page_type: research/tech
+      count: 5
+      order: asc
+      text: |
+        각 카드를 클릭해 해당 기술의 세부 연구 내용을 확인하세요.
+      filters:
+        folders: ["research/tech"]
+      sort_by: "weight"
+      design:
+        view: card
+        columns: 3
+        spacing:
+          padding: [20, 0, 40, 0]
+
+  - block: collection
+    id: related-courses
+    content:
+      title: "역량의 발판이 되는 핵심 전공 과목"
+      subtitle: "금융 IT 기술의 근간이 되는 탄탄한 전공 지식을 소개합니다."
+      page_type: courses/research
+      count: 5
+      order: asc
+      text: |
+        각 카드를 클릭해 해당 과목과 기술의 연결고리 설명을 확인하세요. 
+      filters:
+        folders: ["courses/research"]
+      sort_by: "weight"
+      design:
+        view: card
+        columns: 3
+        spacing:
+          padding: [10, 0, 60, 0]
 ---
