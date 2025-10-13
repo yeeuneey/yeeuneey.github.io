@@ -17,7 +17,7 @@ sections:
         김예은이 전북대학교 컴퓨터인공지능학부에 재학하면서  
         3학년 2학기까지 수강한 모든 전공 과목들을 한눈에 볼 수 있습니다.  
 
-        - <strong>[수강 중인 강의로 이동](/#current-courses)</strong>
+        - <strong>[**수강 중인 강의로 이동**](/#current-courses)</strong>
         - 수강 완료한 강의 보기  
           <div style="margin-left: 24px; margin-top: 6px;">
             <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
