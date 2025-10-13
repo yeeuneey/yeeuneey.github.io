@@ -17,45 +17,11 @@ sections:
         김예은이 전북대학교 컴퓨터인공지능학부에 재학하면서  
         3학년 2학기까지 수강한 모든 전공 과목들을 한눈에 볼 수 있습니다.  
 
-        - [수강 중인 강의로 이동](#current-courses)
+        - [수강 중인 강의로 이동](/#current-courses)
         - [수강 완료한 강의 보기](/courses/completed/)
     design:
       spacing:
         padding: [40, 0, 20, 0]
-
-  # -----------------------------
-  # 현재 수강 중인 강의 섹션 (홈 하단과 동일 + 카드형 미리보기)
-  # -----------------------------
-  - block: markdown
-    id: current-courses
-    content:
-      title: "[현재 수강 중인 강의](/#current-courses)"
-      text: |
-        김예은이 현재 3학년 2학기에 수강 중인 강의 목록입니다.  
-        아래는 홈 페이지의 '수강 중인 강의' 섹션 미리보기입니다.
-    design:
-      spacing:
-        padding: [40, 0, 40, 0]
-
-  - block: collection
-    id: current-preview
-    content:
-      title: ""
-      page_type: course
-      filters:
-        tag: "3-2"
-      count: 3
-      order: asc
-    design:
-      view: card
-      columns: 3
-      show_image: true
-      show_title: true
-      show_summary: true
-      show_date: false
-      show_read_more: false
-      spacing:
-        padding: [0, 0, 40, 0]
 
   # -----------------------------
   # 모든 강의 보기 안내 섹션
