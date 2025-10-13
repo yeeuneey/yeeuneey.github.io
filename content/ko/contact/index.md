@@ -31,7 +31,6 @@ sections:
             width: 600px;
             height: 450px;
             border: 0;
-            border-radius: 12px;
             display: inline-block;
           }
 
