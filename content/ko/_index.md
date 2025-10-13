@@ -60,7 +60,7 @@ sections:
       text: "각 카드를 클릭해 해당 과목과 기술의 연결고리 설명을 확인하세요."
       filters:
         folders:
-          - "related-courses"
+          - "courses/related-courses"
       sort_by: "weight"
       sort_ascending: true
     design:
