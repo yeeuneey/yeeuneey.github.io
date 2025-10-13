@@ -9,22 +9,22 @@ sections:
   - block: markdown
     id: intro
     content:
-      title: "수강 과목"
+      title: "📚 수강 과목"
       text: |
-        김예은이 전북대학교 컴퓨터인공지능학부에 재학하면서 수강한
+        김예은이 전북대학교 컴퓨터인공지능학부에 재학하면서 수강한 <br>
         3학년 2학기까지의 모든 전공 과목들을 한눈에 볼 수 있습니다.  
 
         - <strong>[**수강 중인 강의로 이동**](/#current-courses)</strong>
-        - 수강 완료한 강의 보기  
+        - 수강 완료한 강의 보기
           <div style="margin-left: 24px; margin-top: 6px;">
             <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
-              각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
+                각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.05em;>
-              <li><a href="/courses/completed/1-2/">1학년 2학기</a></li>
-              <li><a href="/courses/completed/2-1/">2학년 1학기</a></li>
-              <li><a href="/courses/completed/2-2/">2학년 2학기</a></li>
-              <li><a href="/courses/completed/3-1/">3학년 1학기</a></li>
+              <li><a href="/courses/completed/1-2/">**1학년 2학기**</a></li>
+              <li><a href="/courses/completed/2-1/">**2학년 1학기**</a></li>
+              <li><a href="/courses/completed/2-2/">**2학년 2학기**</a></li>
+              <li><a href="/courses/completed/3-1/">**3학년 1학기**</a></li>
             </ul>
           </div>
     design:
