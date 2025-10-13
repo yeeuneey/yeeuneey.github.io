@@ -53,8 +53,8 @@ education:
   - area: 컴퓨터인공지능학부
     institution: 전북대학교
     date_start: 2023-03-02
-    summary: |
-      ''
+    # summary: |
+    #   ''
 
 work:
   - position: 제2대 과 학생회 기획부원
@@ -78,20 +78,20 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  # - name: Technical Skills
-  #   items:
-  #     - name: Python
-  #       description: ''
-  #       percent: 95
-  #       icon: code-bracket
-  #     - name: Machine Learning
-  #       description: ''
-  #       percent: 100
-  #       icon: chart-bar
-  #     - name: Cloud Computing (AWS/GCP)
-  #       description: ''
-  #       percent: 85
-  #       icon: cloud
+  - name: Technical Skills
+    items:
+      - name: Python
+        description: ''
+        percent: 95
+        icon: code-bracket
+      - name: Machine Learning
+        description: ''
+        percent: 100
+        icon: chart-bar
+      - name: Cloud Computing (AWS/GCP)
+        description: ''
+        percent: 85
+        icon: cloud
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
