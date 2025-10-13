@@ -67,9 +67,9 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '과제', '출석'],
+    labels: ['중간고사', '기말고사', '출석', '과제'],
     datasets: [{
-      data: [47.5, 47.5, 0, 5],
+      data: [47.5, 47.5, 5, 0],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#b5ead7', '#ffdac1'],
       borderColor: '#222',
       borderWidth: 2
