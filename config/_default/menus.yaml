@@ -25,7 +25,7 @@ main:
     parent: 연구
     url: /#tech
     weight: 41
-  - name: 관련 강의
+  - name: 관련 과목
     parent: 연구
     url: /#related-courses
     weight: 42
