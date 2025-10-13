@@ -22,8 +22,10 @@ sections:
         education: '학위'
         experience: '경험'
         interests: '관심 분야'
-        Skills & Hobbies: '기술 & 취미'
-        Languages: 언어
+        skills: '기술'
+        hobbies: '취미'
+        languages: '언어'
+        awards: '수상'
     design:
       css_class: hbx-bg-gradient
       avatar:
