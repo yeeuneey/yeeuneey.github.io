@@ -47,7 +47,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: article-grid              # view: card 설정은 전체 너비를 차지하도록 기본값이 설정됨. 카드 크기를 줄여 3열 그리드로 만들기 위해서는 view: article-grid 설정 사용하기!
+      view: article-grid
       columns: 3
 
   - block: collection
