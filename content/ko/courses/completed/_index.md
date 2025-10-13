@@ -24,10 +24,10 @@ sections:
               각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.05em; font-weight: 500; color:#444;">
-              <li><a href="#courses1-2"><strong>1-2</strong></a></li>
-              <li><a href="#courses2-1"><strong>2-1</strong></a></li>
-              <li><a href="#courses2-2"><strong>2-2</strong></a></li>
-              <li><a href="#courses3-1"><strong>3-1</strong></a></li>
+              <li><a href="#courses1-2"><strong>1학년 2학기</strong></a></li>
+              <li><a href="#courses2-1"><strong>2학년 1학기</strong></a></li>
+              <li><a href="#courses2-2"><strong>2학년 2학기</strong></a></li>
+              <li><a href="#courses3-1"><strong>3학년 1학기</strong></a></li>
             </ul>
           </div>
     design:
