@@ -20,7 +20,7 @@ sections:
         - <strong>[수강 중인 강의로 이동](/#current-courses)</strong>
         - 수강 완료한 강의 보기  
           <div style="margin-left: 24px; margin-top: 6px;">
-            <p style="color:#666; font-size:0.5em; margin-bottom:6px;">
+            <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
               각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.05em; font-weight: 500; color:#444;">
