@@ -47,7 +47,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: article-grid
+      view: article-grid              # view: card 설정은 전체 너비를 차지하도록 기본값이 설정됨. 카드 크기를 줄여 3열 그리드로 만들기 위해서는 view: article-grid 설정 사용하기!
       columns: 3
 
   - block: collection
@@ -58,7 +58,7 @@ sections:
       text: "각 카드를 클릭해 해당 과목과 기술의 연결고리 설명을 확인하세요."
       filters:
         folders:
-          - "courses/related-courses"
+          - "related-courses"
       sort_by: "weight"
       sort_ascending: true
     design:
