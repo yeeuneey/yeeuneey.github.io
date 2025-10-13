@@ -20,7 +20,7 @@ sections:
             <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
                 각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
             </p>
-            <ul style="margin: 0; padding-left: 20px; font-size:1.05em;>
+            <ul style="margin: 0; padding-left: 20px; font-size:1.05em;">
               <li><a href="/courses/completed/1-2/"><strong>1학년 2학기</strong></a></li>
               <li><a href="/courses/completed/2-1/"><strong>2학년 1학기</strong></a></li>
               <li><a href="/courses/completed/2-2/"><strong>2학년 2학기</strong></a></li>
