@@ -5,6 +5,7 @@ date: 2022-10-24
 type: landing
 
 design:
+  # Default section spacing
   spacing: '6rem'
 
 sections:
@@ -42,7 +43,7 @@ sections:
       text: "각 카드를 클릭해 해당 기술의 세부 연구 내용을 확인하세요."
       filters:
         folders:
-          - "research/tech"
+          - "tech"
       sort_by: "weight"
       sort_ascending: true
     design:
@@ -59,7 +60,7 @@ sections:
       text: "각 카드를 클릭해 해당 과목과 기술의 연결고리 설명을 확인하세요."
       filters:
         folders:
-          - "courses/research"
+          - "related-courses"
       sort_by: "weight"
       sort_ascending: true
     design:
