@@ -36,10 +36,9 @@ header:
     show_search: true
     show_theme_chooser: true
     show_logo: ture
-logo:
-  image: "logo.png"
-  width: 70
-  height: 70
+    logo:
+      filename: 'logo.png'
+      height: 100
 
 # Site footer
 footer:
