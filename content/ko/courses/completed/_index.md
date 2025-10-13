@@ -19,16 +19,17 @@ sections:
 
         - [수강 중인 강의로 이동](/#current-courses)
         - 수강 완료한 강의 보기  
-
-        <p style="color:#888; font-size:0.9em;">
-          각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
-        </p>
-
-        - [1-2](#courses1-2)  
-        - [2-1](#courses2-1)  
-        - [2-2](#courses2-2)  
-        - [3-1](#courses3-1)
-        
+          <div style="margin-left: 24px; margin-top: 6px;">
+            <p style="color:#666; font-size:1em; margin-bottom:6px;">
+              각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
+            </p>
+            <ul style="margin: 0; padding-left: 20px;>
+              <li><a href="#courses1-2">1-2</a></li>
+              <li><a href="#courses2-1">2-1</a></li>
+              <li><a href="#courses2-2">2-2</a></li>
+              <li><a href="#courses3-1">3-1</a></li>
+            </ul>
+          </div>
     design:
       spacing:
         padding: [40, 0, 20, 0]
