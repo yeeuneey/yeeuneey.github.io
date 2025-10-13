@@ -24,7 +24,7 @@ sections:
         전북대학교 공과대학 7호관, 백제대로 567, 덕진구, 전주시
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.51934262187!2d127.13375986643295!3d35.84583686809913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702330dc920b9d%3A0x1d0d425396006646!2z7KCE67aB64yA7ZWZ6rWQIOqzteqzvOuMgO2VmSA37Zi46rSA!5e0!3m2!1sko!2skr!4v1760321686828!5m2!1sko!2skr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.0540515781927!2d127.13295709890805!3d35.84552462693218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35702330dc920b9d%3A0x1d0d425396006646!2z7KCE67aB64yA7ZWZ6rWQIOqzteqzvOuMgO2VmSA37Zi46rSA!5e0!3m2!1sko!2skr!4v1760322660618!5m2!1sko!2skr"
           width="600" height="450" style="border:0;"
           allowfullscreen=""
           loading="lazy"
