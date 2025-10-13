@@ -47,7 +47,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: card
+      view: article-grid
       columns: 3
 
   - block: collection
@@ -62,6 +62,6 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: card
+      view: article-grid
       columns: 3
 ---
