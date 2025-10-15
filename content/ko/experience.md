@@ -21,7 +21,7 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: 기술
+      title: 기술 & 취미
       username: admin
     design:
       show_skill_percentage: false
