@@ -1,5 +1,5 @@
 ---
-title: 'Experience'
+title: '경험'
 date: 2023-10-24
 type: landing
 
@@ -21,7 +21,7 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: 기술 & 취미
+      title: 기술
       username: admin
     design:
       show_skill_percentage: false
