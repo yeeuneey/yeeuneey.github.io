@@ -77,18 +77,18 @@ work:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
+skills: 
   - name: 기술
     items:
-      - name: Python
+      - name: 파이썬
         description: ''
         percent: 95
         icon: code-bracket
-      - name: Machine Learning
+      - name: 기계학습
         description: ''
         percent: 100
         icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
+      - name: 클라우드 컴퓨팅 (AWS)
         description: ''
         percent: 85
         icon: cloud
@@ -96,15 +96,15 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: listening to music
+      - name: 노래 듣기
         description: ''
         percent: 70
         icon: headphones
-      - name: take a photo
+      - name: 사진 찍기
         description: ''
         percent: 90
         icon: camera
-      - name: running
+      - name: 러닝
         description: ''
         percent: 80
         icon: person-simple-walk
