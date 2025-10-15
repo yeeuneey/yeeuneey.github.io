@@ -99,15 +99,15 @@ skills:
       - name: listening to music
         description: ''
         percent: 70
-        icon: chart-bar
+        icon: headphones
+      - name: take a photo
+        description: ''
+        percent: 90
+        icon: camera
       - name: running
         description: ''
         percent: 80
         icon: person-simple-walk
-      - name: coding
-        description: ''
-        percent: 90
-        icon: cpu-chip
 
 languages:
   - name: 한국어
