@@ -52,7 +52,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: showcase
+      view: showcase_custom
 
   - block: collection
     id: related-courses
