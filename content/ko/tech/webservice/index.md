@@ -8,13 +8,13 @@ image:
 weight: 4
 ---
 
-<div style="margin: 40px 0;">
+<!-- <div style="margin: 40px 0;">
   <img 
     src="https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGVzaWdufGVufDB8fDB8fHwy&auto=format&fit=crop&q=60&w=1200"
     alt="ai 이미지" 
     style="max-width: 100%; border-radius: 10px;"
   >
-</div>
+</div> -->
 
 ## 📌 개요  
 오픈뱅킹과 마이데이터 확산으로 금융 서비스는  

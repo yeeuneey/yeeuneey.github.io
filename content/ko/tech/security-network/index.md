@@ -8,13 +8,13 @@ image:
 weight: 3
 ---
 
-<div style="margin: 40px 0;">
+<!-- <div style="margin: 40px 0;">
   <img 
     src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2VjdXJpdHl8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=1200"
     alt="ai 이미지" 
     style="max-width: 100%; border-radius: 10px;"
   >
-</div>
+</div> -->
 
 ## 📌 개요  
 금융 IT의 최우선 과제는 ‘보안’입니다.  
