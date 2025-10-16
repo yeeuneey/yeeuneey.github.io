@@ -4,7 +4,7 @@
   <div class="w-full md:w-1/2">
     {{ with .item.Params.image }}
       <a href="{{ $.item.RelPermalink }}">
-        <img src="{{ .filename | relURL }}" alt="{{ $.item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+        <img src="{{ .filename }}" alt="{{ $.item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
       </a>
     {{ end }}
   </div>
