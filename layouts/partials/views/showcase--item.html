@@ -1,0 +1,11 @@
+<div class="showcase-item" style="display:flex; align-items:center; gap:2rem; margin-bottom:2rem;">
+  <div class="showcase-image" style="flex:1;">
+    {{ with .item.Params.image }}
+      <img src="{{ . | relURL }}" alt="{{ .item.Title }}" style="width:100%; border-radius:12px;">
+    {{ end }}
+  </div>
+  <div class="showcase-content" style="flex:1;">
+    <h3><a href="{{ .item.RelPermalink }}">{{ .item.Title }}</a></h3>
+    {{ with .item.Summary }}<p>{{ . }}</p>{{ end }}
+  </div>
+</div>
