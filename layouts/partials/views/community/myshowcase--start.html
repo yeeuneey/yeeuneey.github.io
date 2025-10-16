@@ -1,6 +1,8 @@
 {{/* layouts/partials/views/community/myshowcase--start.html */}}
+
 <div class="myshowcase">
-  {{ range $index, $item := where .page.Pages "Params.featured" "!=" false }}
+
+  {{ range $index, $item := .page.Sections }}
     <div class="myshowcase-item">
       {{ with $item.Params.image }}
         <div class="myshowcase-image">
@@ -12,12 +14,35 @@
         {{ with $item.Params.subtitle }}
           <p class="subtitle">{{ . }}</p>
         {{ end }}
-        {{ with $item.Summary }}
-          <p>{{ . | plainify | truncate 120 }}</p>
+        {{ with $item.Params.summary }}
+          <p>{{ . }}</p>
+        {{ else }}
+          {{ with $item.Summary }}
+            <p>{{ . | plainify | truncate 120 }}</p>
+          {{ end }}
         {{ end }}
       </div>
     </div>
   {{ end }}
+
+  {{ if not (gt (len .page.Sections) 0) }}
+    {{ range $index, $item := (where site.RegularPages "Section" "in" (slice "research" "project")) }}
+      <div class="myshowcase-item">
+        {{ with $item.Params.image }}
+          <div class="myshowcase-image">
+            <img src="{{ . | relURL }}" alt="{{ $item.Title }}">
+          </div>
+        {{ end }}
+        <div class="myshowcase-content">
+          <h3><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h3>
+          {{ with $item.Summary }}
+            <p>{{ . | plainify | truncate 120 }}</p>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+
 </div>
 
 <style>
@@ -25,14 +50,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 .myshowcase-item {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
 }
 .myshowcase-item:hover {
   transform: translateY(-6px);
@@ -48,15 +73,15 @@
 .myshowcase-content h3 {
   font-weight: 600;
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 .myshowcase-content p {
-  color: #555;
+  color: #444;
   font-size: 0.95rem;
 }
 .subtitle {
   font-weight: 500;
-  color: #999;
-  margin-bottom: 0.3rem;
+  color: #777;
+  margin-bottom: 0.2rem;
 }
 </style>
