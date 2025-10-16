@@ -29,3 +29,14 @@ weight: 1
 - 이상거래탐지시스템(FDS)
 - 챗봇 기반 고객 응대
 - 로보어드바이저 서비스
+
+<style>
+  .article-container h1,
+  .article-container h2,
+  .article-container h3,
+  .article-container p,
+  .article-container li {
+    text-align: justify;
+    word-break: keep-all;
+  }
+</style>

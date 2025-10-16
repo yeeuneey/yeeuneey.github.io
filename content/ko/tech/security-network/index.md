@@ -29,3 +29,14 @@ weight: 3
 - 데이터 암호화 및 접근 제어  
 - 제로 트러스트 네트워크  
 - 클라우드 보안 정책 설계  
+
+<style>
+  .article-container h1,
+  .article-container h2,
+  .article-container h3,
+  .article-container p,
+  .article-container li {
+    text-align: justify;
+    word-break: keep-all;
+  }
+</style>

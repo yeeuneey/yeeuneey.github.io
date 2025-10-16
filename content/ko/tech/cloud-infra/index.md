@@ -29,3 +29,14 @@ weight: 2
 - MSA (Microservice Architecture)  
 - Docker / Kubernetes 기반 배포 자동화  
 - BaaS (Banking as a Service) 모델  
+
+<style>
+  .article-container h1,
+  .article-container h2,
+  .article-container h3,
+  .article-container p,
+  .article-container li {
+    text-align: justify;
+    word-break: keep-all;
+  }
+</style>

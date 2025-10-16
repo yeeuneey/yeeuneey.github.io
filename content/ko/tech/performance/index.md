@@ -27,3 +27,14 @@ weight: 5
 - 멀티스레드 프로그래밍  
 - 실시간 트랜잭션 처리  
 - 대규모 데이터 병렬 연산  
+
+<style>
+  .article-container h1,
+  .article-container h2,
+  .article-container h3,
+  .article-container p,
+  .article-container li {
+    text-align: justify;
+    word-break: keep-all;
+  }
+</style>
