@@ -19,7 +19,7 @@ sections:
                 과목 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.1em;">
-              <li><a href="/courses/current/3-2/><strong>3학년 2학기</strong></a></li>
+              <li><a href="/courses/current/3-2/"><strong>3학년 2학기</strong></a></li>
             </ul>
           </div>
     design:
