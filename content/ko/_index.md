@@ -52,9 +52,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: article-grid
-      columns: 1
-
+      view: showcase
   - block: collection
     id: related-courses
     content:
@@ -69,48 +67,4 @@ sections:
     design:
       view: article-grid
       columns: 3
-      
-  - block: markdown
-    content:
-      text: |
-        <style>
-        #tech .article-item {
-          display: flex !important; 
-          flex-direction: row !important;
-          align-items: center !important;
-          max-width: 100% !important;
-          margin-bottom: 3.5rem !important;
-          background: none !important;
-          border: none !important;
-          box-shadow: none !important;
-          padding: 0 !important;
-        }
-
-        #tech .article-item .card-image {
-          flex: 0 0 40%;
-          margin: 0 !important;
-        }
-
-        #tech .article-item .card-body {
-          flex: 1 1 auto;
-          padding: 0 0 0 2.5rem !important; 
-        }
-
-        #tech .article-item:nth-child(even) {
-          flex-direction: row-reverse !important;
-        }
-        
-        #tech .article-item:nth-child(even) .card-body {
-          padding: 0 2.5rem 0 0 !important;
-        }
-
-        #tech .article-item .card-body .article-title,
-        #tech .article-item .card-body .article-style,
-        #tech .article-item .card-body .article-metadata {
-            text-align: left !important;
-        }
-        #tech .article-item .article-metadata {
-            justify-content: flex-start !important;
-        }
-        </style>
 ---

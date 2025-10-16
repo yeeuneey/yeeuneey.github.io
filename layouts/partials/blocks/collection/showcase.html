@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="showcase-container">
+    {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="showcase-item">
+        <div class="showcase-image">
+          {{ with .Resources.GetMatch "featured.*" }}
+            {{ $image := .Resize "600x" }}
+            <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
+          {{ end }}
+        </div>
+        <div class="showcase-body">
+          <h3 class="showcase-title">{{ .Title }}</h3>
+          <p class="showcase-summary">{{ .Summary }}</p>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</div>
+
+<style>
+  .showcase-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .showcase-image {
+    flex: 0 0 40%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  .showcase-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .showcase-body {
+    flex: 1 1 auto;
+    padding-left: 2.5rem;
+  }
+  .showcase-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  /* 짝수 번째 아이템은 순서를 뒤집습니다 (이미지-텍스트 -> 텍스트-이미지) */
+  .showcase-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .showcase-item:nth-child(even) .showcase-body {
+    padding-left: 0;
+    padding-right: 2.5rem;
+  }
+</style>
