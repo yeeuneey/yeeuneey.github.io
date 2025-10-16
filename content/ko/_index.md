@@ -52,7 +52,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: showcase
+      view: community/my-showcase
       flip_alt_rows: true
 
   - block: collection
