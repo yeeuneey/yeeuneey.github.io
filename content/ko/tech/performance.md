@@ -3,7 +3,7 @@ title: "고성능 컴퓨팅의 기반 ⚡"
 summary: "대규모 금융 연산을 위한 자료구조와 알고리즘 최적화"
 type: tech
 image:
-  filename: "uploads/media/hpc.jpg"
+  filename: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWxnb3JpdGhtfGVufDB8fDB8fHwy&auto=format&fit=crop&q=60&w=1200"
   focal_point: "Center"
 weight: 5
 ---
