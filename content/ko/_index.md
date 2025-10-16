@@ -40,7 +40,7 @@ sections:
         아래에서 제 관심 연구 분야인 금융 IT와 관련된
         **핵심 기술**과 **관련 과목**을 함께 확인하세요!
 
-  - block: showcase_block
+  - block: collection
     id: tech
     content:
       title: "금융 IT를 이끄는 핵심 기술"
@@ -51,14 +51,14 @@ sections:
           - "tech"
       sort_by: "weight"
       sort_ascending: true
-    # design:
-    #   view: showcase
+    design:
+      view: kye-showcase
 
   - block: collection
     id: related-courses
     content:
       title: "역량의 발판이 되는 핵심 전공 과목"
-      subtitle: "금융 IT 기술의 근간이 되는 탄탄한 전공 지식을 소개합니다."
+      subtitle: "금융 산업의 디지털 혁신을 주도하는 5가지 핵심 기술 역량을 소개합니다."
       text: "각 카드를 클릭해 해당 과목과 기술의 연결고리 설명을 확인하세요."
       filters:
         folders:

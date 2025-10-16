@@ -1,0 +1,11 @@
+<div class="flex flex-col md:flex-row items-center gap-6">
+  <div class="w-full md:w-1/2">
+    {{ with .item.Params.image }}
+      <img src="{{ . | relURL }}" alt="{{ .item.Title }}" class="rounded-xl shadow-lg">
+    {{ end }}
+  </div>
+  <div class="w-full md:w-1/2">
+    <h3 class="text-2xl font-semibold mb-2"><a href="{{ .item.RelPermalink }}">{{ .item.Title }}</a></h3>
+    {{ with .item.Summary }}<p class="text-neutral-400">{{ . }}</p>{{ end }}
+  </div>
+</div>

@@ -81,6 +81,10 @@ jobs:
       id: pages
       uses: actions/configure-pages@v5
 
+    - name: Clean Hugo cache
+      run: |
+        rm -rf ~/.cache/hugo_cache resources/_gen
+        
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
