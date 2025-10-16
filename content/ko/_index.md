@@ -53,7 +53,7 @@ sections:
       sort_ascending: true
     design:
       view: article-grid
-      columns: 1 
+      columns: 1
 
   - block: collection
     id: related-courses
@@ -74,29 +74,43 @@ sections:
     content:
       text: |
         <style>
-        #tech .article-grid .article-item {
-          max-width: 100%;
-          display: flex;
-          align-items: center;
-          margin-bottom: 3rem;
-          background-color: transparent;
-          border: none;
-          box-shadow: none;
+        #tech .article-item {
+          display: flex !important; 
+          flex-direction: row !important;
+          align-items: center !important;
+          max-width: 100% !important;
+          margin-bottom: 3.5rem !important;
+          background: none !important;
+          border: none !important;
+          box-shadow: none !important;
+          padding: 0 !important;
         }
-        #tech .article-grid .article-item .card-image {
-          flex: 1 1 45%;
-          margin: 0;
+
+        #tech .article-item .card-image {
+          flex: 0 0 40%;
+          margin: 0 !important;
         }
-        #tech .article-grid .article-item .card-body {
-          flex: 1 1 55%;
-          padding-left: 2rem;
+
+        #tech .article-item .card-body {
+          flex: 1 1 auto;
+          padding: 0 0 0 2.5rem !important; 
         }
-        #tech .article-grid .article-item:nth-child(even) {
-          flex-direction: row-reverse;
+
+        #tech .article-item:nth-child(even) {
+          flex-direction: row-reverse !important;
         }
-        #tech .article-grid .article-item:nth-child(even) .card-body {
-          padding-left: 0;
-          padding-right: 2rem;
+        
+        #tech .article-item:nth-child(even) .card-body {
+          padding: 0 2.5rem 0 0 !important;
+        }
+
+        #tech .article-item .card-body .article-title,
+        #tech .article-item .card-body .article-style,
+        #tech .article-item .card-body .article-metadata {
+            text-align: left !important;
+        }
+        #tech .article-item .article-metadata {
+            justify-content: flex-start !important;
         }
         </style>
 ---
