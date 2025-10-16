@@ -1,5 +1,5 @@
 ---
-title: 'Projects'
+title: '프로젝트'
 date: 2024-05-19
 type: landing
 
@@ -11,8 +11,8 @@ design:
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: 프로젝트
+      text: 각 프로젝트 카드를 누르면 상세 페이지로 이동합니다.
       filters:
         folders:
           - projects
