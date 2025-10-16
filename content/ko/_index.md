@@ -52,7 +52,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: kye-showcase
+      view: showcase
 
   - block: collection
     id: related-courses
