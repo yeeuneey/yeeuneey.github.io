@@ -62,5 +62,9 @@ features:
   privacy_pack:
     enable: false
 
+assets:
+  css:
+    - assets/css/custom.css
+    - assets/css/custom-showcase.css
 
 
