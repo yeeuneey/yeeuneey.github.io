@@ -52,8 +52,9 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: community/my-showcase
+      view: community/myshowcase
       flip_alt_rows: true
+      columns: '1'
 
   - block: collection
     id: related-courses

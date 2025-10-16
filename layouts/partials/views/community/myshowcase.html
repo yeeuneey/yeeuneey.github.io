@@ -1,0 +1,43 @@
+<div class="myshowcase">
+  {{ range .Items }}
+  <div class="myshowcase-item">
+    {{ with .Params.image }}
+      <div class="myshowcase-image">
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+      </div>
+    {{ end }}
+    <div class="myshowcase-content">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Summary }}
+        <p>{{ . | plainify | truncate 100 }}</p>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+<style>
+.myshowcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.myshowcase-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.myshowcase-item:hover {
+  transform: translateY(-8px);
+}
+.myshowcase-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.myshowcase-content {
+  padding: 1rem;
+}
+</style>
