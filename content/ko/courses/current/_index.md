@@ -15,17 +15,15 @@ sections:
         - 3학년 2학기 강의 목록
           <div style="margin-left: 24px; margin-top: 6px;">
             <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
-                각 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
+                각 과목를 클릭하면 과목 목록을 볼 수 있고, <br>
+                과목을 클릭하면 과목의 상세 페이지로 이동합니다.
             </p>
-            <ul style="margin: 0; padding-left: 20px; font-size:1.1em;">
-              <li><a href="/courses/current/3-2/cc/"><strong>클라우드컴퓨팅</strong></a></li>
-              <li><a href="/courses/current/3-2/dmg/"><strong>데이터마이닝</strong></a></li>
-              <li><a href="/courses/current/3-2/ml/"><strong>기계학습</strong></a></li>
-              <li><a href="/courses/current/3-2/pb/"><strong>초급프로젝트</strong></a></li>
-              <li><a href="/courses/current/3-2/wsd/"><strong>웹서비스설계</strong></a></li>
-            </ul>
-          </div>
+      filters:
+        folders:
+          - "courses/current"
+      sort_by: "title"
+      sort_ascending: true
     design:
-      spacing:
-        padding: [40, 0, 20, 0]
+      view: article-grid
+      columns: 3
 ---
