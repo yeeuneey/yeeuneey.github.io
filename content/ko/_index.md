@@ -40,21 +40,20 @@ sections:
         아래에서 제 관심 연구 분야인 금융 IT와 관련된
         **핵심 기술**과 **관련 과목**을 함께 확인하세요!
 
-  - block: portfolio
+  - block: collection
     id: tech
     content:
       title: "금융 IT를 이끄는 핵심 기술"
       subtitle: "금융 산업의 디지털 혁신을 주도하는 5가지 핵심 기술 역량을 소개합니다."
-      text: "각 카드를 클릭해 해당 기술의 세부 연구 내용을 확인하세요."
+      text: "각 항목을 클릭해 해당 기술의 세부 연구 내용을 확인하세요."
       filters:
         folders:
           - "tech"
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: showcase
-      columns: 1
-      flip_alt_rows: true
+      view: article-grid
+      columns: 1 
 
   - block: collection
     id: related-courses
@@ -75,8 +74,29 @@ sections:
     content:
       text: |
         <style>
-        .article-grid {
-          justify-content: center;
+        #tech .article-grid .article-item {
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          margin-bottom: 3rem;
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+        }
+        #tech .article-grid .article-item .card-image {
+          flex: 1 1 45%;
+          margin: 0;
+        }
+        #tech .article-grid .article-item .card-body {
+          flex: 1 1 55%;
+          padding-left: 2rem;
+        }
+        #tech .article-grid .article-item:nth-child(even) {
+          flex-direction: row-reverse;
+        }
+        #tech .article-grid .article-item:nth-child(even) .card-body {
+          padding-left: 0;
+          padding-right: 2rem;
         }
         </style>
 ---
