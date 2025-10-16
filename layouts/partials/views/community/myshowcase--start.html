@@ -1,22 +1,41 @@
+{{/* layouts/partials/views/community/myshowcase--start.html */}}
 <div class="myshowcase">
-  {{ partial "views/community/myshowcase.html" (dict "Items" .Items "Title" .Title) }}
+  {{ range $index, $item := where .page.Pages "Params.featured" "!=" false }}
+    <div class="myshowcase-item">
+      {{ with $item.Params.image }}
+        <div class="myshowcase-image">
+          <img src="{{ . | relURL }}" alt="{{ $item.Title }}">
+        </div>
+      {{ end }}
+      <div class="myshowcase-content">
+        <h3><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h3>
+        {{ with $item.Params.subtitle }}
+          <p class="subtitle">{{ . }}</p>
+        {{ end }}
+        {{ with $item.Summary }}
+          <p>{{ . | plainify | truncate 120 }}</p>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
 </div>
 
 <style>
 .myshowcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
+  margin-top: 1.5rem;
 }
 .myshowcase-item {
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 .myshowcase-item:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 .myshowcase-image img {
   width: 100%;
@@ -24,6 +43,20 @@
   object-fit: cover;
 }
 .myshowcase-content {
-  padding: 1rem;
+  padding: 1rem 1.2rem;
+}
+.myshowcase-content h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.myshowcase-content p {
+  color: #555;
+  font-size: 0.95rem;
+}
+.subtitle {
+  font-weight: 500;
+  color: #999;
+  margin-bottom: 0.3rem;
 }
 </style>
