@@ -87,7 +87,7 @@ skills:
       - name: 기계학습
         description: ''
         percent: 100
-        icon: chart-bar
+        icon: cog
       - name: 클라우드 컴퓨팅 (AWS)
         description: ''
         percent: 85
@@ -104,10 +104,10 @@ skills:
         description: ''
         percent: 90
         icon: camera
-      - name: 러닝
+      - name: 퍼즐 맞추기
         description: ''
         percent: 80
-        icon: person-simple-walk
+        icon: puzzle-piece
 
 languages:
   - name: 한국어
