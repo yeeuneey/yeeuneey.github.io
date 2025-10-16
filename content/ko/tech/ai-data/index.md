@@ -3,7 +3,7 @@ title: "인공지능 & 빅데이터 🤖"
 summary: "금융 데이터 분석과 예측의 핵심, AI와 빅데이터 기술"
 type: tech
 image:
-  filename: "https://images.unsplash.com/photo-1744640326166-433469d102f2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFpfGVufDB8fDB8fHwy&auto=format&fit=crop&q=60&w=1200"
+  filename: "featured.jpg"
   focal_point: "Center"
 weight: 1
 ---

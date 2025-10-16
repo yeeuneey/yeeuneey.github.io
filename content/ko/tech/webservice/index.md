@@ -3,7 +3,7 @@ title: "웹 서비스 및 API 설계 🌐"
 summary: "오픈뱅킹 시대의 핵심, RESTful API 설계와 배포 자동화"
 type: tech
 image:
-  filename: "https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2ViJTIwZGVzaWdufGVufDB8fDB8fHwy&auto=format&fit=crop&q=60&w=1200"
+  filename: "featured.jpg"
   focal_point: "Center"
 weight: 4
 ---

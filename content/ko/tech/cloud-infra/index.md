@@ -3,7 +3,7 @@ title: "클라우드 컴퓨팅 ☁️"
 summary: "금융 시스템의 확장성과 유연성을 위한 핵심 인프라"
 type: tech
 image:
-  filename: "https://images.unsplash.com/photo-1690627931320-16ac56eb2588?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xvdWQlMjBjb21wdXRpbmd8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&q=60&w=1200"
+  filename: "featured.jpg"
   focal_point: "Center"
 weight: 2
 ---
