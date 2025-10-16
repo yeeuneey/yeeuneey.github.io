@@ -1,15 +1,23 @@
-{{/* 이미지 섹션 */}}
+{{/* layouts/partials/views/community/myshowcase--item.html */}}
+
+{{ $item := .item }}
+{{ $image := $item.Params.image }}
+
 <div class="w-full md:w-1/2">
-  {{ $item := .item }}
-  {{ $image := $item.Params.image }}
   {{ with $image }}
     <a href="{{ $item.RelPermalink }}">
-      {{ $src := cond (strings.HasPrefix .filename "http") .filename (cond (ne .url "") .url "") }}
-      {{ if $src }}
+      {{ $src := "" }}
+      {{ if .filename }}
+        {{ $src = .filename }}
+      {{ else if .url }}
+        {{ $src = .url }}
+      {{ end }}
+
+      {{ if strings.HasPrefix $src "http" }}
         <img src="{{ $src }}" alt="{{ $item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
       {{ else }}
-        {{ $img_resource := ($item.Resources.GetMatch .filename) }}
-        {{ with $img_resource }}
+        {{ $img := $item.Resources.GetMatch $src }}
+        {{ with $img }}
           <img src="{{ .RelPermalink }}" alt="{{ $item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
         {{ end }}
       {{ end }}
@@ -17,10 +25,11 @@
   {{ end }}
 </div>
 
-{{/* 텍스트 섹션 */}}
 <div class="w-full md:w-1/2">
-  <h3 class="text-2xl font-semibold mb-2"><a href="{{ .item.RelPermalink }}">{{ .item.Title }}</a></h3>
-  {{ with .item.Summary }}
+  <h3 class="text-2xl font-semibold mb-2">
+    <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
+  </h3>
+  {{ with $item.Summary }}
     <p class="text-neutral-400">{{ . }}</p>
   {{ end }}
 </div>
