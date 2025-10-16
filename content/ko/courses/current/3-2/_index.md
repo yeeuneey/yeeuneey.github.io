@@ -10,7 +10,7 @@ sections:
       title: "3학년 2학기 수강 과목"
       filters:
         folders:
-          - "."
+          - "courses/current/3-2"
     design:
       view: article-grid
       columns: 3
