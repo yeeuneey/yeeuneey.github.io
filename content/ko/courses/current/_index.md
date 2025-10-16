@@ -20,7 +20,7 @@ sections:
             </p>
       filters:
         folders:
-          - "courses/current"
+          - "courses/current/3-2/"
       sort_by: "title"
       sort_ascending: true
     design:
