@@ -99,7 +99,7 @@ skills:
       - name: 노래 듣기
         description: ''
         percent: 70
-        icon: music
+        icon: musical-note
       - name: 사진 찍기
         description: ''
         percent: 90
