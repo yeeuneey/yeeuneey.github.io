@@ -1,25 +1,26 @@
-<div class="flex flex-col items-center gap-6 {{ if eq .item_classes "hb-row-even" }}md:flex-row-reverse{{ else }}md:flex-row{{ end }}">
-
-  {{/* 이미지 섹션 */}}
+{{/* 이미지 섹션 */}}
 <div class="w-full md:w-1/2">
-  {{ with .item.Params.image }}
-    <a href="{{ $.item.RelPermalink }}">
-      {{ $is_external := strings.HasPrefix .filename "http" }}
-      {{ if $is_external }}
-        <img src="{{ .filename }}" alt="{{ $.item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+  {{ $item := .item }}
+  {{ $image := $item.Params.image }}
+  {{ with $image }}
+    <a href="{{ $item.RelPermalink }}">
+      {{ $src := cond (strings.HasPrefix .filename "http") .filename (cond (ne .url "") .url "") }}
+      {{ if $src }}
+        <img src="{{ $src }}" alt="{{ $item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
       {{ else }}
-        <img src="{{ .filename | relURL }}" alt="{{ $.item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+        {{ $img_resource := ($item.Resources.GetMatch .filename) }}
+        {{ with $img_resource }}
+          <img src="{{ .RelPermalink }}" alt="{{ $item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+        {{ end }}
       {{ end }}
     </a>
   {{ end }}
 </div>
 
-  {{/* 텍스트 섹션 */}}
-  <div class="w-full md:w-1/2">
-    <h3 class="text-2xl font-semibold mb-2"><a href="{{ .item.RelPermalink }}">{{ .item.Title }}</a></h3>
-    {{ with .item.Summary }}
-      <p class="text-neutral-400">{{ . }}</p>
-    {{ end }}
-  </div>
-
+{{/* 텍스트 섹션 */}}
+<div class="w-full md:w-1/2">
+  <h3 class="text-2xl font-semibold mb-2"><a href="{{ .item.RelPermalink }}">{{ .item.Title }}</a></h3>
+  {{ with .item.Summary }}
+    <p class="text-neutral-400">{{ . }}</p>
+  {{ end }}
 </div>
