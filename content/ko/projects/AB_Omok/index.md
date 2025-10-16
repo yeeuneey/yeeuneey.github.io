@@ -2,7 +2,7 @@
 title: AB_Omok
 date: 2025-04-13
 links:
-  - type: 오목
+  - name: 오목
     url: https://github.com/yeeuneey/AB_Omok.git
     icon: link
 tags:
