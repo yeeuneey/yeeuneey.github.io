@@ -51,13 +51,12 @@
 
 
 .article-card .article-header {
-  padding: 0;
+    padding: 0 !important;
 }
 
 .article-card .article-header a img {
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
