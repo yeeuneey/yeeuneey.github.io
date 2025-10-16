@@ -1,6 +1,6 @@
 ---
-title: "수강 완료한 강의"
-summary: "1학년 2학기부터 3학년 1학기까지 수강 완료한 강의 목록"
+title: "전체 강의"
+summary: "1학년 2학기부터 3학년 2학기까지 수강한 전공 강의 목록"
 type: landing
 layout: list
 
