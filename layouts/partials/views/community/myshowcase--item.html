@@ -1,13 +1,18 @@
 <div class="flex flex-col items-center gap-6 {{ if eq .item_classes "hb-row-even" }}md:flex-row-reverse{{ else }}md:flex-row{{ end }}">
 
   {{/* 이미지 섹션 */}}
-  <div class="w-full md:w-1/2">
-    {{ with .item.Params.image }}
-      <a href="{{ $.item.RelPermalink }}">
+<div class="w-full md:w-1/2">
+  {{ with .item.Params.image }}
+    <a href="{{ $.item.RelPermalink }}">
+      {{ $is_external := strings.HasPrefix .filename "http" }}
+      {{ if $is_external }}
         <img src="{{ .filename }}" alt="{{ $.item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
-      </a>
-    {{ end }}
-  </div>
+      {{ else }}
+        <img src="{{ .filename | relURL }}" alt="{{ $.item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+      {{ end }}
+    </a>
+  {{ end }}
+</div>
 
   {{/* 텍스트 섹션 */}}
   <div class="w-full md:w-1/2">
