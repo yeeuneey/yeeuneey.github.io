@@ -1,13 +1,20 @@
-{{/* layouts/partials/views/showcase--item.html */}}
-{{ $is_even := modBool .i 2 }}
+{{ $is_even := eq (mod .item.Params.weight 2) 0 }}
+
 <div class="flex flex-col {{ if $is_even }}md:flex-row-reverse{{ else }}md:flex-row{{ end }} items-center gap-6">
+
   <div class="w-full md:w-1/2">
     {{ with .item.Params.image }}
-      <img src="{{ . | relURL }}" alt="{{ .item.Title }}" class="rounded-xl shadow-lg">
+      <a href="{{ $.item.RelPermalink }}">
+        <img src="{{ .filename | relURL }}" alt="{{ $.item.Title }}" class="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+      </a>
     {{ end }}
   </div>
+
   <div class="w-full md:w-1/2">
     <h3 class="text-2xl font-semibold mb-2"><a href="{{ .item.RelPermalink }}">{{ .item.Title }}</a></h3>
-    {{ with .item.Summary }}<p class="text-neutral-400">{{ . }}</p>{{ end }}
+    {{ with .item.Summary }}
+      <p class="text-neutral-400">{{ . }}</p>
+    {{ end }}
   </div>
+
 </div>
