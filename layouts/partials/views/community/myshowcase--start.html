@@ -1,25 +1,11 @@
 <div class="myshowcase">
-  {{ range .Items }}
-  <div class="myshowcase-item">
-    {{ with .Params.image }}
-      <div class="myshowcase-image">
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}">
-      </div>
-    {{ end }}
-    <div class="myshowcase-content">
-      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-      {{ with .Summary }}
-        <p>{{ . | plainify | truncate 100 }}</p>
-      {{ end }}
-    </div>
-  </div>
-  {{ end }}
+  {{ partial "views/community/myshowcase.html" (dict "Items" .Items "Title" .Title) }}
 </div>
 
 <style>
 .myshowcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 .myshowcase-item {
