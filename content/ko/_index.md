@@ -40,7 +40,7 @@ sections:
         아래에서 제 관심 연구 분야인 금융 IT와 관련된
         **핵심 기술**과 **관련 과목**을 함께 확인하세요!
 
-  - block: collection
+  - block: showcase_block
     id: tech
     content:
       title: "금융 IT를 이끄는 핵심 기술"
@@ -51,8 +51,9 @@ sections:
           - "tech"
       sort_by: "weight"
       sort_ascending: true
-    design:
-      view: showcase
+    # design:
+    #   view: showcase
+
   - block: collection
     id: related-courses
     content:
