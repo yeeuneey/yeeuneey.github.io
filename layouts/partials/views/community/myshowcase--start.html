@@ -1,25 +1,85 @@
-<div class="myshowcase">
-  <style>
-    .myshowcase {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
-      margin-top: 1.5rem;
-    }
-    .myshowcase-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      overflow: hidden;
-      transition: transform .25s ease;
-    }
-    .myshowcase-card:hover { transform: translateY(-6px); }
-    .myshowcase-image img {
-      width: 100%; height: 200px; object-fit: cover;
-      display:block;
-    }
-    .myshowcase-body { padding: 1rem 1.2rem; }
-    .myshowcase-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 .4rem; }
-    .myshowcase-sub { color:#777; margin: 0 0 .2rem; }
-    .myshowcase-text { color:#444; margin: 0; }
-  </style>
+<div class="showcase-container flex flex-col gap-10 mt-10">
+
+<style>
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.showcase-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform .3s ease;
+}
+
+.showcase-item:hover {
+  transform: translateY(-6px);
+}
+
+.showcase-image {
+  flex: 1.1;
+  min-width: 45%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.showcase-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.showcase-content {
+  flex: 1;
+  padding: 2rem 2.2rem;
+}
+
+.showcase-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.showcase-subtitle {
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.showcase-desc {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .showcase-item {
+    flex-direction: column;
+  }
+  .showcase-image {
+    min-width: 100%;
+    height: 220px;
+  }
+  .showcase-content {
+    padding: 1.5rem;
+  }
+}
+
+.showcase-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+@media (max-width: 900px) {
+  .showcase-item:nth-child(even) {
+    flex-direction: column;
+  }
+}
+
+</style>

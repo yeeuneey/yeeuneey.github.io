@@ -1,19 +1,20 @@
 {{ $it := .item }}
-<div class="myshowcase-card">
+
+<div class="showcase-item">
   {{ with $it.Params.image }}
-    <div class="myshowcase-image">
+    <div class="showcase-image">
       <img src="{{ . | relURL }}" alt="{{ $it.Title }}">
     </div>
   {{ end }}
-  <div class="myshowcase-body">
-    <h3 class="myshowcase-title">
-      <a href="{{ $it.RelPermalink }}">{{ $it.Title }}</a>
+  <div class="showcase-content">
+    <h3 class="showcase-title">
+      <a href="{{ $it.RelPermalink }}" class="hover:underline">{{ $it.Title }}</a>
     </h3>
     {{ with $it.Params.subtitle }}
-      <p class="myshowcase-sub">{{ . }}</p>
+      <p class="showcase-subtitle">{{ . }}</p>
     {{ end }}
     {{ with $it.Summary }}
-      <p class="myshowcase-text">{{ . | plainify | truncate 120 }}</p>
+      <p class="showcase-desc">{{ . | plainify | truncate 160 }}</p>
     {{ end }}
   </div>
 </div>
