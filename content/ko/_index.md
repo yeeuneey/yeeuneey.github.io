@@ -19,11 +19,11 @@ sections:
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(/media/slider1.jpg)">
               <h3>김예은의 포트폴리오</h3>
-              <p>방문을 환영합니다.</p>
+              <p>환영합니다.</p>
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider2.jpg)">
               <h3>연구</h3>
-              <p>관심 연구 분야와 관련된 핵심 기술과 관련 과목을 확인하세요.</p>
+              <p>관심 연구분야와 관련된 핵심기술&관련과목을 확인하세요.</p>
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider3.jpg)">
               <h3>프로젝트</h3>
@@ -41,7 +41,7 @@ sections:
           var swiper = new Swiper(".mySwiper", {
             loop: true,
             autoplay: {
-              delay: 3500,
+              delay: 3000,
               disableOnInteraction: false,
             },
             pagination: {
