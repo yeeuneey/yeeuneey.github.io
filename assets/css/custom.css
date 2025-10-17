@@ -183,7 +183,6 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -209,7 +208,6 @@
   color: #ffffff !important; 
 }
 
-/* Swiper 페이지네이션 색상 */
 .swiper-pagination-bullet-active {
   background: #ffffff !important; 
 }

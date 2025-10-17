@@ -13,10 +13,12 @@ sections:
     id: slider
     content:
       text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(/media/slider1.jpg)">
-              <h3>김예은의 프토폴리오</h3>
+              <h3>김예은의 포트폴리오</h3>
               <p>방문을 환영합니다.</p>
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider2.jpg)">
@@ -32,6 +34,26 @@ sections:
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
     design:
       columns: '1'
       spacing:
