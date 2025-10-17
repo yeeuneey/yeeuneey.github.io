@@ -93,24 +93,22 @@
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
+
 #bio {
-  position: relative; 
+  position: relative;
   z-index: 1;
 
   &::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.45); 
-    z-index: -1; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: -1;
   }
 
   &, h1, h2, h3, p, div, .prose {
     color: #fff !important;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.5); 
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
   }
 
   .profile-social a {
@@ -121,20 +119,38 @@
   }
 
   .hb-card, .card {
-    background-color: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    
+
     &, h1, h2, h3, p, div {
       text-shadow: none;
     }
   }
-  
+
   .tag-pill {
-     background-color: rgba(255, 255, 255, 0.2) !important;
-     color: #fff !important;
      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+     color: #fff !important;
+  }
+
+  [data-theme="light"] & {
+    .hb-card, .card {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .tag-pill {
+       background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+  }
+
+  [data-theme="dark"] & {
+    .hb-card, .card {
+      background-color: rgba(31, 41, 55, 0.8) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .tag-pill {
+       background-color: rgba(55, 65, 81, 0.75) !important;
+    }
   }
 }
