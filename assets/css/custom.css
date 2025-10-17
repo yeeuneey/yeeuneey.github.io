@@ -316,3 +316,63 @@ header.navbar {
 body > *:first-of-type {
     margin-top: 0 !important;
 }
+
+/* 상단 메뉴 탭 hover! */
+
+.navbar a:hover,
+.navbar-item:hover,
+.navbar-nav > li:hover > a {
+  background-color: rgba(13, 148, 136, 0.25); 
+  color: #14b8a6 !important; 
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover,
+.navbar .dropdown-menu a:hover {
+  background-color: rgba(13, 148, 136, 0.25);
+  color: #14b8a6 !important;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a.active,
+.navbar-item.active {
+  color: #2dd4bf !important;
+  border-bottom: 2px solid #0d9488;
+  background-color: transparent;
+}
+
+.navbar-nav > li > a, .navbar-item {
+  position: relative;
+  padding: 10px 0;
+  transition: color 0.3s ease-in-out;
+  background-color: transparent !important;
+}
+
+.navbar-nav > li > a::after, .navbar-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #2dd4bf; 
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav > li > a:hover, .navbar-item:hover {
+  color: #2dd4bf !important;
+}
+
+.navbar-nav > li > a:hover::after, .navbar-item:hover::after {
+  width: 100%;
+}
+
+.navbar-nav > li > a.active, .navbar-item.active {
+  color: #2dd4bf !important;
+}
+.navbar-nav > li > a.active::after, .navbar-item.active::after {
+  width: 100%;
+}
