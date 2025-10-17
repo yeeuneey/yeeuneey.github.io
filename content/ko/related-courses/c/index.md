@@ -15,8 +15,8 @@ weight: 2
 ---
 
 ## 🎓 관련 수강 과목  
-- [**클라우드컴퓨팅 (3-2)**](/courses/current/cc/) - AWS EC2, S3, VPC 기반 클라우드 자원 실습
-- [**운영체제 (3-1)**](/courses/completed/os/) - 프로세스·메모리·파일 관리로 시스템 자원 이해 
+- [**클라우드컴퓨팅 (3-2)**](/courses/current/3-2/cc/) - AWS EC2, S3, VPC 기반 클라우드 자원 실습
+- [**운영체제 (3-1)**](/courses/completed/3-1/os/) - 프로세스·메모리·파일 관리로 시스템 자원 이해 
 
 ---
 

@@ -16,8 +16,8 @@ weight: 3
 
 ## 🎓 관련 수강 과목  
 
-- [**컴퓨터네트워크 (3-1)**](/courses/completed/cn/) - TCP/IP, HTTPS, SSL, 암호화·인증 구조 학습
-- [**데이터통신 (2-2)**](/courses/completed/dc/) - 전송 계층·프로토콜·오류 제어 기반 안전한 통신 설계
+- [**컴퓨터네트워크 (3-1)**](/courses/completed/3-1/cn/) - TCP/IP, HTTPS, SSL, 암호화·인증 구조 학습
+- [**데이터통신 (2-2)**](/courses/completed/2-2/dc/) - 전송 계층·프로토콜·오류 제어 기반 안전한 통신 설계
 
 ---
 
