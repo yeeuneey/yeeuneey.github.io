@@ -27,7 +27,7 @@ sections:
         languages: '언어'
         awards: '수상'
     design:
-      css_class: hbx-bg-gradient
+      css_class: 'custom-hero'
       avatar:
         size: medium
         shape: circle
