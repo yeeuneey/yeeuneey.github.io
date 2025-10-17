@@ -2,7 +2,7 @@
 title: AB_Omok
 date: 2025-04-13
 links:
-  - name: 오목
+  - name: 오목 깃허브 링크
     url: https://github.com/yeeuneey/AB_Omok.git
     icon: link
 tags:
@@ -13,6 +13,36 @@ tags:
 AB_Omok을 해결하는 탐색 알고리즘을 구현하는 프로젝트.
 
 <!--more-->
+
+<div style="text-align: center; margin: 24px 0;">
+  <a href="/uploads/omok-report.pdf" download
+     style="
+       display: inline-flex;
+       align-items: center;
+       gap: 8px;
+       background-color: #2563eb;
+       color: white;
+       padding: 12px 28px;
+       border-radius: 12px;
+       font-weight: 600;
+       text-decoration: none;
+       box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
+       transform: scale(1);
+       transition: all 0.25s ease-in-out;
+     "
+     onmouseover="this.style.backgroundColor='#1e40af';
+                  this.style.transform='scale(1.08)';
+                  this.style.boxShadow='0 8px 20px rgba(37, 99, 235, 0.5)';"
+     onmouseout="this.style.backgroundColor='#2563eb';
+                 this.style.transform='scale(1)';
+                 this.style.boxShadow='0 4px 10px rgba(37, 99, 235, 0.35)';">
+    <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+            d='M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3' />
+    </svg>
+    보고서 다운로드
+  </a>
+</div>
 
 초기의 user_agent.py 파일은 돌의 위치를 무작위로 정하여 랜덤의 수를 두는 플레이를 하였습니다. 이는 전략이 없는 무의미한 방식으로, 오목이라는 게임의 진행과는 거리가 멀었습니다. 특별한 기능이 구현되어 있지 않기 때문에 승리하는 조건이나 패배하는 조건, 또는 흰 돌의 수에 대한 방어, 연속되게 놓아진 돌의 수 계산 등이 전혀 고려되지 않은 코드였습니다. HUMAN=True일 때, 흰 돌(내가 직접 플레이)이 연속 3개의 돌을 놓는다면 방어를 하고, 방어를 하는 것뿐만 아니라 검은 돌(ai의 플레이)이 연속 5개의 돌을 놓도록(검은 돌이 승리하도록) 시도하게끔 구현하였습니다. 돌을 두는 방식은 무작위로 두는 것이 아닌, alpha-beta pruning 탐색을 기반으로 하여서 최선의 선택을 하게 됩니다. 이 알고리즘은 AI가 앞의 수까
 지 탐색하며 최선의 수를 선택할 수 있도록 하는 핵심 로직입니다. 

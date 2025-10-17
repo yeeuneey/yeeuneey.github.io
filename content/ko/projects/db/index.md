@@ -1,8 +1,8 @@
 ---
 title: database
-date: 2025-03-29
+date: 2025-06-21
 links:
-  - name: 도서관 예약 관리 시스템
+  - name: 도서관 예약 관리 시스템 깃허브 링크
     url: https://github.com/yeeuneey/db_project.git
     icon: link
 tags:
@@ -13,6 +13,36 @@ tags:
 sql을 이용한 도서관 예약 관리 시스템을 구현하는 프로젝트.
 
 <!--more-->
+
+<div style="text-align: center; margin: 24px 0;">
+  <a href="/uploads/db-report.pdf" download
+     style="
+       display: inline-flex;
+       align-items: center;
+       gap: 8px;
+       background-color: #2563eb;
+       color: white;
+       padding: 12px 28px;
+       border-radius: 12px;
+       font-weight: 600;
+       text-decoration: none;
+       box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
+       transform: scale(1);
+       transition: all 0.25s ease-in-out;
+     "
+     onmouseover="this.style.backgroundColor='#1e40af';
+                  this.style.transform='scale(1.08)';
+                  this.style.boxShadow='0 8px 20px rgba(37, 99, 235, 0.5)';"
+     onmouseout="this.style.backgroundColor='#2563eb';
+                 this.style.transform='scale(1)';
+                 this.style.boxShadow='0 4px 10px rgba(37, 99, 235, 0.35)';">
+    <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
+            d='M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3' />
+    </svg>
+    보고서 다운로드
+  </a>
+</div>
 
 프로젝트 주제는 시험 기간에 도서관을 다니면서 느꼈던 고충을 데이터베이스 프로젝트에 녹여내보면 어떨까? 라는 생각으로 도서관 예약 관리 시스템을 구축하기로 결정하였습니다. 좌석을 예약하는 과정에서 생기는 불편함, 또는 불만족을 수용하고 이를 관리한다면 학교 측에서도, 학생 측에서도 좋은 결과를 도출해낼 것이라고 생각하였습니다. 제가 느꼈던 가장 큰 고충은 자리를 미리 선점해놓고 3시간이 지나도 그 자리에 나타나지 않거나, 장시간 자리를 비우는 등 좌석을 맡아두고서 제때 사용하지 않는 학생들로 인해, 자리들을 헛되이 버리는 사례가 많았습니다. 이를 민원 시스템을 도입하여 경고 누적을 쌓고, 그 누적이 많이 쌓이게 되면 3일간 도서관을 이용할 수 없게 하는 패널티를 부여하면 학생들 모두가 경각심을 가지게 되고, 보다 원활한 도서관의 이용이 이루어질 것이라고 생각하였습니다.
 
