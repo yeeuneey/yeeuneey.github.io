@@ -83,6 +83,8 @@
   z-index: 2;
 }
 
+
+/* 배경 & 바이오 */
 .custom-hero.hbx-bg-gradient,
 .custom-hero .hbx-bg-gradient {
   background: transparent !important;
@@ -164,4 +166,50 @@
       text-shadow: none !important;
     }
   }
+}
+
+/* 슬라이더 */
+#slider .prose {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 450px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.swiper-slide h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.swiper-slide p {
+  font-size: 1.2rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important; 
+}
+
+/* Swiper 페이지네이션 색상 */
+.swiper-pagination-bullet-active {
+  background: #ffffff !important; 
 }

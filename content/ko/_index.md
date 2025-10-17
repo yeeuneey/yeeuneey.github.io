@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ''
-date: 2022-10-24
+title: '김예은'
+date: 2025-10-11
 type: landing
 
 design:
@@ -9,6 +9,34 @@ design:
   spacing: '6rem'
 
 sections:
+  - block: markdown
+    id: slider
+    content:
+      text: |
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(/media/slider1.jpg)">
+              <h3>김예은의 프토폴리오</h3>
+              <p>방문을 환영합니다.</p>
+            </div>
+            <div class="swiper-slide" style="background-image:url(/media/slider2.jpg)">
+              <h3>연구</h3>
+              <p>관심 연구 분야와 관련된 핵심 기술과 관련 과목을 확인하세요.</p>
+            </div>
+            <div class="swiper-slide" style="background-image:url(/media/slider3.jpg)">
+              <h3>프로젝트</h3>
+              <p>제가 구현한 프로젝트와 github를 함께 확인하세요.</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+    design:
+      columns: '1'
+      spacing:
+        padding: ["0", "0", "0", "0"]
+
   - block: resume-biography-3
     id: bio
     content:
