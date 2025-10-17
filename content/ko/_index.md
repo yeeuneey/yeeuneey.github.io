@@ -23,7 +23,7 @@ sections:
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider2.jpg)">
               <h3>연구</h3>
-              <p>관심 연구분야와 관련된 핵심기술&관련과목을 확인하세요.</p>
+              <p>관심 연구 분야와 관련된 핵심 기술 & 관련 과목을 확인하세요.</p>
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider3.jpg)">
               <h3>프로젝트</h3>
