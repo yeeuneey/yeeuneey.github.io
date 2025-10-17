@@ -14,6 +14,28 @@ tags:
 
 <!--more-->
 
+<div style="text-align: center; margin: 24px 0;">
+  <a href="/uploads/8-puzzle-report.pdf" download
+     style="
+       display: inline-flex;
+       align-items: center;
+       gap: 8px;
+       background-color: #2563eb;
+       color: white;
+       padding: 12px 24px;
+       border-radius: 12px;
+       font-weight: 600;
+       text-decoration: none;
+       transition: background-color 0.3s;
+     "
+     onmouseover="this.style.backgroundColor='#1e40af'"
+     onmouseout="this.style.backgroundColor='#2563eb'">
+    <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 4v16m8-8H4'/></svg>
+    보고서 다운로드
+  </a>
+</div>
+
+
 초기 코드에서는 경로를 표현할 때 노드 리스트를 사용하는 구조로 되어 있으며 모든 상태를 저장하도록 구현되어 있기 때문에 탐색 중인 노드 하나를 위해 경로 전체를 복사하여 저장한다는 문제점이 있다고 판단하였습니다. 예를 들어서 DFS에서 깊이가 1000 이상이 되면 1000개 리스트가 매번 복사되기 때문에 탐색 깊이가 깊어질수록 성능 저하와 메모리 낭비가 발생하는 문제가 생겨, 결과 출력까지 걸리는 시간이 너무 낭비되는 느낌을 받았습니다. 따라서 다음과 같이 코드를 수정하였습니다.
 
 node 클래스를 도입하여서 state, action, cost, parent 의 정보를 하나의 객체에 캡슐화했습니다. path() 메서드는 현재 상태의 노드부터 루트 노드인 시작 상태까지의 경로에서 어떠한 action(up, down, left, right)들을 했는지 parent를 따라 거슬러 가면서 action을 리스트에 저장하고 reverse()를 취하여 올바른 순서대로 반환하도록 구현하였습니다. 즉, action 리스트를 반환하는 역할을 합니다. 각각의 탐색 알고리즘들에서 동일한 node 클래스를 사용하도록 설계하여 알고리즘 간 구조를 통일함으로써 효율성을 높이는 데 초점을 맞췄습니다.
