@@ -169,6 +169,17 @@
 }
 
 /* 슬라이더 */
+#slider {
+  max-width: 100vw; 
+  width: 100vw;
+
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 #slider .prose {
   max-width: 100%;
   padding-left: 0;
