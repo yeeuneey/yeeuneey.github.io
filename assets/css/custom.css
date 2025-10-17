@@ -97,12 +97,16 @@
 #bio {
   position: relative;
   z-index: 1;
+  background-size: auto !important;
+  background-repeat: repeat !important; 
+  background-attachment: fixed !important; 
+
 
   &::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
   }
 
@@ -118,39 +122,46 @@
     }
   }
 
-  .hb-card, .card {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-    &, h1, h2, h3, p, div {
-      text-shadow: none;
-    }
-  }
-
-  .tag-pill {
-     border: 1px solid rgba(255, 255, 255, 0.3) !important;
-     color: #fff !important;
-  }
-
   [data-theme="light"] & {
     .hb-card, .card {
-      background-color: rgba(255, 255, 255, 0.1) !important;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      background-color: #f8f9fa !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border: 1px solid #dee2e6 !important;
     }
     .tag-pill {
-       background-color: rgba(255, 255, 255, 0.2) !important;
+       background-color: #e9ecef !important;
+       color: #343a40 !important;
+       border: none !important;
+    }
+    .col-12:first-child .flex .icon-circle {
+      background-color: #e9ecef !important;
+    }
+
+    .hb-card *, .card * {
+      color: #212529 !important;
+      text-shadow: none !important;
     }
   }
 
   [data-theme="dark"] & {
     .hb-card, .card {
-      background-color: rgba(31, 41, 55, 0.8) !important;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background-color: #212529 !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border: 1px solid #495057 !important;
     }
     .tag-pill {
-       background-color: rgba(55, 65, 81, 0.75) !important;
+       background-color: #495057 !important;
+       color: #f8f9fa !important;
+       border: none !important;
+    }
+    .col-12:first-child .flex .icon-circle {
+      background-color: #495057 !important;
+    }
+
+    .hb-card *, .card * {
+      text-shadow: none !important;
     }
   }
 }
