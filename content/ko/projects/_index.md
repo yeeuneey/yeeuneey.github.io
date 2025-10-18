@@ -1,7 +1,11 @@
 ---
 title: '프로젝트'
-date: 2024-05-19
+date: 2025-10-11
 type: landing
+image:
+  filename: "media/projects-banner.jpg"
+  focal_point: "center"
+  perview_only: false
 
 design:
   # Section spacing

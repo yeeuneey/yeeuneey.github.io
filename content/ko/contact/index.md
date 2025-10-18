@@ -3,6 +3,10 @@ title: "연락"
 summary: "김예은의 연락처 및 위치입니다."
 type: landing
 layout: list
+image:
+  filename: "media/contact-banner.jpg"
+  focal_point: "center"
+  perview_only: false
 
 sections:
   - block: markdown
