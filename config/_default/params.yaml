@@ -54,7 +54,8 @@ features:
   privacy_pack:
     enable: false
   search:
-    provider: pagefind 
+    provider: pagefind
+    enable: true
 
 custom_css:
   - "css/custom.css"

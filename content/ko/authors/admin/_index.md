@@ -24,7 +24,7 @@ role: 학부생
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: 전북대학교 컴퓨터인공지능학부
+  - name: 전북대 컴퓨터인공지능학부
     url: https://cs.jbnu.ac.kr/
 
 # Social network links
