@@ -53,7 +53,8 @@ features:
     enable: false
   privacy_pack:
     enable: false
+  search:
+    provider: pagefind 
 
-assets:
-  css:
-    - assets/css/custom.css
+custom_css:
+  - "css/custom.css"
