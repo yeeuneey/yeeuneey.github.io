@@ -12,19 +12,11 @@ appearance:
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: 'Jeonbuk National University'
+    description: '전북대학교 컴퓨터인공지능학부 김예은의 포트폴리오입니다.'
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
   verification:
-    google: ''
-    baidu: ''
+    google: '' # static 폴더에 HTML 파일 인증 방식 추가함.
 
 # Site header 
 header:
