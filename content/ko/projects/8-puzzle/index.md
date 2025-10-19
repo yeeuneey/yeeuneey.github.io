@@ -2,7 +2,7 @@
 title: 8-puzzle
 date: 2025-03-29
 links:
-  - name: 8-퍼즐 깃허브 링크
+  - name: 8-puzzle github link
     url: https://github.com/yeeuneey/8-puzzle.git
     icon: link
 tags:
