@@ -2,10 +2,10 @@
 title: CookieRun Game
 date: 2024-06-03
 links:
-  - name: 게임 클라이언트 (Front-End) 깃허브 링크
+  - name: 클라이언트 (Front-End) github link
     url: https://github.com/yeeuneey/CookieRun-Front.git
     icon: link
-  - name: 게임 서버 (Back-End) 깃허브 링크
+  - name: 서버 (Back-End) github link
     url: https://github.com/yeeuneey/CookieRun-Server.git
     icon: link
 tags:
