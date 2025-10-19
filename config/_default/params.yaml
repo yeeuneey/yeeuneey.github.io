@@ -8,11 +8,13 @@ appearance:
   mode: system
   color: teal
 
+favicon: "/media/icon.png"
+
 # SEO
 marketing:
   seo:
     site_type: Person
-    org_name: 'Jeonbuk National University'
+    org_name: '전북대 컴퓨터인공지능학부'
     description: '전북대학교 컴퓨터인공지능학부 김예은의 포트폴리오입니다.'
     keywords: ['김예은', '전북대학교', '전북대', '컴퓨터인공지능학부']
     image: 'media/sharing.jpg'
