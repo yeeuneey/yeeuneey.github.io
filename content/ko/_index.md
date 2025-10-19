@@ -27,11 +27,7 @@ sections:
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider3.jpg)">
               <h3>프로젝트</h3>
-              <p>제가 구현한 프로젝트와 github를 함께 확인하세요.</p>
-            </div>
-            <div class="swiper-slide" style="background-image:url(/media/slider4.jpg)">
-              <h3>감사합니다!</h3>
-              <p>THANK YOU FOR VISITING</p>
+              <p>프로젝트와 github 링크를 함께 확인하세요.</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -44,9 +40,14 @@ sections:
         <script>
           var swiper = new Swiper(".mySwiper", {
             loop: true,
+            speed: 1600,
             autoplay: {
-              delay: 3000,
+              delay: 3500,
               disableOnInteraction: false,
+            },
+            effect: "fade", 
+            fadeEffect: {
+              crossFade: true,
             },
             pagination: {
               el: ".swiper-pagination",
@@ -57,6 +58,7 @@ sections:
               prevEl: ".swiper-button-prev",
             },
           });
+
         </script>
     design:
       columns: '1'
