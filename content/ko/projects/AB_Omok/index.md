@@ -2,7 +2,7 @@
 title: AB_Omok
 date: 2025-04-13
 links:
-  - name: 오목 깃허브 링크
+  - name: Omok github link
     url: https://github.com/yeeuneey/AB_Omok.git
     icon: link
 tags:
@@ -14,33 +14,14 @@ AB_Omok을 해결하는 탐색 알고리즘을 구현하는 프로젝트.
 
 <!--more-->
 
-<div style="text-align: center; margin: 24px 0;">
-  <a href="/uploads/omok-report.pdf" download
-     style="
-       display: inline-flex;
-       align-items: center;
-       gap: 8px;
-       background-color: #2563eb;
-       color: white;
-       padding: 12px 28px;
-       border-radius: 12px;
-       font-weight: 600;
-       text-decoration: none;
-       box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
-       transform: scale(1);
-       transition: all 0.25s ease-in-out;
-     "
-     onmouseover="this.style.backgroundColor='#1e40af';
-                  this.style.transform='scale(1.08)';
-                  this.style.boxShadow='0 8px 20px rgba(37, 99, 235, 0.5)';"
-     onmouseout="this.style.backgroundColor='#2563eb';
-                 this.style.transform='scale(1)';
-                 this.style.boxShadow='0 4px 10px rgba(37, 99, 235, 0.35)';">
-    <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
-      <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2'
-            d='M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3' />
+<div style="text-align: center; margin: 28px 0;">
+  <a href="/uploads/omok-report.pdf" download class="hb-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3" />
     </svg>
-    보고서 다운로드
+    보고서 PDF 다운로드
   </a>
 </div>
 
