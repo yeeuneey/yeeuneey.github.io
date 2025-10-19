@@ -285,3 +285,29 @@ html, body, main, .page-body, .hb-page { width: 100% !important; max-width: 100v
     .swiper-slide h3 { font-size: 1.8rem; }
     .swiper-slide p { font-size: 1rem; }
 }
+
+.hb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: 12px;
+  background-color: #10b981;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+  transform: scale(1);
+  transition: all 0.25s ease-in-out;
+}
+
+.hb-btn:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.55);
+}
+
+.hb-btn svg {
+  width: 18px;
+  height: 18px;
+}
