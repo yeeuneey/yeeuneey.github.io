@@ -19,7 +19,7 @@ sections:
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(/media/slider1.jpg)">
               <h3>김예은의 포트폴리오</h3>
-              <p>환영합니다.</p>
+              <p>WELCOME TO Yeeun-Kim's PORTFOLIO!</p>
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider2.jpg)">
               <h3>연구</h3>
@@ -28,6 +28,10 @@ sections:
             <div class="swiper-slide" style="background-image:url(/media/slider3.jpg)">
               <h3>프로젝트</h3>
               <p>제가 구현한 프로젝트와 github를 함께 확인하세요.</p>
+            </div>
+            <div class="swiper-slide" style="background-image:url(/media/slider4.jpg)">
+              <h3>감사합니다!</h3>
+              <p>THANK YOU FOR VISITING</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
