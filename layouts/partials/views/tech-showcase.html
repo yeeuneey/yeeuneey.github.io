@@ -1,0 +1,105 @@
+{{- $item := .item -}}
+{{- $index := .index | default 0 -}}
+{{- if not $item -}}
+  {{- return -}}
+{{- end -}}
+
+{{- $cardID := "" -}}
+{{- with $item.File }}{{ $cardID = printf "tech-card-%s" .UniqueID }}{{ else }}{{ $cardID = printf "tech-card-%s" (anchorize $item.Title) }}{{ end }}
+
+{{- $imageResource := partial "functions/get_featured_image.html" $item -}}
+{{- $imageURL := "" -}}
+{{- if not $imageResource }}
+  {{- with $item.Params.image.filename }}
+    {{- if or (strings.HasPrefix . "http://") (strings.HasPrefix . "https://") (strings.HasPrefix . "//") }}
+      {{- $imageURL = . -}}
+    {{- else }}
+      {{- $clean := strings.TrimPrefix . "/" -}}
+      {{- $imageURL = relURL (printf "/%s" $clean) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $altText := printf "%s featured image" $item.Title -}}
+{{- with $item.Params.image.alt }}{{ $altText = . }}{{ end -}}
+
+{{- $summary := "" -}}
+{{- with $item.Params.summary }}
+  {{- $summary = . | plainify -}}
+{{- else }}
+  {{- with $item.Summary }}
+    {{- $summary = . | plainify -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $summary) 220 }}{{ $summary = truncate 220 $summary }}{{ end -}}
+
+{{- $tags := slice -}}
+{{- with $item.Params.tags }}{{ $tags = . }}{{ end -}}
+{{- if and (eq (len $tags) 0) ($item.Params.categories) }}
+  {{- $tags = $item.Params.categories -}}
+{{- end -}}
+
+{{- $isReversed := eq (mod (add $index 1) 2) 0 -}}
+
+<article class="tech-showcase-card" role="article" aria-labelledby="{{ $cardID }}">
+  <div class="tech-showcase-card__inner {{ if $isReversed }}tech-showcase-card__inner--reversed{{ end }}">
+    <div class="tech-showcase-card__media">
+      {{- if $imageResource }}
+        {{- $processed := $imageResource.Fill "1024x682 Center" -}}
+        <a href="{{ $item.RelPermalink }}" class="tech-showcase-card__media-link" aria-hidden="true" tabindex="-1">
+          <img class="tech-showcase-card__image" src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ $altText }}" loading="lazy" decoding="async">
+        </a>
+      {{- else if $imageURL }}
+        <a href="{{ $item.RelPermalink }}" class="tech-showcase-card__media-link" aria-hidden="true" tabindex="-1">
+          <img class="tech-showcase-card__image" src="{{ $imageURL }}" alt="{{ $altText }}" loading="lazy" decoding="async">
+        </a>
+      {{- else }}
+        <div class="tech-showcase-card__placeholder">
+          <span>{{ $item.Title }}</span>
+        </div>
+      {{- end }}
+    </div>
+
+    <div class="tech-showcase-card__content">
+      <div class="tech-showcase-card__eyebrow">
+        {{- with $item.Params.topic }}
+          <span>{{ . }}</span>
+        {{- else }}
+          <span>핵심 기술 역량</span>
+        {{- end }}
+      </div>
+
+      <h3 id="{{ $cardID }}" class="tech-showcase-card__title">
+        <a href="{{ $item.RelPermalink }}">
+          {{ $item.Title }}
+        </a>
+      </h3>
+
+      {{- if $summary }}
+        <p class="tech-showcase-card__summary">
+          {{ $summary }}
+        </p>
+      {{- end }}
+
+      {{- if gt (len $tags) 0 }}
+        <div class="tech-showcase-card__tags" aria-label="관련 키워드">
+          {{- range first 6 $tags }}
+            <span class="tech-showcase-card__tag">{{ . }}</span>
+          {{- end }}
+          {{- if gt (len $tags) 6 }}
+            <span class="tech-showcase-card__tag tech-showcase-card__tag--more">+{{ sub (len $tags) 6 }}</span>
+          {{- end }}
+        </div>
+      {{- end }}
+
+      <div class="tech-showcase-card__cta">
+        <a class="tech-showcase-card__button" href="{{ $item.RelPermalink }}">
+          세부 기술 살펴보기
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

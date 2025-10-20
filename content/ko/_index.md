@@ -109,7 +109,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: article-grid
+      view: tech-showcase
       columns: 3
 
   - block: collection
@@ -125,6 +125,6 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: article-grid
+      view: related-courses-tiles
       columns: 3
 ---

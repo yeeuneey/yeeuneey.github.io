@@ -1,59 +1,3 @@
-.myshowcase-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-  margin-bottom: 2rem;
-}
-.myshowcase-item:hover {
-  transform: translateY(-6px);
-}
-.myshowcase-item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.myshowcase-image {
-  flex: 1.1;
-  min-width: 45%;
-  height: 260px;
-  overflow: hidden;
-}
-.myshowcase-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.myshowcase-body {
-  flex: 1;
-  padding: 2rem 2.2rem;
-}
-.myshowcase-title {
-  font-weight: 800;
-  font-size: 1.35rem;
-  margin-bottom: 0.5rem;
-}
-.myshowcase-sub {
-  color: #777;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-.myshowcase-desc {
-  color: #444;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-.article-card .article-header { padding: 0 !important; }
-.article-card .article-header a img {
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
 /* Hero Section */
 .custom-hero {
   position: relative;
@@ -399,3 +343,268 @@ main,
     max-width: 95%;
   }
 }
+
+/* Custom collection views */
+.tech-showcase-card {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(59, 130, 246, 0.1));
+  border: 1px solid rgba(45, 212, 191, 0.18);
+  box-shadow: 0 28px 60px -32px rgba(15, 118, 110, 0.55);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+[data-theme="dark"] .tech-showcase-card {
+  background: linear-gradient(140deg, rgba(12, 74, 110, 0.55), rgba(15, 118, 110, 0.42));
+  border-color: rgba(45, 212, 191, 0.28);
+  box-shadow: 0 28px 60px -32px rgba(9, 9, 11, 0.7);
+}
+.tech-showcase-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.25), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.tech-showcase-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 36px 80px -30px rgba(14, 116, 144, 0.65);
+}
+.tech-showcase-card:hover::after {
+  opacity: 1;
+}
+.tech-showcase-card__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: clamp(1.85rem, 1.5rem + 1vw, 3.2rem);
+  padding: clamp(1.9rem, 1.4rem + 1vw, 2.6rem);
+  flex-wrap: nowrap;
+}
+.tech-showcase-card__inner--reversed {
+  flex-direction: row-reverse;
+}
+.tech-showcase-card__inner--reversed .tech-showcase-card__content {
+  padding-right: 0;
+  padding-left: clamp(1rem, 0.4rem + 0.8vw, 1.6rem);
+}
+.tech-showcase-card__inner .tech-showcase-card__content {
+  padding-right: clamp(1rem, 0.4rem + 0.8vw, 1.6rem);
+}
+@media (max-width: 540px) {
+  .tech-showcase-card__inner {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+.tech-showcase-card__media {
+  position: relative;
+  flex: 0 0 clamp(12.5rem, 32vw, 22rem);
+  min-width: 12.5rem;
+  max-width: 26rem;
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.45), rgba(56, 189, 248, 0.45));
+  min-height: 220px;
+}
+.tech-showcase-card__inner--reversed .tech-showcase-card__media {
+  margin-left: 0;
+}
+.tech-showcase-card__media::before {
+  content: "";
+  display: block;
+  padding-bottom: 68%;
+}
+.tech-showcase-card__media-link,
+.tech-showcase-card__media-link:focus-visible {
+  display: block;
+  outline: none;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+.tech-showcase-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+  border-radius: inherit;
+}
+.tech-showcase-card:hover .tech-showcase-card__image {
+  transform: scale(1.04);
+}
+.tech-showcase-card__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: rgba(15, 118, 110, 0.85);
+  padding: 2rem;
+  text-align: center;
+  padding: 2rem;
+  text-align: center;
+}
+.tech-showcase-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  color: #0b1120;
+  flex: 1 1 0;
+  min-width: 0;
+  align-items: flex-start;
+  text-align: left;
+}
+[data-theme="dark"] .tech-showcase-card__content {
+  color: rgba(241, 245, 249, 0.97);
+  text-shadow: 0 1px 2px rgba(2, 6, 23, 0.45);
+}
+.tech-showcase-card__inner:not(.tech-showcase-card__inner--reversed) .tech-showcase-card__content {
+  align-items: flex-end;
+  text-align: right;
+}
+.tech-showcase-card__inner--reversed .tech-showcase-card__content {
+  align-items: flex-start;
+  text-align: left;
+}
+.tech-showcase-card__eyebrow span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(15, 118, 110, 0.9);
+}
+[data-theme="dark"] .tech-showcase-card__eyebrow span {
+  color: rgba(94, 234, 212, 0.8);
+}
+.tech-showcase-card__title {
+  font-size: clamp(1.55rem, 1.3rem + 0.8vw, 2.05rem);
+  line-height: 1.25;
+  font-weight: 800;
+  margin: 0;
+}
+.tech-showcase-card__title a {
+  color: inherit;
+  text-decoration: none;
+}
+.tech-showcase-card__title a:hover {
+  color: #0ea5e9;
+}
+[data-theme="dark"] .tech-showcase-card__title,
+[data-theme="dark"] .tech-showcase-card__title a {
+  color: #f8fafc;
+}
+[data-theme="dark"] .tech-showcase-card__title a:hover {
+  color: #60a5fa;
+  text-shadow: 0 6px 22px rgba(37, 99, 235, 0.55);
+}
+.tech-showcase-card__summary {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(15, 23, 42, 0.76);
+}
+[data-theme="dark"] .tech-showcase-card__summary {
+  color: rgba(248, 250, 252, 0.95);
+}
+.tech-showcase-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: flex-start;
+}
+.tech-showcase-card__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(15, 118, 110, 0.1);
+  color: rgba(15, 118, 110, 0.95);
+}
+[data-theme="dark"] .tech-showcase-card__tag {
+  background: rgba(31, 152, 191, 0.25);
+  color: rgba(125, 211, 252, 0.92);
+}
+.tech-showcase-card__tag--more {
+  background: rgba(14, 165, 233, 0.1);
+  color: rgba(14, 165, 233, 0.9);
+}
+.tech-showcase-card__cta {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.tech-showcase-card__inner:not(.tech-showcase-card__inner--reversed) .tech-showcase-card__cta {
+  justify-content: flex-end;
+}
+.tech-showcase-card__inner:not(.tech-showcase-card__inner--reversed) .tech-showcase-card__tags {
+  justify-content: flex-end;
+}
+
+.tech-showcase-card__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding: 0.85rem 1.45rem;
+  border-radius: 999px;
+  background: white;
+  box-shadow: 0 18px 40px -24px rgba(15, 118, 110, 0.65);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+.tech-showcase-card__button svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  stroke: currentColor;
+  transition: transform 0.3s ease;
+}
+.tech-showcase-card__button:hover {
+  transform: translateX(4px);
+  box-shadow: 0 18px 32px -22px rgba(14, 165, 233, 0.65);
+}
+.tech-showcase-card__button:hover svg {
+  transform: translateX(4px);
+}
+[data-theme="dark"] .tech-showcase-card__button {
+  background: rgba(15, 23, 42, 0.92);
+  color: rgba(248, 250, 252, 0.98);
+  box-shadow: 0 18px 44px -24px rgba(96, 165, 250, 0.48);
+}
+.tech-showcase-card__title a:hover {
+  color: #0ea5e9;
+}
+[data-theme="dark"] .tech-showcase-card__title a:hover {
+  color: #60a5fa;
+  text-shadow: 0 6px 22px rgba(37, 99, 235, 0.55);
+}
+.related-course-card__cta svg {
+  transition: transform 0.3s ease;
+}
+.related-course-card:hover .related-course-card__cta svg {
+  transform: translateX(6px);
+}
+.related-course-card__cta {
+  text-decoration: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tech-showcase-card,
+  .tech-showcase-card__image,
+  .tech-showcase-card__button,
+  .related-course-card__cta svg {
+    transition: none !important;
+  }
+}
+

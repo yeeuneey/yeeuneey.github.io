@@ -1,0 +1,6 @@
+{{- $config := .config | default dict -}}
+{{- $len := int ($config.len | default 0) -}}
+{{- $containerClass := "container px-8 mx-auto xl:px-6 py-6 lg:py-12 max-w-screen-xl" -}}
+{{- if lt $len 2 }}{{ $containerClass = "container px-8 mx-auto xl:px-5 py-6 lg:py-12 max-w-4xl" }}{{ end -}}
+<div class="{{ $containerClass }}">
+  <div class="hb-view tech-showcase-stack flex flex-col gap-10 lg:gap-14">
