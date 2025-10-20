@@ -108,9 +108,8 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: myshowcase
-      flip_alt_rows: true
-      columns: '1'
+      view: article-grid
+      columns: 3
 
   - block: collection
     id: related-courses

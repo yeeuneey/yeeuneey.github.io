@@ -8,13 +8,7 @@ image:
 weight: 1
 ---
 
-<!-- <div style="margin: 40px 0;">
-  <img 
-    src="https://images.unsplash.com/photo-1744640326166-433469d102f2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFpfGVufDB8fDB8fHwy&auto=format&fit=crop&q=60&w=1200"
-    alt="ai 이미지" 
-    style="max-width: 100%; border-radius: 10px;"
-  >
-</div> -->
+<br>
 
 ## 📌 개요
 금융 IT에서 인공지능과 빅데이터는 거의 모든 영역에서 활용되는 핵심 기술입니다.
