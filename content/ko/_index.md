@@ -109,7 +109,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: tech-showcase
+      view: showcase
       columns: 3
 
   - block: collection
@@ -125,7 +125,8 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: tech-showcase
+      view: showcase
       columns: 3
 ---
+
 
