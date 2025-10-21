@@ -1,7 +1,8 @@
 ---
 title: "3학년 2학기 수강 과목"
-
+view: outline
+columns: 1
 design:
-  view: article-grid
-  columns: 3
+  view: outline
+  columns: 1
 ---

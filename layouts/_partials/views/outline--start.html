@@ -1,0 +1,11 @@
+{{- $config := .config | default dict -}}
+{{- $columns := $config.columns | default 1 -}}
+{{- $containerClass := "container px-8 mx-auto xl:px-5 py-6 lg:py-10 max-w-4xl" -}}
+{{- if gt $columns 1 -}}
+  {{- $containerClass = "container px-8 mx-auto xl:px-6 py-6 lg:py-10 max-w-screen-xl" -}}
+{{- end -}}
+{{- with $config.container_class -}}
+  {{- $containerClass = . -}}
+{{- end -}}
+<div class="{{ $containerClass }}">
+  <div class="outline-stack flex flex-col gap-6 lg:gap-8">
