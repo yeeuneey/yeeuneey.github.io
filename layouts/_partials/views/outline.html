@@ -10,42 +10,6 @@
   {{- $cardID = printf "outline-%s" (anchorize $item.Title) -}}
 {{- end -}}
 
-{{- $summary := "" -}}
-{{- with $item.Params.summary -}}
-  {{- $summary = . | plainify -}}
-{{- else -}}
-  {{- with $item.Summary -}}
-    {{- $summary = . | plainify -}}
-  {{- end -}}
-{{- end -}}
-{{- if not $summary -}}
-  {{- $plain := $item.Plain | plainify | strings.TrimSpace -}}
-  {{- if $plain -}}
-    {{- $summary = $plain -}}
-  {{- end -}}
-{{- end -}}
-{{- if gt (len $summary) 240 -}}
-  {{- $summary = truncate 240 $summary -}}
-{{- end -}}
-
-{{- $overview := "" -}}
-{{- with $item.Params.overview -}}
-  {{- $overview = . | plainify -}}
-{{- end -}}
-{{- if eq $overview "" -}}
-  {{- if ne $summary "" -}}
-    {{- $overview = $summary -}}
-  {{- end -}}
-{{- end -}}
-{{- if eq $overview "" -}}
-  {{- with $item.Params.description -}}
-    {{- $overview = . | plainify -}}
-  {{- end -}}
-{{- end -}}
-{{- if gt (len $overview) 240 -}}
-  {{- $overview = truncate 240 $overview -}}
-{{- end -}}
-
 {{- $goals := slice -}}
 {{- with $item.Params.goals -}}
   {{- $goals = . -}}
@@ -55,19 +19,6 @@
 {{- with $item.Params.instructor -}}
   {{- $meta = $meta | append (printf "담당: %s" (. | plainify)) -}}
 {{- end -}}
-{{- with $item.Params.credit -}}
-  {{- $meta = $meta | append (printf "학점: %v" .) -}}
-{{- end -}}
-{{- with $item.Params.language -}}
-  {{- $meta = $meta | append (printf "언어: %s" (. | plainify)) -}}
-{{- end -}}
-
-{{- $goalPrefixes := slice
-  "Goal 1️⃣ :" "Goal 2️⃣ :" "Goal 3️⃣ :" "Goal 4️⃣ :" "Goal 5️⃣ :" "Goal 6️⃣ :"
-  "Goal 1️⃣:" "Goal 2️⃣:" "Goal 3️⃣:" "Goal 4️⃣:" "Goal 5️⃣:" "Goal 6️⃣:"
-  "Goal 1:" "Goal 2:" "Goal 3:" "Goal 4:" "Goal 5:" "Goal 6:"
-  "Goal 1 :" "Goal 2 :" "Goal 3 :" "Goal 4 :" "Goal 5 :" "Goal 6 :"
--}}
 
 <article class="outline-card" role="article" aria-labelledby="{{ $cardID }}">
   <a class="outline-card__link" href="{{ $item.RelPermalink }}">
@@ -82,28 +33,20 @@
       {{- end }}
     </header>
 
-    {{- if ne $overview "" }}
-      <div class="outline-card__section">
-        <span class="outline-card__section-title">강의 개요</span>
-        <p class="outline-card__summary">
-          {{ $overview }}
-        </p>
-      </div>
-    {{- end }}
-
     {{- if gt (len $goals) 0 }}
       <div class="outline-card__section">
         <span class="outline-card__section-title">강의 목표</span>
         <ul class="outline-card__goals">
           {{- $maxGoals := cond (gt (len $goals) 3) 3 (len $goals) -}}
-          {{- range $index, $goal := first $maxGoals $goals }}
-            {{- $goalText := $goal | markdownify | plainify | strings.TrimSpace -}}
-            {{- range $goalPrefixes }}
-              {{- if strings.HasPrefix $goalText . }}
-                {{- $goalText = strings.TrimSpace (strings.TrimPrefix $goalText .) -}}
-              {{- end }}
+          {{- range first $maxGoals $goals }}
+            {{- $goalOriginal := . | markdownify | plainify | strings.TrimSpace -}}
+            {{- $goalText := $goalOriginal -}}
+            {{- $goalText = replaceRE `(?i)^goal\s*[0-9]+[️⃣]*\s*[:：\-–—\.]*\s*` "" $goalText -}}
+            {{- $goalText = replaceRE `^[0-9①②③④⑤⑥]+[\.\)\-–—：:\s]*` "" $goalText -}}
+            {{- $goalText = replaceRE `^[\p{Z}\p{P}\p{S}]*` "" $goalText -}}
+            {{- if eq $goalText "" }}
+              {{- $goalText = $goalOriginal -}}
             {{- end }}
-            {{- $goalText = strings.TrimLeft $goalText ":：-–— " -}}
             {{- if ne $goalText "" }}
               <li>{{ $goalText }}</li>
             {{- end }}
