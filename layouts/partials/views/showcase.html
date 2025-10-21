@@ -1,4 +1,4 @@
-﻿{{- $item := .item -}}
+{{- $item := .item -}}
 {{- $index := .index | default 0 -}}
 {{- if not $item -}}
   {{- return -}}
@@ -45,27 +45,27 @@
 {{- $ctaDefault := cond (eq $section "related-courses") "과목 상세 보기" "기술 상세 보기" -}}
 {{- $tagsLabel := cond (eq $section "related-courses") "Related course keywords" "Related keywords" -}}
 
-<article class="tech-showcase-card" role="article" aria-labelledby="{{ $cardID }}">
-  <div class="tech-showcase-card__inner {{ if $isReversed }}tech-showcase-card__inner--reversed{{ end }}">
-    <div class="tech-showcase-card__media">
+<article class="showcase-card" role="article" aria-labelledby="{{ $cardID }}">
+  <div class="showcase-card__inner {{ if $isReversed }}showcase-card__inner--reversed{{ end }}">
+    <div class="showcase-card__media">
       {{- if $imageResource }}
         {{- $processed := $imageResource.Fill "1024x682 Center" -}}
-        <a href="{{ $item.RelPermalink }}" class="tech-showcase-card__media-link" aria-hidden="true" tabindex="-1">
-          <img class="tech-showcase-card__image" src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ $altText }}" loading="lazy" decoding="async">
+        <a href="{{ $item.RelPermalink }}" class="showcase-card__media-link" aria-hidden="true" tabindex="-1">
+          <img class="showcase-card__image" src="{{ $processed.RelPermalink }}" width="{{ $processed.Width }}" height="{{ $processed.Height }}" alt="{{ $altText }}" loading="lazy" decoding="async">
         </a>
       {{- else if $imageURL }}
-        <a href="{{ $item.RelPermalink }}" class="tech-showcase-card__media-link" aria-hidden="true" tabindex="-1">
-          <img class="tech-showcase-card__image" src="{{ $imageURL }}" alt="{{ $altText }}" loading="lazy" decoding="async">
+        <a href="{{ $item.RelPermalink }}" class="showcase-card__media-link" aria-hidden="true" tabindex="-1">
+          <img class="showcase-card__image" src="{{ $imageURL }}" alt="{{ $altText }}" loading="lazy" decoding="async">
         </a>
       {{- else }}
-        <div class="tech-showcase-card__placeholder">
+        <div class="showcase-card__placeholder">
           <span>{{ $item.Title }}</span>
         </div>
       {{- end }}
     </div>
 
-    <div class="tech-showcase-card__content">
-      <div class="tech-showcase-card__eyebrow">
+    <div class="showcase-card__content">
+      <div class="showcase-card__eyebrow">
         {{- with $item.Params.topic }}
           <span>{{ . }}</span>
         {{- else }}
@@ -73,31 +73,31 @@
         {{- end }}
       </div>
 
-      <h3 id="{{ $cardID }}" class="tech-showcase-card__title">
+      <h3 id="{{ $cardID }}" class="showcase-card__title">
         <a href="{{ $item.RelPermalink }}">
           {{ $item.Title }}
         </a>
       </h3>
 
       {{- if $summary }}
-        <p class="tech-showcase-card__summary">
+        <p class="showcase-card__summary">
           {{ $summary }}
         </p>
       {{- end }}
 
       {{- if gt (len $tags) 0 }}
-        <div class="tech-showcase-card__tags" aria-label="{{ $tagsLabel }}">
+        <div class="showcase-card__tags" aria-label="{{ $tagsLabel }}">
           {{- range first 6 $tags }}
-            <span class="tech-showcase-card__tag">{{ . }}</span>
+            <span class="showcase-card__tag">{{ . }}</span>
           {{- end }}
           {{- if gt (len $tags) 6 }}
-            <span class="tech-showcase-card__tag tech-showcase-card__tag--more">+{{ sub (len $tags) 6 }}</span>
+            <span class="showcase-card__tag showcase-card__tag--more">+{{ sub (len $tags) 6 }}</span>
           {{- end }}
         </div>
       {{- end }}
 
-      <div class="tech-showcase-card__cta">
-        <a class="tech-showcase-card__cta-link" href="{{ $item.RelPermalink }}">
+      <div class="showcase-card__cta">
+        <a class="showcase-card__cta-link" href="{{ $item.RelPermalink }}">
           {{ $ctaDefault }}
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
@@ -107,4 +107,5 @@
     </div>
   </div>
 </article>
+
 

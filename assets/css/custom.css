@@ -392,7 +392,7 @@ main,
 }
 
 /* Custom collection views */
-.tech-showcase-card {
+.showcase-card {
   position: relative;
   border-radius: 28px;
   overflow: hidden;
@@ -401,12 +401,12 @@ main,
   box-shadow: 0 28px 60px -32px rgba(15, 118, 110, 0.55);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
-[data-theme="dark"] .tech-showcase-card {
+[data-theme="dark"] .showcase-card {
   background: linear-gradient(140deg, rgba(12, 74, 110, 0.55), rgba(15, 118, 110, 0.42));
   border-color: rgba(45, 212, 191, 0.28);
   box-shadow: 0 28px 60px -32px rgba(9, 9, 11, 0.7);
 }
-.tech-showcase-card::after {
+.showcase-card::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -415,14 +415,14 @@ main,
   opacity: 0;
   transition: opacity 0.35s ease;
 }
-.tech-showcase-card:hover {
+.showcase-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 36px 80px -30px rgba(14, 116, 144, 0.65);
 }
-.tech-showcase-card:hover::after {
+.showcase-card:hover::after {
   opacity: 1;
 }
-.tech-showcase-card__inner {
+.showcase-card__inner {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -430,23 +430,23 @@ main,
   padding: clamp(1.9rem, 1.4rem + 1vw, 2.6rem);
   flex-wrap: nowrap;
 }
-.tech-showcase-card__inner--reversed {
+.showcase-card__inner--reversed {
   flex-direction: row-reverse;
 }
-.tech-showcase-card__inner--reversed .tech-showcase-card__content {
+.showcase-card__inner--reversed .showcase-card__content {
   padding-right: 0;
   padding-left: clamp(1rem, 0.4rem + 0.8vw, 1.6rem);
 }
-.tech-showcase-card__inner .tech-showcase-card__content {
+.showcase-card__inner .showcase-card__content {
   padding-right: clamp(1rem, 0.4rem + 0.8vw, 1.6rem);
 }
 @media (max-width: 540px) {
-  .tech-showcase-card__inner {
+  .showcase-card__inner {
     padding: 1.5rem;
     gap: 1.5rem;
   }
 }
-.tech-showcase-card__media {
+.showcase-card__media {
   position: relative;
   flex: 0 0 clamp(12.5rem, 32vw, 22rem);
   min-width: 12.5rem;
@@ -456,23 +456,23 @@ main,
   background: linear-gradient(135deg, rgba(13, 148, 136, 0.45), rgba(56, 189, 248, 0.45));
   min-height: 220px;
 }
-.tech-showcase-card__inner--reversed .tech-showcase-card__media {
+.showcase-card__inner--reversed .showcase-card__media {
   margin-left: 0;
 }
-.tech-showcase-card__media::before {
+.showcase-card__media::before {
   content: "";
   display: block;
   padding-bottom: 68%;
 }
-.tech-showcase-card__media-link,
-.tech-showcase-card__media-link:focus-visible {
+.showcase-card__media-link,
+.showcase-card__media-link:focus-visible {
   display: block;
   outline: none;
   position: absolute;
   inset: 0;
   border-radius: inherit;
 }
-.tech-showcase-card__image {
+.showcase-card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -480,10 +480,10 @@ main,
   transition: transform 0.45s ease;
   border-radius: inherit;
 }
-.tech-showcase-card:hover .tech-showcase-card__image {
+.showcase-card:hover .showcase-card__image {
   transform: scale(1.04);
 }
-.tech-showcase-card__placeholder {
+.showcase-card__placeholder {
   position: absolute;
   inset: 0;
   display: flex;
@@ -496,7 +496,7 @@ main,
   padding: 2rem;
   text-align: center;
 }
-.tech-showcase-card__content {
+.showcase-card__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -507,19 +507,19 @@ main,
   align-items: flex-start;
   text-align: left;
 }
-[data-theme="dark"] .tech-showcase-card__content {
+[data-theme="dark"] .showcase-card__content {
   color: rgba(241, 245, 249, 0.97);
   text-shadow: 0 1px 2px rgba(2, 6, 23, 0.45);
 }
-.tech-showcase-card__inner:not(.tech-showcase-card__inner--reversed) .tech-showcase-card__content {
+.showcase-card__inner:not(.showcase-card__inner--reversed) .showcase-card__content {
   align-items: flex-end;
   text-align: right;
 }
-.tech-showcase-card__inner--reversed .tech-showcase-card__content {
+.showcase-card__inner--reversed .showcase-card__content {
   align-items: flex-start;
   text-align: left;
 }
-.tech-showcase-card__eyebrow span {
+.showcase-card__eyebrow span {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -529,46 +529,46 @@ main,
   font-weight: 600;
   color: rgba(15, 118, 110, 0.9);
 }
-[data-theme="dark"] .tech-showcase-card__eyebrow span {
+[data-theme="dark"] .showcase-card__eyebrow span {
   color: rgba(94, 234, 212, 0.8);
 }
-.tech-showcase-card__title {
+.showcase-card__title {
   font-size: clamp(1.55rem, 1.3rem + 0.8vw, 2.05rem);
   line-height: 1.25;
   font-weight: 800;
   margin: 0;
 }
-.tech-showcase-card__title a {
+.showcase-card__title a {
   color: inherit;
   text-decoration: none;
 }
-.tech-showcase-card__title a:hover {
+.showcase-card__title a:hover {
   color: #0ea5e9;
 }
-[data-theme="dark"] .tech-showcase-card__title,
-[data-theme="dark"] .tech-showcase-card__title a {
+[data-theme="dark"] .showcase-card__title,
+[data-theme="dark"] .showcase-card__title a {
   color: #f8fafc;
 }
-[data-theme="dark"] .tech-showcase-card__title a:hover {
+[data-theme="dark"] .showcase-card__title a:hover {
   color: #60a5fa;
   text-shadow: 0 6px 22px rgba(37, 99, 235, 0.55);
 }
-.tech-showcase-card__summary {
+.showcase-card__summary {
   margin: 0;
   font-size: 1rem;
   line-height: 1.7;
   color: rgba(15, 23, 42, 0.76);
 }
-[data-theme="dark"] .tech-showcase-card__summary {
+[data-theme="dark"] .showcase-card__summary {
   color: rgba(248, 250, 252, 0.95);
 }
-.tech-showcase-card__tags {
+.showcase-card__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
   justify-content: flex-start;
 }
-.tech-showcase-card__tag {
+.showcase-card__tag {
   display: inline-flex;
   align-items: center;
   padding: 0.45rem 0.85rem;
@@ -578,27 +578,27 @@ main,
   background: rgba(15, 118, 110, 0.1);
   color: rgba(15, 118, 110, 0.95);
 }
-[data-theme="dark"] .tech-showcase-card__tag {
+[data-theme="dark"] .showcase-card__tag {
   background: rgba(31, 152, 191, 0.25);
   color: rgba(125, 211, 252, 0.92);
 }
-.tech-showcase-card__tag--more {
+.showcase-card__tag--more {
   background: rgba(14, 165, 233, 0.1);
   color: rgba(14, 165, 233, 0.9);
 }
-.tech-showcase-card__cta {
+.showcase-card__cta {
   margin-top: 0.75rem;
   display: flex;
   justify-content: flex-start;
 }
-.tech-showcase-card__inner:not(.tech-showcase-card__inner--reversed) .tech-showcase-card__cta {
+.showcase-card__inner:not(.showcase-card__inner--reversed) .showcase-card__cta {
   justify-content: flex-end;
 }
-.tech-showcase-card__inner:not(.tech-showcase-card__inner--reversed) .tech-showcase-card__tags {
+.showcase-card__inner:not(.showcase-card__inner--reversed) .showcase-card__tags {
   justify-content: flex-end;
 }
 
-.tech-showcase-card__cta-link {
+.showcase-card__cta-link {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
@@ -612,28 +612,28 @@ main,
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
 }
-.tech-showcase-card__cta-link svg {
+.showcase-card__cta-link svg {
   width: 1.1rem;
   height: 1.1rem;
   stroke: currentColor;
   transition: transform 0.3s ease;
 }
-.tech-showcase-card__cta-link:hover {
+.showcase-card__cta-link:hover {
   transform: translateX(4px);
   box-shadow: 0 18px 32px -22px rgba(14, 165, 233, 0.65);
 }
-.tech-showcase-card__cta-link:hover svg {
+.showcase-card__cta-link:hover svg {
   transform: translateX(4px);
 }
-[data-theme="dark"] .tech-showcase-card__cta-link {
+[data-theme="dark"] .showcase-card__cta-link {
   background: rgba(15, 23, 42, 0.92);
   color: rgba(248, 250, 252, 0.98);
   box-shadow: 0 18px 44px -24px rgba(96, 165, 250, 0.48);
 }
-.tech-showcase-card__title a:hover {
+.showcase-card__title a:hover {
   color: #0ea5e9;
 }
-[data-theme="dark"] .tech-showcase-card__title a:hover {
+[data-theme="dark"] .showcase-card__title a:hover {
   color: #60a5fa;
   text-shadow: 0 6px 22px rgba(37, 99, 235, 0.55);
 }
@@ -647,12 +647,20 @@ main,
   text-decoration: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .tech-showcase-card,
-  .tech-showcase-card__image,
-  .tech-showcase-card__cta-link,
+  .showcase-card,
+  .showcase-card__image,
+  .showcase-card__cta-link,
   .related-course-card__cta svg {
     transition: none !important;
   }
 }
 
+
+[data-theme="dark"] .showcase-card__title,
+[data-theme="dark"] .showcase-card__title a {
+  color: #ffffff !important;
+}
+[data-theme="dark"] .showcase-card__summary {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
 
