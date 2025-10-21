@@ -1,4 +1,4 @@
-{{- $item := .item -}}
+﻿{{- $item := .item -}}
 {{- $index := .index | default 0 -}}
 {{- if not $item -}}
   {{- return -}}
@@ -40,6 +40,10 @@
 {{- end -}}
 
 {{- $isReversed := eq (mod (add $index 1) 2) 0 -}}
+{{- $section := $item.Section | default "" -}}
+{{- $eyebrowDefault := cond (eq $section "related-courses") "COURSE CONNECTION" "CORE TECH FOCUS" -}}
+{{- $ctaDefault := cond (eq $section "related-courses") "View curriculum details" "Explore the capability" -}}
+{{- $tagsLabel := cond (eq $section "related-courses") "Related course keywords" "Related keywords" -}}
 
 <article class="tech-showcase-card" role="article" aria-labelledby="{{ $cardID }}">
   <div class="tech-showcase-card__inner {{ if $isReversed }}tech-showcase-card__inner--reversed{{ end }}">
@@ -65,7 +69,7 @@
         {{- with $item.Params.topic }}
           <span>{{ . }}</span>
         {{- else }}
-          <span>핵심 기술 역량</span>
+          <span>{{ $eyebrowDefault }}</span>
         {{- end }}
       </div>
 
@@ -82,7 +86,7 @@
       {{- end }}
 
       {{- if gt (len $tags) 0 }}
-        <div class="tech-showcase-card__tags" aria-label="관련 키워드">
+        <div class="tech-showcase-card__tags" aria-label="{{ $tagsLabel }}">
           {{- range first 6 $tags }}
             <span class="tech-showcase-card__tag">{{ . }}</span>
           {{- end }}
@@ -93,8 +97,8 @@
       {{- end }}
 
       <div class="tech-showcase-card__cta">
-        <a class="tech-showcase-card__button" href="{{ $item.RelPermalink }}">
-          세부 기술 살펴보기
+        <a class="tech-showcase-card__cta-link" href="{{ $item.RelPermalink }}">
+          {{ $ctaDefault }}
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
           </svg>

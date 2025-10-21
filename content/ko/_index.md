@@ -1,4 +1,4 @@
----
+﻿---
 # Leave the homepage title empty to use the site title
 title: '김예은'
 date: 2025-10-11
@@ -125,6 +125,7 @@ sections:
       sort_by: "weight"
       sort_ascending: true
     design:
-      view: related-courses-tiles
+      view: tech-showcase
       columns: 3
 ---
+
