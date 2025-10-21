@@ -1,6 +1,6 @@
 ﻿---
 # Leave the homepage title empty to use the site title
-title: '김예은'
+title: ''
 date: 2025-10-11
 type: landing
 
