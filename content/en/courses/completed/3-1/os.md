@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/operating_system.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Understand the structure and responsibilities of an operating system."
   - "Goal 2️⃣: Learn core OS concepts such as processes, threads, memory management, and file systems."
