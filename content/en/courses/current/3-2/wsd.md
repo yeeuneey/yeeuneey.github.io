@@ -1,63 +1,57 @@
 ---
-title: "웹서비스설계"
+title: "Web Service Design"
 summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/web_service_design.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
-  - "Goal 1️⃣ : 현대 웹서비스의 구조와 백엔드 설계·REST API 설계 원리를 이해한다."
-  - "Goal 2️⃣ : Node.js/Express, Spring Boot, FastAPI/Flask 등 주요 백엔드 프레임워크를 실습한다."
-  - "Goal 3️⃣ : 인증·보안, DB/ORM, CI/CD, Docker·Kubernetes 등 배포·인프라 환경을 이해하고 적용한다."
+  - "Goal 1️⃣: Understand modern web-service architectures and core principles of backend and REST API design."
+  - "Goal 2️⃣: Practice major backend frameworks such as Node.js/Express, Spring Boot, and FastAPI/Flask."
+  - "Goal 3️⃣: Apply deployment and infrastructure concepts including authentication, DB/ORM integration, CI/CD, Docker, and Kubernetes."
 
-instructor: "이경수 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 3호관 311호"
-language: "한국어"
+instructor: "Prof. Kyung-Soo Lee"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 3, Room 311"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "Node.js 백엔드 개발자 되기"
-  author: "박승규"
+  title: "Becoming a Node.js Backend Developer"
+  author: "Seung-Kyu Park"
   publisher: "lulu.com"
   year: 2009
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 웹서비스설계 |
-| **담당교수** | 이경수 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 3호관 311호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 현대 웹서비스의 구조와 백엔드 설계·REST API 설계 원리를 이해한다.  
-2️⃣ Node.js/Express, Spring Boot, FastAPI/Flask 등 주요 백엔드 프레임워크를 실습한다.  
-3️⃣ 인증·보안, DB/ORM, CI/CD, Docker·Kubernetes 등 배포·인프라 환경을 이해하고 적용한다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Web Service Design |
+| **Instructor** | Prof. Kyung-Soo Lee |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 3, Room 311 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> Node.js 백엔드 개발자 되기  
-> 박승규 저 · lulu.com (2009)
+1️⃣ Learn the structure of modern web services and the principles behind backend and REST API design.  
+2️⃣ Gain hands-on experience with core backend frameworks such as Express, Spring Boot, and Flask/FastAPI.  
+3️⃣ Understand authentication, security, database/ORM integration, and deployment tooling including CI/CD, Docker, and Kubernetes.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Becoming a Node.js Backend Developer*  
+> Seung-Kyu Park · lulu.com (2009)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="chart-web" width="400" height="400"></canvas>
 <script>
@@ -65,7 +59,7 @@ const cWEB = document.getElementById('chart-web');
 new Chart(cWEB, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제', '발표/토론', '수업태도', '기타'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments', 'Presentation/Discussion', 'Participation', 'Other'],
     datasets: [{ data: [0, 0, 5, 80, 5, 0, 10], backgroundColor: ['#9ad0f5','#ffb7b2','#ffdac1','#b5ead7','#c7ceea','#f6a5c0','#cfd8dc'], borderColor:'#222', borderWidth:2 }]
   },
   options: { plugins:{ legend:{ position:'bottom' } } }
@@ -74,22 +68,24 @@ new Chart(cWEB, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 웹서비스 구조 이해 | OT, 개발자 로드맵 |
-| 2주 | 웹서비스 구조 심화 | 서버 종류와 구조 |
-| 3주 | 백엔드 구조 이해 | 백엔드 서버 구조, 아키텍처 디자인 |
-| 4주 | 프레임워크·HTTP | Node.js & Express, HTTP, REST API |
-| 5주 | 인증·문서화 | JWT, Swagger, Postman |
-| 6주 | 프레임워크 실습 I | Express/Spring Boot 기초 |
-| 7주 | 프레임워크 실습 II | Spring Boot 심화, Flask/FastAPI |
-| 8주 | Term Project I 마감 | 중간기간 보완 |
-| 9주 | DB/ORM | RDB·NoSQL, JPA/MyBatis/Prisma/SQLAlchemy |
-| 10주 | OAuth/소셜 로그인 | Google/카카오, Firebase 연동 |
-| 11주 | 통신 프로토콜 | WebSocket, MQTT 등 |
-| 12주 | 유지보수·테스트 | 로깅·테스트·문서화 |
-| 13주 | CI/CD | 자동화·GitHub Actions |
-| 14주 | 컨테이너/오케스트레이션 | Docker, Kubernetes |
-| 15주 | Term Project III 마감 | 서버 배포 제출 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Understand web-service architecture | OT and developer roadmap |
+| 2 | Deep dive into web-service structure | Server types and architectures |
+| 3 | Backend architecture | Backend server structure and architectural design |
+| 4 | Frameworks & HTTP | Node.js & Express, HTTP, REST APIs |
+| 5 | Authentication & documentation | JWT, Swagger, Postman |
+| 6 | Framework practice I | Express/Spring Boot fundamentals |
+| 7 | Framework practice II | Advanced Spring Boot, Flask/FastAPI |
+| 8 | Term Project I deadline | Midterm project refinement |
+| 9 | Databases & ORMs | RDB/NoSQL, JPA/MyBatis/Prisma/SQLAlchemy |
+| 10 | OAuth & social login | Google/Kakao auth, Firebase integration |
+| 11 | Communication protocols | WebSocket, MQTT, and others |
+| 12 | Maintenance & testing | Logging, testing, documentation |
+| 13 | CI/CD automation | GitHub Actions and automated pipelines |
+| 14 | Containers & orchestration | Docker and Kubernetes |
+| 15 | Term Project III deadline | Deployment submission |
+
+---
