@@ -37,22 +37,22 @@
       <div class="outline-card__section">
         <span class="outline-card__section-title">강의 목표</span>
         <ul class="outline-card__goals">
-          {{- $maxGoals := cond (gt (len $goals) 3) 3 (len $goals) -}}
-          {{- range first $maxGoals $goals }}
+          {{- range first 1 $goals }}
             {{- $goalOriginal := . | markdownify | plainify | strings.TrimSpace -}}
             {{- $goalText := $goalOriginal -}}
             {{- $goalText = replaceRE `(?i)^goal\s*[0-9]+[️⃣]*\s*[:：\-–—\.]*\s*` "" $goalText -}}
-            {{- $goalText = replaceRE `^[0-9①②③④⑤⑥]+[\.\)\-–—：:\s]*` "" $goalText -}}
+            {{- $goalText = replaceRE `^[0-9①②③④⑤⑥⑦⑧⑨⑩]+[\.\)\-–—：:\s]*` "" $goalText -}}
             {{- $goalText = replaceRE `^[\p{Z}\p{P}\p{S}]*` "" $goalText -}}
             {{- if eq $goalText "" }}
               {{- $goalText = $goalOriginal -}}
             {{- end }}
             {{- if ne $goalText "" }}
-              <li>{{ $goalText }}</li>
+              <li class="outline-card__goal" title="{{ $goalText | htmlEscape }}">
+                <span aria-hidden="true" class="outline-card__goal-icon">✅</span>
+                <span class="outline-card__goal-text">{{ $goalText }}</span>
+                <span aria-hidden="true" class="outline-card__goal-more">… 더보기</span>
+              </li>
             {{- end }}
-          {{- end }}
-          {{- if gt (len $goals) 3 }}
-            <li class="outline-card__goals-more">…</li>
           {{- end }}
         </ul>
       </div>
