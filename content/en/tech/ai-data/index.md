@@ -1,28 +1,28 @@
 ---
-title: "인공지능 & 빅데이터 🤖"
-summary: "금융 데이터 분석과 예측의 핵심, AI와 빅데이터 기술"
+title: "AI & Big Data 🤖"
+summary: "AI and big-data technologies that power financial analytics and forecasting"
 type: tech
 image:
-  filename: "featured.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%ED%9A%8C%EB%A1%9C-%EA%B8%B0%ED%8C%90%EC%97%90-%EB%B9%9B%EB%82%98%EB%8A%94-%EC%9D%B8%EA%B3%B5-%EC%A7%80%EB%8A%A5-%EC%B9%A9-w69Z8K-HGQU)'
   focal_point: "Center"
 weight: 1
 ---
 
 <br>
 
-## 📌 개요
-금융 IT에서 인공지능과 빅데이터는 거의 모든 영역에서 활용되는 핵심 기술입니다.
-대규모 데이터를 분석하여 시장을 예측하고, 숨겨진 패턴을 찾아내어
-새로운 사업 기회를 창출하며 서비스의 **효율성과 안정성**을 극대화합니다.
+## 📌 Overview
+In financial IT, AI and big data are foundational technologies that permeate nearly every domain.
+They analyze massive datasets to forecast markets, uncover hidden patterns,
+create new business opportunities, and maximize service **efficiency and reliability**.
 
 ---
 
-## 💡 주요 응용 사례
-- 개인화된 금융 상품 추천
-- 신용평가 모델 고도화
-- 이상거래탐지시스템(FDS)
-- 챗봇 기반 고객 응대
-- 로보어드바이저 서비스
+## 💡 Key Use Cases
+- Personalized financial product recommendations
+- Advanced credit-scoring models
+- Fraud Detection Systems (FDS)
+- Chatbot-based customer support
+- Robo-advisor services
 
 <style>
   .article-container h1,
