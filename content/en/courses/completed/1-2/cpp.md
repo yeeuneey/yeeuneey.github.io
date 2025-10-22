@@ -1,5 +1,5 @@
 ---
-title: "C++ 프로그래밍"
+title: "C++ Programming"
 summary: ""
 type: course
 tags: ["1-2"]
@@ -11,53 +11,53 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 언어기초를 공부한 학생을 대상으로 C++ 언어의 프로그래밍 문법을 학습한다."
-  - "Goal 2️⃣ : 객체지향프로그래밍(OOP)의 개념을 이해하고, C++ 언어를 이용하여 OOP 프로그램을 설계 및 구현하는 능력을 기른다."
-  - "Goal 3️⃣ : 다양한 문제에 대한 프로그래밍 실습을 통해 각 주제를 실질적으로 이해하고, C++ 프로그래밍 응용 능력을 향상시킨다."
+  - "Goal 1️⃣: Teach C++ syntax to students who have already studied the fundamentals of programming."
+  - "Goal 2️⃣: Build a solid understanding of object-oriented programming (OOP) and the ability to design and implement OOP solutions in C++."
+  - "Goal 3️⃣: Strengthen practical C++ skills by solving diverse programming exercises for each topic."
 
-instructor: "이세호 교수님"
-department: "전북대학교 컴퓨터인공지능학부"
-room: "공대 7호관 204호"
-language: "한국어"
+instructor: "Prof. Se-Ho Lee"
+department: "School of Computer & Artificial Intelligence, Jeonbuk National University"
+room: "College of Engineering Building 7, Room 204"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "열혈 C++ 프로그래밍"
-  author: "윤성우"
-  publisher: "오렌지미디어"
+  title: "Passionate C++ Programming"
+  author: "Sung-Woo Yoon"
+  publisher: "Orange Media"
   year: 2010
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | C++ 프로그래밍 |
-| **담당교수** | 이세호 교수님 |
-| **소속** | 전북대학교 컴퓨터인공지능학부 |
-| **강의실** | 공대 7호관 204호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 언어기초를 공부한 학생을 대상으로 C++ 언어의 프로그래밍 문법을 학습한다.  
-2️⃣ 객체지향프로그래밍(OOP)의 개념을 이해하고, C++ 언어를 이용하여 OOP 프로그램을 설계 및 구현하는 능력을 기른다.  
-3️⃣ 다양한 문제에 대한 프로그래밍 실습을 통해 각 주제를 실질적으로 이해하고, C++ 프로그래밍 응용 능력을 향상시킨다.
+| Item | Details |
+|------|---------|
+| **Course Title** | C++ Programming |
+| **Instructor** | Prof. Se-Ho Lee |
+| **Affiliation** | School of Computer & Artificial Intelligence, JBNU |
+| **Classroom** | Engineering Building 7, Room 204 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> 열혈 C++ 프로그래밍
-> 윤성우 저 · 오렌지미디어 (2010)
+1️⃣ Learn C++ syntax and idioms as an extension of introductory programming.  
+2️⃣ Understand the principles of object-oriented programming and apply them using C++.  
+3️⃣ Gain hands-on experience through programming exercises that deepen mastery of each topic.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Passionate C++ Programming*  
+> Sung-Woo Yoon · Orange Media (2010)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +67,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '과제', '출석'],
+    labels: ['Midterm Exam', 'Final Exam', 'Assignments', 'Attendance'],
     datasets: [{
       data: [40, 40, 10, 10],
       backgroundColor: ['#ff9aa2', '#9ad0f5', '#b5ead7', '#ffdac1'],
@@ -88,22 +88,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|-----------|
-| 1주 | 강의소개 및 C++ 개요 | 강의소개 및 C++ 개요 |
-| 2주 | C++ 기초 Part I | C++ 입출력, 이름공간(namespace) |
-| 3주 | C++ 기초 Part II | 함수, 동적할당(new & delete) |
-| 4주 | 클래스 Part I | 클래스와 객체, 객체지향 프로그래밍 이해 |
-| 5주 | 클래스 Part II | 생성자, 복사생성자 |
-| 6주 | 복사 생성자/special keywords | 복사 생성자, friend/static/const |
-| 7주 | 중간평가 | 중간고사 |
-| 8주 | 상속과 다형성 Part I | 상속의 기본개념, 상속과 클래스의 응용 |
-| 9주 | 상속과 다형성 Part II | 객체 포인터와 참조, 가상 함수와 다중 상속 |
-| 10주 | 연산자 오버로딩 Part I | 단항/이항 연산자 오버로딩, 타입 변환 연산자 |
-| 11주 | 연산자 오버로딩 Part II | 비트 연산자 오버로딩, 기타 연산자 |
-| 12주 | 템플릿 Part I | 함수/클래스 템플릿 이해 |
-| 13주 | 템플릿 Part II | 표준 템플릿 라이브러리(STL) |
-| 14주 | 예외처리 | 예외처리 메커니즘, 예외 클래스 설계 |
-| 15주 | 기말평가 | 기말고사 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Course introduction and C++ overview | Introduction to the course and language basics |
+| 2 | C++ fundamentals I | C++ I/O and namespaces |
+| 3 | C++ fundamentals II | Functions and dynamic allocation (`new` & `delete`) |
+| 4 | Classes I | Classes, objects, and core OOP concepts |
+| 5 | Classes II | Constructors and copy constructors |
+| 6 | Copy semantics & special keywords | Copy constructors, `friend`, `static`, and `const` |
+| 7 | Midterm evaluation | Midterm exam |
+| 8 | Inheritance & polymorphism I | Basics of inheritance and class applications |
+| 9 | Inheritance & polymorphism II | Object pointers/references and virtual/multiple inheritance |
+| 10 | Operator overloading I | Unary/binary operator overloading and type conversion operators |
+| 11 | Operator overloading II | Bitwise operator overloading and additional operators |
+| 12 | Templates I | Function and class templates |
+| 13 | Templates II | Standard Template Library (STL) |
+| 14 | Exception handling | Exception mechanisms and designing exception classes |
+| 15 | Final evaluation | Final exam |
+
+---
