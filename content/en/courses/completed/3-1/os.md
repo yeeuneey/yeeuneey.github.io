@@ -1,5 +1,5 @@
 ---
-title: "운영체제"
+title: "Operating Systems"
 summary: ""
 type: course
 tags: ["3-1"]
@@ -11,53 +11,53 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 운영체제의 구조와 역할을 이해한다."
-  - "Goal 2️⃣ : 프로세스, 스레드, 메모리, 파일 시스템 등 운영체제의 핵심 개념을 학습한다."
-  - "Goal 3️⃣ : 병렬 처리와 가상화 등 현대 운영체제의 응용 기술을 이해한다."
+  - "Goal 1️⃣: Understand the structure and responsibilities of an operating system."
+  - "Goal 2️⃣: Learn core OS concepts such as processes, threads, memory management, and file systems."
+  - "Goal 3️⃣: Explore modern OS technologies including parallel processing and virtualization."
 
-instructor: "강동기 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 534호"
-language: "한국어"
+instructor: "Prof. Dong-Gi Kang"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 534"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "명품운영체제"
-  author: "황기태"
-  publisher: "생능출판"
+  title: "Premium Operating Systems"
+  author: "Ki-Tae Hwang"
+  publisher: "Saengneung Publishing"
   year: 2021
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 운영체제 |
-| **담당교수** | 강동기 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 534호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 운영체제의 구조와 역할을 이해한다.  
-2️⃣ 프로세스, 스레드, 메모리, 파일 시스템 등 운영체제의 핵심 개념을 학습한다.  
-3️⃣ 병렬 처리와 가상화 등 현대 운영체제의 응용 기술을 이해한다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Operating Systems |
+| **Instructor** | Prof. Dong-Gi Kang |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 534 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> 명품운영체제  
-> 황기태 저 · 생능출판 (2021)
+1️⃣ Understand how operating systems are structured and what roles they perform.  
+2️⃣ Study processes, threads, memory architecture, file systems, and other essential OS components.  
+3️⃣ Examine contemporary OS techniques such as parallel processing and virtualization.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Premium Operating Systems*  
+> Ki-Tae Hwang · Saengneung Publishing (2021)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart3" width="400" height="400"></canvas>
 <script>
@@ -65,7 +65,7 @@ const ctx3 = document.getElementById('evaluationChart3');
 new Chart(ctx3, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments'],
     datasets: [{
       data: [30, 30, 10, 30],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#ffdac1', '#b5ead7'],
@@ -79,22 +79,24 @@ new Chart(ctx3, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 운영체제 개요 | 운영체제 소개 및 실습 방식 |
-| 2주 | 프로세스 관리Ⅰ | 프로세스 이론 및 코드 |
-| 3주 | 프로세스 관리Ⅱ | 프로세스 상태, 스케줄링 |
-| 4주 | CPU 스케줄링Ⅰ | 알고리즘 비교 |
-| 5주 | CPU 스케줄링Ⅱ | 성능 평가 |
-| 6주 | 멀티스레딩Ⅰ | 스레드 개념 |
-| 7주 | 멀티스레딩Ⅱ | 병렬 처리 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 스레드 동기화 | 데드락 처리 |
-| 10주 | 메모리 관리Ⅰ | 메모리 구조 |
-| 11주 | 메모리 관리Ⅱ | 페이징 기법 |
-| 12주 | 가상 메모리 | 교체 알고리즘 |
-| 13주 | 파일 시스템 | 파일 입출력 구조 |
-| 14주 | 저장장치 관리 | HDD, SSD |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Operating-system overview | Introduction to OS concepts and lab format |
+| 2 | Process management I | Process theory and example code |
+| 3 | Process management II | Process states and scheduling |
+| 4 | CPU scheduling I | Comparing scheduling algorithms |
+| 5 | CPU scheduling II | Evaluating scheduling performance |
+| 6 | Multithreading I | Thread fundamentals |
+| 7 | Multithreading II | Parallel processing with threads |
+| 8 | Midterm exam | Examination |
+| 9 | Thread synchronization | Deadlock handling |
+| 10 | Memory management I | Memory architecture |
+| 11 | Memory management II | Paging techniques |
+| 12 | Virtual memory | Replacement algorithms |
+| 13 | File systems | File I/O structures |
+| 14 | Storage management | HDD and SSD management |
+| 15 | Final exam | Examination |
+
+---
