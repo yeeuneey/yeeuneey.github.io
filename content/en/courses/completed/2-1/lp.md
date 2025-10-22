@@ -1,5 +1,5 @@
 ---
-title: "리눅스프로그래밍"
+title: "Linux Programming"
 summary: ""
 type: course
 tags: ["2-1"]
@@ -11,53 +11,53 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 리눅스 환경에서 CLI(Command Line Interface) 사용 능력을 배양한다."
-  - "Goal 2️⃣ : 리눅스 운영체제의 사용 능력과 시스템 구조를 이해한다."
-  - "Goal 3️⃣ : 리눅스 환경에서 네트워크 서비스 관리 및 시스템 프로그래밍 능력을 기른다."
+  - "Goal 1️⃣: Develop proficiency with the command-line interface (CLI) in a Linux environment."
+  - "Goal 2️⃣: Understand Linux system administration concepts and the structure of the operating system."
+  - "Goal 3️⃣: Build skills for managing network services and performing systems programming on Linux."
 
-instructor: "김아미 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 204호"
-language: "한국어"
+instructor: "Prof. A-Mi Kim"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 204"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "리눅스 프로그래밍 원리와 실제"
-  author: "창병모"
-  publisher: "생능출판"
-  year: "2022"
+  title: "Principles and Practice of Linux Programming"
+  author: "Byeong-Mo Chang"
+  publisher: "Saengneung Publishing"
+  year: 2022
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 리눅스프로그래밍 |
-| **담당교수** | 김아미 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 204호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 리눅스 환경에서 CLI(Command Line Interface) 사용 능력을 배양한다.  
-2️⃣ 리눅스 운영체제의 사용 능력과 시스템 구조를 이해한다.  
-3️⃣ 리눅스 환경에서 네트워크 서비스 관리 및 시스템 프로그래밍 능력을 기른다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Linux Programming |
+| **Instructor** | Prof. A-Mi Kim |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 204 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> 리눅스 프로그래밍 원리와 실제 
-> 창병모 저 · 생능출판 (2022)
+1️⃣ Gain confidence using the Linux command line to execute everyday tasks.  
+2️⃣ Learn the architecture of the Linux operating system and essential administration skills.  
+3️⃣ Manage network services and practice systems programming techniques within Linux.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Principles and Practice of Linux Programming*  
+> Byeong-Mo Chang · Saengneung Publishing (2022)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +67,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments'],
     datasets: [{
       data: [35, 35, 10, 20],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#ffdac1', '#b5ead7'],
@@ -88,22 +88,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 리눅스 개요 및 설치 이해 | 리눅스 개요 및 설치 |
-| 2주 | 리눅스 시스템과 명령어 이해 | 리눅스 시스템 구축, 기본 명령어 *(실습과제 1)* |
-| 3주 | 디렉토리와 파일 관리 | CLI 환경에서 디렉토리·파일 관리 *(실습과제 2)* |
-| 4주 | 사용자와 권한 관리 | 시스템 권한 개념, 사용자 관리 *(실습과제 3)* |
-| 5주 | 프로세스와 입출력 재지정 | 프로세스 개념, redirection *(실습과제 4)* |
-| 6주 | 기타 명령어 학습 | 검색, 압축 등 자주 사용하는 명령어 *(실습과제 5)* |
-| 7주 | C언어 기반 프로그래밍 실습 | 리눅스 환경에서의 C 프로그램 개발 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 시스템콜 및 파일 입출력Ⅰ | 시스템콜 개념, 파일 입출력 (Low-Level) *(실습과제 6)* |
-| 10주 | 파일 입출력Ⅱ | 파일 입출력 (High-Level) *(실습과제 7)* |
-| 11주 | 메모리·프로세스 관리 | 동적 메모리 활용, 프로세스 생성·실행·종료 *(실습과제 8)* |
-| 12주 | IPC – 시그널, 공유메모리 | 프로세스 간 통신 *(실습과제 9)* |
-| 13주 | IPC – 소켓·스레드 | 네트워크 소켓, 스레드 프로그래밍 *(실습과제 10)* |
-| 14주 | 병렬 프로그래밍 이해 | 병렬 프로그래밍 및 스레드 활용 |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Introduction and installation | Linux overview and installation |
+| 2 | Linux system & commands | Setting up the system; essential commands *(Lab Assignment 1)* |
+| 3 | Directory and file management | Managing directories and files in the CLI *(Lab Assignment 2)* |
+| 4 | Users and permissions | Understanding permissions; user management *(Lab Assignment 3)* |
+| 5 | Processes & I/O redirection | Process concepts and redirection *(Lab Assignment 4)* |
+| 6 | Additional utilities | Frequently used commands such as search and compression *(Lab Assignment 5)* |
+| 7 | C programming on Linux | Developing C programs in the Linux environment |
+| 8 | Midterm exam | Examination |
+| 9 | System calls & file I/O I | System calls; low-level file I/O *(Lab Assignment 6)* |
+| 10 | File I/O II | High-level file I/O *(Lab Assignment 7)* |
+| 11 | Memory & process management | Dynamic memory; process creation/execution/termination *(Lab Assignment 8)* |
+| 12 | IPC — signals & shared memory | Inter-process communication *(Lab Assignment 9)* |
+| 13 | IPC — sockets & threads | Network sockets and thread programming *(Lab Assignment 10)* |
+| 14 | Parallel programming | Parallel programming concepts and thread usage |
+| 15 | Final exam | Examination |
+
+---
