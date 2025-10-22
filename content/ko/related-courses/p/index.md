@@ -3,7 +3,7 @@ title: "고성능 컴퓨팅 관련 과목 ⚡"
 summary: "실시간 거래와 대규모 연산을 뒷받침하는 성능 중심 기술"
 type: course
 image:
-  filename: "uploads/media/hpc_related.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EC%98%81%ED%99%94-%EC%8A%A4%ED%8B%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-iar-afB0QQw)'
   focal_point: "Center"
 weight: 5
 ---
