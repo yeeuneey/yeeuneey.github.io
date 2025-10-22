@@ -1,6 +1,6 @@
 ---
-title: "수강 중인 강의"
-summary: "현재(3학년 2학기) 수강 중인 강의"
+title: "Current Courses"
+summary: "Courses in progress during junior fall."
 type: landing
 layout: list
 
@@ -8,18 +8,18 @@ sections:
   - block: markdown
     id: intro
     content:
-      title: "📚 수강 중인 과목"
+      title: "📚 Courses I'm Taking Now"
       text: |
-        김예은이 현재 전북대학교 컴퓨터인공지능학부에서 3학년 2학기에 수강 중인 전공 과목들입니다.
+        These are the major courses Ye-eun Kim is currently taking in the junior fall semester at Jeonbuk National University.
 
-        - 수강 중인 강의 보기
+        - View courses in progress
           <div style="margin-left: 24px; margin-top: 6px;">
             <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
-                각 학기를 클릭하면 과목 목록을 볼 수 있고, <br>
-                과목 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
+                Click the term to browse the course list.<br>
+                Selecting a course card opens its detail page.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.1em;">
-              <li><a href="/courses/current/3-2/"><strong>3학년 2학기</strong></a></li>
+              <li><a href="/en/courses/current/3-2/"><strong>Junior · Fall</strong></a></li>
             </ul>
           </div>
     design:
