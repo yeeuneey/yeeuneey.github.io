@@ -1,5 +1,5 @@
 ---
-title: "2학년 2학기"
+title: "Sophomore · Fall"
 view: outline
 columns: 3
 design:
