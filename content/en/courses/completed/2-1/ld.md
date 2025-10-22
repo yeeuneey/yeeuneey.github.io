@@ -1,5 +1,5 @@
 ---
-title: "논리설계"
+title: "Logic Design"
 summary: ""
 type: course
 tags: ["2-1"]
@@ -11,53 +11,53 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 디지털 시스템의 기본 개념과 동작 원리를 이해하여 디지털 시스템 설계에 대한 폭넓은 시각을 기른다."
-  - "Goal 2️⃣ : 논리회로를 구성하는 기본 소자와 조합회로 및 순차회로의 설계 이론을 학습한다."
-  - "Goal 3️⃣ : 논리회로 설계 능력을 바탕으로 디지털 시스템의 구조를 이해하고 응용할 수 있는 능력을 기른다."
+  - "Goal 1️⃣: Understand the core concepts and operating principles of digital systems to approach digital design with a broad perspective."
+  - "Goal 2️⃣: Learn the fundamentals of combinational and sequential circuits, along with the devices that compose logic circuits."
+  - "Goal 3️⃣: Build the ability to analyze and apply digital systems based on logic-circuit design skills."
 
-instructor: "윤수경 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / IT지능정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 534호"
-language: "한국어"
+instructor: "Prof. Soo-Kyung Yoon"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Intelligent IT Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 534"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "처음 만나는 디지털 논리회로"
-  author: "임석구, 홍경호"
-  publisher: "한빛아카데미"
+  title: "Introduction to Digital Logic Circuits"
+  author: "Seok-Gu Lim, Kyung-Ho Hong"
+  publisher: "Hanbit Academy"
   year: 2016
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 논리설계 |
-| **담당교수** | 윤수경 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 534호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 디지털 시스템의 기본 개념과 동작 원리를 이해하여 디지털 시스템 설계에 대한 폭넓은 시각을 기른다.  
-2️⃣ 논리회로를 구성하는 기본 소자와 조합회로 및 순차회로의 설계 이론을 학습한다.  
-3️⃣ 논리회로 설계 능력을 바탕으로 디지털 시스템의 구조를 이해하고 응용할 수 있는 능력을 기른다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Logic Design |
+| **Instructor** | Prof. Soo-Kyung Yoon |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 534 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> 처음 만나는 디지털 논리회로  
-> 임석구, 홍경호 저 · 한빛아카데미 (2016)
+1️⃣ Gain a broad understanding of digital systems by studying their fundamental concepts and behavior.  
+2️⃣ Master the principles behind combinational and sequential logic circuits, including the basic components that form them.  
+3️⃣ Apply logic-design knowledge to comprehend and build practical digital systems.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Introduction to Digital Logic Circuits*  
+> Seok-Gu Lim & Kyung-Ho Hong · Hanbit Academy (2016)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +67,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments'],
     datasets: [{
       data: [40, 40, 10, 10],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#ffdac1', '#b5ead7'],
@@ -88,22 +88,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 디지털 시스템의 개념 이해 | 디지털 시스템 소개, Course Overview |
-| 2주 | 수의 체계 이해 | 디지털 시스템에서 사용하는 수의 체계 |
-| 3주 | 논리 게이트 이해 | NOT, AND, OR, NAND, NOR 게이트 등 |
-| 4주 | 부울대수 이해 Ⅰ | 부울 대수 기초, 기본 논리식 표현, 부울 대수 법칙 |
-| 5주 | 부울대수 이해 Ⅱ 및 논리식 간소화 Ⅰ | 논리회로식 변환, 카르노맵 |
-| 6주 | 논리식 간소화 Ⅱ | 카르노맵 *(과제 1)* |
-| 7주 | 조합논리회로 이해 Ⅰ | 조합논리회로 설계 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 조합논리회로 이해 Ⅱ | 조합논리회로 심화 |
-| 10주 | 플립플롭 이해 Ⅰ | SR, D, JK 플립플롭 기본 동작 |
-| 11주 | 플립플롭 이해 Ⅱ | 플립플롭 응용 |
-| 12주 | 순서논리회로 이해 | 순서논리회로 개요 및 설계 |
-| 13주 | 카운터·레지스터 이해 Ⅰ | 비동기식/동기식 카운터, 레지스터 *(과제 2)* |
-| 14주 | 카운터·레지스터 이해 Ⅱ | 비동기식/동기식 카운터, 레지스터 심화 |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Introduce digital systems | Overview of digital systems and the course |
+| 2 | Number systems | Number systems used in digital computing |
+| 3 | Logic gates | NOT, AND, OR, NAND, NOR, and other gates |
+| 4 | Boolean algebra I | Boolean algebra basics, canonical forms, algebraic laws |
+| 5 | Boolean algebra II & simplification I | Converting logic expressions; Karnaugh maps |
+| 6 | Logic simplification II | Karnaugh-map practice *(Assignment 1)* |
+| 7 | Combinational logic I | Designing combinational circuits |
+| 8 | Midterm exam | Examination |
+| 9 | Combinational logic II | Advanced combinational design |
+| 10 | Flip-flops I | Operation of SR, D, and JK flip-flops |
+| 11 | Flip-flops II | Applications of flip-flops |
+| 12 | Sequential circuits | Overview and design of sequential circuits |
+| 13 | Counters & registers I | Asynchronous/synchronous counters and registers *(Assignment 2)* |
+| 14 | Counters & registers II | Advanced counter and register design |
+| 15 | Final exam | Examination |
+
+---
