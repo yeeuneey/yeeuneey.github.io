@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/data_mining.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Learn principles and techniques for extracting meaningful information from large-scale data."
   - "Goal 2️⃣: Implement and analyze data mining algorithms using Python."
