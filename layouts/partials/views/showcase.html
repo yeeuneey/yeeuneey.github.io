@@ -41,9 +41,9 @@
 
 {{- $isReversed := eq (mod (add $index 1) 2) 0 -}}
 {{- $section := $item.Section | default "" -}}
-{{- $eyebrowDefault := cond (eq $section "related-courses") "COURSE CONNECTION" "CORE TECH FOCUS" -}}
-{{- $ctaDefault := cond (eq $section "related-courses") "과목 상세 보기" "기술 상세 보기" -}}
-{{- $tagsLabel := cond (eq $section "related-courses") "Related course keywords" "Related keywords" -}}
+{{- $eyebrowDefault := cond (eq $section "related-courses") (i18n "course_connection_label") (i18n "tech_focus_label") -}}
+{{- $ctaDefault := cond (eq $section "related-courses") (i18n "course_details") (i18n "tech_details") -}}
+{{- $tagsLabel := cond (eq $section "related-courses") (i18n "related_course_keywords") (i18n "related_keywords") -}}
 
 <article class="showcase-card" role="article" aria-labelledby="{{ $cardID }}">
   <div class="showcase-card__inner {{ if $isReversed }}showcase-card__inner--reversed{{ end }}">

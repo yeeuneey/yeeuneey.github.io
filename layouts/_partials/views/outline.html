@@ -17,7 +17,7 @@
 
 {{- $meta := slice -}}
 {{- with $item.Params.instructor -}}
-  {{- $meta = $meta | append (printf "담당: %s" (. | plainify)) -}}
+  {{- $meta = $meta | append (printf "%s: %s" (i18n "course_instructor") (. | plainify)) -}}
 {{- end -}}
 
 <article class="outline-card" role="article" aria-labelledby="{{ $cardID }}">
@@ -35,7 +35,7 @@
 
     {{- if gt (len $goals) 0 }}
       <div class="outline-card__section">
-        <span class="outline-card__section-title">강의 목표</span>
+        <span class="outline-card__section-title">{{ i18n "course_goals" }}</span>
         <ul class="outline-card__goals">
           {{- range first 1 $goals }}
             {{- $goalOriginal := . | markdownify | plainify | strings.TrimSpace -}}
@@ -48,9 +48,9 @@
             {{- end }}
             {{- if ne $goalText "" }}
               <li class="outline-card__goal" title="{{ $goalText | htmlEscape }}">
-                <span aria-hidden="true" class="outline-card__goal-icon">✅</span>
+                <span aria-hidden="true" class="outline-card__goal-icon">&#10003;</span>
                 <span class="outline-card__goal-text">{{ $goalText }}</span>
-                <span aria-hidden="true" class="outline-card__goal-more">… 더보기</span>
+                <span aria-hidden="true" class="outline-card__goal-more">... {{ i18n "course_goal_more" }}</span>
               </li>
             {{- end }}
           {{- end }}
@@ -59,7 +59,7 @@
     {{- end }}
 
     <span class="outline-card__cta">
-      과목 상세 보기
+      {{ i18n "course_details" }}
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M5 12h14M13 6l6 6-6 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
       </svg>

@@ -14,3 +14,21 @@ languages:
   other: 언어
 awards:
   other: 수상
+course_instructor:
+  other: 담당
+course_goals:
+  other: 강의 목표
+course_goal_more:
+  other: 더보기
+course_details:
+  other: 과목 상세 보기
+course_connection_label:
+  other: 과목 연계
+tech_focus_label:
+  other: 핵심 기술 소개
+tech_details:
+  other: 기술 상세 보기
+related_course_keywords:
+  other: 관련 과목 키워드
+related_keywords:
+  other: 관련 키워드

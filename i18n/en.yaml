@@ -14,3 +14,21 @@ languages:
   other: Languages
 awards:
   other: Awards
+course_instructor:
+  other: Instructor
+course_goals:
+  other: Course Goals
+course_goal_more:
+  other: More
+course_details:
+  other: View course details
+course_connection_label:
+  other: Course Connection
+tech_focus_label:
+  other: Core Tech Focus
+tech_details:
+  other: View tech details
+related_course_keywords:
+  other: Related course keywords
+related_keywords:
+  other: Related keywords
