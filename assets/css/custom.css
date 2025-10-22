@@ -743,6 +743,12 @@ body.dark .showcase-card__cta-link:hover {
 }
 .outline-stack {
   width: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: clamp(1.5rem, 1rem + 1vw, 2.5rem);
+  align-items: stretch;
+  margin-top: clamp(2.25rem, 4vw, 3.5rem);
 }
 .outline-card {
   position: relative;
@@ -752,6 +758,7 @@ body.dark .showcase-card__cta-link:hover {
   box-shadow: 0 22px 58px -32px rgba(15, 23, 42, 0.32);
   overflow: hidden;
   transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.32s ease;
+  height: 100%;
 }
 .outline-card::after {
   content: "";
@@ -1052,9 +1059,6 @@ body.dark .outline-card:focus-within .outline-card__cta {
 .page-body > .max-w-prose:first-child {
   margin-top: clamp(3.5rem, 6vw, 5.5rem) !important;
   margin-bottom: clamp(2.75rem, 5vw, 4.5rem) !important;
-}
-.outline-stack {
-  margin-top: clamp(2.25rem, 4vw, 3.5rem);
 }
 #intro ul li a,
 #intro ul li a strong {

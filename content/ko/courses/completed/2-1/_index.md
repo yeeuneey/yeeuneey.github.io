@@ -1,8 +1,8 @@
 ---
 title: "2학년 1학기"
 view: outline
-columns: 1
+columns: 3
 design:
   view: outline
-  columns: 1
+  columns: 3
 ---
