@@ -3,7 +3,7 @@ title: "차세대 보안 기술 🛡️"
 summary: "클라우드·오픈뱅킹 환경의 지능형 보안 체계"
 type: tech
 image:
-  filename: "featured.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EA%B2%80%EC%9D%80%EC%83%89-%EC%BB%B4%ED%93%A8%ED%84%B0-%ED%82%A4%EB%B3%B4%EB%93%9C%EC%9D%98-%EB%B9%A8%EA%B0%84%EC%83%89-%EC%9E%90%EB%AC%BC%EC%87%A0-mT7lXZPjk7U)'
   focal_point: "Center"
 weight: 3
 ---
