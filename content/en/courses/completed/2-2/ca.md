@@ -1,5 +1,5 @@
 ---
-title: "컴퓨터구조"
+title: "Computer Architecture"
 summary: ""
 type: course
 tags: ["2-2"]
@@ -11,14 +11,14 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 컴퓨터 시스템의 내부 구성 요소와 동작 원리를 이해한다."
-  - "Goal 2️⃣ : 명령어의 해석 과정과 프로세서 설계 원리를 학습한다."
-  - "Goal 3️⃣ : 파이프라인과 메모리 계층 구조를 이해하고 컴퓨터 성능 향상 원리를 습득한다."
+  - "Goal 1️⃣: Understand the internal components of a computer system and how they operate together."
+  - "Goal 2️⃣: Learn how instructions are interpreted and the principles behind processor design."
+  - "Goal 3️⃣: Grasp pipelining and memory hierarchies to recognize how computer performance can be improved."
 
-instructor: "윤수경 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / IT지능정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 534호"
-language: "한국어"
+instructor: "Prof. Soo-Kyung Yoon"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Intelligent IT Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 534"
+language: "Korean"
 credit: 3
 
 textbook:
@@ -30,34 +30,34 @@ textbook:
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 컴퓨터구조 |
-| **담당교수** | 윤수경 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 534호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 컴퓨터 시스템의 내부 구성 요소와 동작 원리를 이해한다.  
-2️⃣ 명령어의 해석 과정과 프로세서 설계 원리를 학습한다.  
-3️⃣ 파이프라인과 메모리 계층 구조를 이해하고 컴퓨터 성능 향상 원리를 습득한다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Computer Architecture |
+| **Instructor** | Prof. Soo-Kyung Yoon |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 534 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> Computer Organization and Design RISC-V Edition: The Hardware/Software Interface  
-> David A. Patterson, John L. Hennessy 저 · Morgan Kaufmann (2017)
+1️⃣ Understand the structure and behavior of the key elements inside a computer system.  
+2️⃣ Study the instruction execution pipeline and the design concepts behind processors.  
+3️⃣ Explore pipelining and memory hierarchy strategies to learn how performance is enhanced.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Computer Organization and Design RISC-V Edition: The Hardware/Software Interface*  
+> David A. Patterson & John L. Hennessy · Morgan Kaufmann (2017)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +67,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments'],
     datasets: [{
       data: [45, 45, 10, 0],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#ffdac1', '#b5ead7'],
@@ -88,22 +88,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 강의 소개 및 컴퓨터구조 개요 이해 | Introduction to Computer Architecture |
-| 2주 | 컴퓨터의 추상화 계층 이해 | Computer Abstractions and Technology |
-| 3주 | 명령어 구조 및 성능 이해Ⅰ | Instruction Set: RISC-V, Number Representation |
-| 4주 | 명령어 구조 및 성능 이해Ⅱ | RISC Addressing Mode, Translating and Starting a Program |
-| 5주 | 명령어 구조 및 성능 이해Ⅲ | RISC-V 명령어 세트 심화 |
-| 6주 | 명령어 구조 및 성능 이해Ⅳ | 프로그램 번역 및 실행 과정 |
-| 7주 | 컴퓨터 연산 구조 이해Ⅰ | Arithmetic for Computers: 정수 및 실수 연산 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 컴퓨터 연산 구조 이해Ⅱ | 부동소수점 연산, 산술 연산 심화 |
-| 10주 | 컴퓨터 연산 구조 이해Ⅲ | 연산기 설계 및 성능 평가 |
-| 11주 | 프로세서 구조 이해Ⅰ | Datapath, Control, Pipelining, Hazard |
-| 12주 | 프로세서 구조 이해Ⅱ | 파이프라인 및 제어 흐름 구조 |
-| 13주 | 메모리 계층 구조 이해Ⅰ | Cache, Memory Technologies |
-| 14주 | 메모리 계층 구조 이해Ⅱ | Virtual Memory, Cache Performance |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Introduce the course and overview computer architecture | Introduction to Computer Architecture |
+| 2 | Understand abstraction layers in computers | Computer Abstractions and Technology |
+| 3 | Study instruction formats and performance I | Instruction set (RISC-V) and number representation |
+| 4 | Study instruction formats and performance II | RISC addressing modes; translating and starting a program |
+| 5 | Study instruction formats and performance III | Advanced RISC-V instruction set topics |
+| 6 | Study instruction formats and performance IV | Program translation and execution flow |
+| 7 | Explore computer arithmetic I | Arithmetic for computers: integer and floating-point operations |
+| 8 | Midterm exam | Examination |
+| 9 | Explore computer arithmetic II | Floating-point arithmetic and advanced techniques |
+| 10 | Explore computer arithmetic III | ALU design and performance considerations |
+| 11 | Learn processor structure I | Datapath, control, pipelining, and hazards |
+| 12 | Learn processor structure II | Pipelining control flow and hazard handling |
+| 13 | Understand memory hierarchy I | Cache design and memory technologies |
+| 14 | Understand memory hierarchy II | Virtual memory and cache performance tuning |
+| 15 | Final exam | Examination |
+
+---
