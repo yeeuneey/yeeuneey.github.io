@@ -1,63 +1,57 @@
 ---
-title: "프로그래밍언어론"
+title: "Programming Languages"
 summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/programming_languages.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
-  - "Goal 1️⃣ : 다양한 프로그래밍 언어의 원리와 구조를 이해한다."
-  - "Goal 2️⃣ : 구문, 의미, 타입 시스템 등 언어 이론을 학습한다."
-  - "Goal 3️⃣ : 함수형 및 논리형 언어를 포함한 언어 패러다임을 이해한다."
+  - "Goal 1️⃣: Understand the principles and structures that underpin diverse programming languages."
+  - "Goal 2️⃣: Learn language theory topics such as syntax, semantics, and type systems."
+  - "Goal 3️⃣: Explore language paradigms, including functional and logic programming."
 
-instructor: "안동언 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 301호"
-language: "한국어"
+instructor: "Prof. Dong-Eon Ahn"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 301"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "프로그래밍 언어론 - 쉽게 배우는 언어의 원리와 구조"
-  author: "김종훈, 김종진"
-  publisher: "한빛미디어"
+  title: "Programming Languages: Principles and Structures Made Easy"
+  author: "Jong-Hoon Kim, Jong-Jin Kim"
+  publisher: "Hanbit Media"
   year: 2013
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 프로그래밍언어론 |
-| **담당교수** | 안동언 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 301호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 다양한 프로그래밍 언어의 원리와 구조를 이해한다.  
-2️⃣ 구문, 의미, 타입 시스템 등 언어 이론을 학습한다.  
-3️⃣ 함수형 및 논리형 언어를 포함한 언어 패러다임을 이해한다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Programming Languages |
+| **Instructor** | Prof. Dong-Eon Ahn |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 301 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> 프로그래밍 언어론 - 쉽게 배우는 언어의 원리와 구조  
-> 김종훈, 김종진 저 · 한빛미디어 (2013)
+1️⃣ Develop a solid grasp of how different programming languages are designed and structured.  
+2️⃣ Study language theory, covering syntax, semantics, typing, and binding.  
+3️⃣ Understand multiple language paradigms, including object-oriented, functional, and logic-based approaches.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Programming Languages: Principles and Structures Made Easy*  
+> Jong-Hoon Kim & Jong-Jin Kim · Hanbit Media (2013)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart4" width="400" height="400"></canvas>
 <script>
@@ -65,7 +59,7 @@ const ctx4 = document.getElementById('evaluationChart4');
 new Chart(ctx4, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제', '발표', '태도'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments', 'Presentation', 'Participation'],
     datasets: [{
       data: [30, 30, 10, 20, 5, 5],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#ffdac1', '#b5ead7', '#c7ceea', '#f6a5c0'],
@@ -79,22 +73,24 @@ new Chart(ctx4, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 언어 개요 | 프로그래밍 언어의 정의 및 패러다임 |
-| 2주 | 언어 역사Ⅰ | 프로그래밍 언어의 변천사 |
-| 3주 | 언어 역사Ⅱ | 주요 언어의 발전 흐름 |
-| 4주 | 구문Ⅰ | BNF, 파스 트리, EBNF |
-| 5주 | 구문Ⅱ | 구문 도표, 연산자 우선순위 |
-| 6주 | 변수 | 변수, 바인딩, 스코프, 할당 |
-| 7주 | 데이터 타입 | 배열, 레코드, 포인터 등 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 제어문 | 조건문, 반복문, 분기문 |
-| 10주 | 부프로그램 | 함수, 매개변수, 매크로 |
-| 11주 | 예외 처리 | 예외 처리 기법(Ada, C++, Java) |
-| 12주 | 객체지향 프로그래밍 | 추상화, 상속, 다형성 |
-| 13주 | 함수형 언어 | Scheme 프로그래밍 |
-| 14주 | 논리형 언어 | Prolog 프로그래밍 |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Language overview | Definitions and paradigms of programming languages |
+| 2 | Language history I | Historical evolution of languages |
+| 3 | Language history II | Development of major languages |
+| 4 | Syntax I | BNF, parse trees, and EBNF |
+| 5 | Syntax II | Syntax diagrams and operator precedence |
+| 6 | Variables | Variables, binding, scope, and assignment |
+| 7 | Data types | Arrays, records, pointers, and other types |
+| 8 | Midterm exam | Examination |
+| 9 | Control structures | Conditionals, loops, and branching statements |
+| 10 | Subprograms | Functions, parameters, and macros |
+| 11 | Exception handling | Exception techniques in Ada, C++, and Java |
+| 12 | Object-oriented programming | Abstraction, inheritance, and polymorphism |
+| 13 | Functional languages | Scheme programming |
+| 14 | Logic languages | Prolog programming |
+| 15 | Final exam | Examination |
+
+---
