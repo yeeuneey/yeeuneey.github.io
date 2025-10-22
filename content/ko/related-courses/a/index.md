@@ -3,7 +3,7 @@ title: "AI 관련 과목 🤖"
 summary: "인공지능과 빅데이터 연구에 연계된 핵심 과목들"
 type: course
 image:
-  filename: "uploads/media/ai_related.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%ED%9A%8C%EB%A1%9C-%EA%B8%B0%ED%8C%90%EC%97%90-%EB%B9%9B%EB%82%98%EB%8A%94-%EC%9D%B8%EA%B3%B5-%EC%A7%80%EB%8A%A5-%EC%B9%A9-w69Z8K-HGQU)'
   focal_point: "Center"
 weight: 1
 ---

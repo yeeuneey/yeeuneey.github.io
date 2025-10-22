@@ -1,3 +1,3 @@
 ---
-title: related courses
+title: Related Courses
 ---

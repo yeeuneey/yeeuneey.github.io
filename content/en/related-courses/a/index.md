@@ -1,29 +1,29 @@
 ---
-title: "AI 관련 과목 🤖"
-summary: "인공지능과 빅데이터 연구에 연계된 핵심 과목들"
+title: "AI-Related Courses 🤖"
+summary: "Core classes connected to AI and big-data research"
 type: course
 image:
-  filename: "uploads/media/ai_related.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%ED%9A%8C%EB%A1%9C-%EA%B8%B0%ED%8C%90%EC%97%90-%EB%B9%9B%EB%82%98%EB%8A%94-%EC%9D%B8%EA%B3%B5-%EC%A7%80%EB%8A%A5-%EC%B9%A9-w69Z8K-HGQU)'
   focal_point: "Center"
 weight: 1
 ---
 
 <br>
 
-## 🧠 연구와의 연계  
-AI와 빅데이터 기술은 금융 IT의 모든 분야에 적용됩니다.  
-이 과목들을 통해 **데이터 기반 의사결정**, **예측 모델링**, **추천 시스템 설계** 등  
-AI 기술을 실제 금융 문제 해결에 연결하는 기반을 다졌습니다.  
+## 🧠 Research Connection  
+AI and big-data technologies impact every corner of financial IT.  
+These courses laid the groundwork for applying AI to real financial problems, including  
+**data-driven decision making**, **predictive modeling**, and **recommendation system design**.  
 
 ---
 
-## 🎓 관련 수강 과목  
-- [**인공지능 (3-1)**](/courses/completed/3-1/ai/) — 탐색, 지식 표현, 강화학습 등 핵심 AI 개념 학습  
-- [**기계학습 (3-2)**](/courses/current/3-2/ml/) — SVM, 신경망 기반 신용평가 및 추천 모델 구현  
-- [**데이터마이닝 (3-2)**](/courses/current/3-2/dmg/) — 대규모 데이터 분석 및 클러스터링 실습  
+## 🎓 Courses Taken  
+- [**Artificial Intelligence (3-1)**](/courses/completed/3-1/ai/) — Core AI topics such as search, knowledge representation, and reinforcement learning  
+- [**Machine Learning (3-2)**](/courses/current/3-2/ml/) — SVMs and neural networks applied to credit scoring and recommendation models  
+- [**Data Mining (3-2)**](/courses/current/3-2/dmg/) — Large-scale data analysis and clustering practice  
 
 ---
 
-## 🧩 기술 연결  
-AI 알고리즘을 통해 대규모 금융 데이터를 분석하고,  
-고객 맞춤형 서비스 및 리스크 예측 모델을 개발하는 데 활용됩니다.
+## 🧩 Technology Link  
+AI algorithms analyze massive financial datasets, powering personalized services  
+and risk-prediction models that drive smarter business decisions.
