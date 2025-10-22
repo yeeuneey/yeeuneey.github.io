@@ -3,7 +3,7 @@ title: "웹 서비스 & API 관련 과목 🌐"
 summary: "핀테크와 오픈뱅킹 시대의 핵심 연결 기술"
 type: course
 image:
-  filename: "uploads/media/webapi_related.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EC%95%A0%ED%94%8C-%EC%BB%B4%ED%93%A8%ED%84%B0%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EB%82%A8%EC%9E%90-iEiUITs149M)'
   focal_point: "Center"
 weight: 4
 ---
