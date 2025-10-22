@@ -1,3 +1,3 @@
 ---
-title: 기술
+title: tech
 ---
