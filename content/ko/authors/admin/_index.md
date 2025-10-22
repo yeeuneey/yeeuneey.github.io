@@ -42,9 +42,6 @@ profiles:
   - icon: brands/instagram
     url: https://instagram.com/imyezlv
     label: Instagram
-  - icon: brands/youtube
-    url: https://youtube.com/@bdns?si=4ZeyuF_pkXrQSoMG
-    label: Youtube
   - icon: brands/facebook
     url: 'javascript:alert("Facebook 계정 준비 중! Comming soon!")'
     label: Facebook
