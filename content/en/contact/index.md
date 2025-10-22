@@ -1,6 +1,6 @@
 ---
-title: "연락"
-summary: "김예은의 연락처 및 위치입니다."
+title: "Contact"
+summary: "Get in touch with Ye-eun Kim and find the campus location."
 type: landing
 layout: list
 image:
@@ -12,7 +12,7 @@ sections:
   - block: markdown
     id: contact-info
     content:
-      title: "📞 연락처"
+      title: "📞 Contact"
       text: |
         {{< icon name="envelope" pack="fas" >}} [202312632@jbnu.ac.kr](mailto:202312632@jbnu.ac.kr)
         
@@ -30,14 +30,14 @@ sections:
   - block: markdown
     id: map
     content:
-      title: "📍 위치"
+      title: "📍 Location"
       text: |
         <p style="text-align:center; margin: 0 0 12px;">
-          전북대 공과대학 7호관, 백제대로 567, 덕진구, 전주시
+          College of Engineering Building 7, 567 Baekje-daero, Deokjin-gu, Jeonju-si
         </p>
 
         <style>
-          /* 기본 (PC) */
+          /* Desktop */
           .map-frame {
             width: 600px;
             height: 450px;
@@ -45,7 +45,7 @@ sections:
             display: inline-block;
           }
 
-          /* 모바일 */
+          /* Mobile */
           @media (max-width: 768px) {
             .map-frame {
               width: 100%;
