@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/datastructure.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 효율적인 프로그램을 작성하기 위해 다양한 자료구조의 특징과 사용 방법에 대해 학습한다."
   - "Goal 2️⃣ : 여러 자료구조(배열, 스택과 큐, 리스트, 트리, 그래프 등)를 이해하고 이를 적용할 수 있다."

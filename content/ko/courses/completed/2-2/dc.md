@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-2"]
 
-image:
-  filename: "uploads/media/data_communication.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 서로 다른 컴퓨터 간 데이터 전송에 필요한 전송매체, 신호, 전송장비 등의 기술 요소를 학습한다."
   - "Goal 2️⃣ : 데이터의 손실 없는 전송을 위해 통신 과정과 네트워크 구성 원리를 이해한다."

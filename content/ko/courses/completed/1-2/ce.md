@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["1-2"]
 
-image:
-  filename: "uploads/media/comeng_intro.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 컴퓨터공학을 전공하는 학생이 4년 동안 배워야 할 내용을 주제별로 구분하여 소개하고 그들 간의 관계를 이해하도록 한다."
   - "Goal 2️⃣ : 또한 컴퓨터 공학의 최근 동향, 특히 인공지능과 빅데이터 분야를 파악하고 그 흐름을 따라갈 동기와 공부하는 자세를 갖추도록 한다."

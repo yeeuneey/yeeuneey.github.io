@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/machine_learning.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 기계학습의 정의와 한계를 포함한 기본 개념과 이론을 이해한다."
   - "Goal 2️⃣ : 의사결정나무, 최근접, 퍼셉트론, 선형·확률모형, SVM, 앙상블, GMM 등 핵심 알고리즘을 학습한다."

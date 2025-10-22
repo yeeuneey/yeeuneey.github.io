@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-2"]
 
-image:
-  filename: "uploads/media/computer_architecture.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Understand the internal components of a computer system and how they operate together."
   - "Goal 2️⃣: Learn how instructions are interpreted and the principles behind processor design."

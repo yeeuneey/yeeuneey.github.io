@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/computer_network.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 컴퓨터 네트워크의 구조와 동작 원리를 이해한다."
   - "Goal 2️⃣ : 네트워크 계층(IP), 전송 계층(TCP/UDP), 응용 계층(HTTP, SMTP 등)의 역할을 학습한다."

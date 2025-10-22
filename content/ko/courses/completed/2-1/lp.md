@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/linux_programming.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 리눅스 환경에서 CLI(Command Line Interface) 사용 능력을 배양한다."
   - "Goal 2️⃣ : 리눅스 운영체제의 사용 능력과 시스템 구조를 이해한다."

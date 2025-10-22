@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/logic_design.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 디지털 시스템의 기본 개념과 동작 원리를 이해하여 디지털 시스템 설계에 대한 폭넓은 시각을 기른다."
   - "Goal 2️⃣ : 논리회로를 구성하는 기본 소자와 조합회로 및 순차회로의 설계 이론을 학습한다."

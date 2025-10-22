@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/web_service_design.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 현대 웹서비스의 구조와 백엔드 설계·REST API 설계 원리를 이해한다."
   - "Goal 2️⃣ : Node.js/Express, Spring Boot, FastAPI/Flask 등 주요 백엔드 프레임워크를 실습한다."

@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-2"]
 
-image:
-  filename: "uploads/media/computer_architecture.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 컴퓨터 시스템의 내부 구성 요소와 동작 원리를 이해한다."
   - "Goal 2️⃣ : 명령어의 해석 과정과 프로세서 설계 원리를 학습한다."

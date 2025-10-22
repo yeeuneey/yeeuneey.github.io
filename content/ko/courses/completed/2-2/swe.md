@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-2"]
 
-image:
-  filename: "uploads/media/software_engineering.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 소프트웨어 개발 주기와 공학적 접근 방법을 이해하고, 요구사항 분석부터 유지보수까지의 전 과정을 학습한다."
   - "Goal 2️⃣ : 요구사항 관리, 소프트웨어 설계, 테스트, 프로젝트 관리 등 핵심 기술을 습득한다."

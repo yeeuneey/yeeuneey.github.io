@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/programming_languages.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 다양한 프로그래밍 언어의 원리와 구조를 이해한다."
   - "Goal 2️⃣ : 구문, 의미, 타입 시스템 등 언어 이론을 학습한다."

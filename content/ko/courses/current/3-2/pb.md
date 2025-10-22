@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/intro_project.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 최신 개발 기술(TS, Vue/React, Git, Firebase, API 등)의 기본을 이해한다."
   - "Goal 2️⃣ : Git·GitHub 기반 협업과 디자인 패턴 적용을 통해 구조적 프로그래밍 역량을 강화한다."

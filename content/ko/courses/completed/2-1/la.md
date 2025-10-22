@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/linear_algebra.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 선형대수학의 기본 요소인 벡터, 행렬, 선형 변환 등의 개념을 이해한다."
   - "Goal 2️⃣ : 관련 분야의 문제를 해결하는 방법을 학습하여 응용 능력을 기른다."

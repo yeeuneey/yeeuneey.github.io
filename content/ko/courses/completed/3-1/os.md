@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/operating_system.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 운영체제의 구조와 역할을 이해한다."
   - "Goal 2️⃣ : 프로세스, 스레드, 메모리, 파일 시스템 등 운영체제의 핵심 개념을 학습한다."

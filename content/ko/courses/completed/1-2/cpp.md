@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["1-2"]
 
-image:
-  filename: "uploads/media/cpp.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 언어기초를 공부한 학생을 대상으로 C++ 언어의 프로그래밍 문법을 학습한다."
   - "Goal 2️⃣ : 객체지향프로그래밍(OOP)의 개념을 이해하고, C++ 언어를 이용하여 OOP 프로그램을 설계 및 구현하는 능력을 기른다."

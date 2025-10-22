@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/object_oriented_programming.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 객체지향 프로그래밍의 개념을 이해하고 Java 언어를 기반으로 객체지향 프로그램을 설계할 수 있는 능력을 기른다."
   - "Goal 2️⃣ : 클래스, 객체, 상속, 다형성 등 객체지향의 핵심 개념을 학습한다."

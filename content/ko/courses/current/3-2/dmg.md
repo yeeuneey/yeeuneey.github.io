@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/data_mining.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 대규모 데이터로부터 유용한 정보를 추출하는 원리와 기법을 학습한다."
   - "Goal 2️⃣ : Python을 활용해 데이터마이닝 알고리즘을 구현하고 분석한다."

@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/database.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 데이터베이스의 기본 개념과 DBMS 구조를 이해한다."
   - "Goal 2️⃣ : ER 다이어그램과 SQL을 활용해 실제 데이터베이스를 설계하고 구축할 수 있다."

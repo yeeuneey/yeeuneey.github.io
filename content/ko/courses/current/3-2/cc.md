@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/cloud_computing.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 가상화 기술 및 클라우드 서비스의 기본 개념을 이해한다."
   - "Goal 2️⃣ : AWS 기반의 가상 서버, 네트워크, 스토리지 등 주요 클라우드 인프라 서비스를 학습한다."

@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["1-2"]
 
-image:
-  filename: "uploads/media/discrete.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 이산수학은 향후 컴퓨터공학의 여러 전공 과목들에서 사용될 기초적인 수학이며 구체적으로 명제, 증명, 집합, 행렬, 관계, 함수, 그래프, 트리, 부울대수, 순열/조합/확률, 알고리즘의 기초와 컴퓨터공학의 응용/활용을 다룬다."
 

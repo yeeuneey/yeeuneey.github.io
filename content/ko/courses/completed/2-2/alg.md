@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-2"]
 
-image:
-  filename: "uploads/media/algorithm.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 문제 해결을 위한 알고리즘을 설계하고 구현하는 능력을 기른다."
   - "Goal 2️⃣ : 알고리즘의 효율성을 분석하고 다양한 문제 유형에 적합한 알고리즘을 선택할 수 있는 능력을 배양한다."

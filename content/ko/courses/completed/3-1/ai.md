@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/artificial_intelligence.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣ : 인공지능의 전반적인 개념과 주요 원리를 이해한다."
   - "Goal 2️⃣ : 탐색, 지식표현, 논리추론, 확률 기반 추론 등 인공지능의 핵심 기법을 학습한다."
