@@ -582,7 +582,7 @@ main,
   text-decoration: none;
 }
 .showcase-card__title a:hover {
-  color: #0ea5e9;
+  color: #0ea5e9 !important;
 }
 [data-theme="light"] .showcase-card__title,
 [data-theme="light"] .showcase-card__title a,
@@ -608,8 +608,12 @@ body.dark .showcase-card__title,
 body.dark .showcase-card__title a {
   color: #ffffff !important;
 }
-[data-theme="dark"] .showcase-card__title a:hover {
-  color: #60a5fa;
+[data-theme="dark"] .showcase-card__title a:hover,
+html[data-theme="dark"] .showcase-card__title a:hover,
+body[data-theme="dark"] .showcase-card__title a:hover,
+html.dark .showcase-card__title a:hover,
+body.dark .showcase-card__title a:hover {
+  color: #60a5fa !important;
   text-shadow: 0 6px 22px rgba(37, 99, 235, 0.55);
 }
 .showcase-card__summary {
