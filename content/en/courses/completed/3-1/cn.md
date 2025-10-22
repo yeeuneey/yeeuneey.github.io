@@ -1,24 +1,18 @@
 ---
-title: "컴퓨터네트워크"
+title: "Computer Networks"
 summary: ""
 type: course
 tags: ["3-1"]
 
-image:
-  filename: "uploads/media/computer_network.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
-  - "Goal 1️⃣ : 컴퓨터 네트워크의 구조와 동작 원리를 이해한다."
-  - "Goal 2️⃣ : 네트워크 계층(IP), 전송 계층(TCP/UDP), 응용 계층(HTTP, SMTP 등)의 역할을 학습한다."
-  - "Goal 3️⃣ : 네트워크 프로토콜과 보안 기술의 개념을 이해하고 이를 응용할 수 있는 능력을 기른다."
+  - "Goal 1️⃣: Understand the architecture and operating principles of computer networks."
+  - "Goal 2️⃣: Learn the roles of the network layer (IP), transport layer (TCP/UDP), and application layer (HTTP, SMTP, etc.)."
+  - "Goal 3️⃣: Grasp network protocols and security concepts and be able to apply them in practice."
 
-instructor: "편기현 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 3호관 311호"
-language: "한국어"
+instructor: "Prof. Ki-Hyun Pyeon"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 3, Room 311"
+language: "Korean"
 credit: 3
 
 textbook:
@@ -30,34 +24,34 @@ textbook:
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 컴퓨터네트워크 |
-| **담당교수** | 편기현 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 3호관 311호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 컴퓨터 네트워크의 구조와 동작 원리를 이해한다.  
-2️⃣ 네트워크 계층(IP), 전송 계층(TCP/UDP), 응용 계층(HTTP, SMTP 등)의 역할을 학습한다.  
-3️⃣ 네트워크 프로토콜과 보안 기술의 개념을 이해하고 이를 응용할 수 있는 능력을 기른다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Computer Networks |
+| **Instructor** | Prof. Ki-Hyun Pyeon |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 3, Room 311 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> Data Communications and Networking  
-> Behrouz A. Forouzan 저 · McGraw-Hill
+1️⃣ Understand the structure and behavior of computer networks.  
+2️⃣ Study the responsibilities of the IP, TCP/UDP, and application-layer protocols such as HTTP and SMTP.  
+3️⃣ Learn fundamental networking protocols and security techniques and practice applying them.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Data Communications and Networking*  
+> Behrouz A. Forouzan · McGraw-Hill
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +61,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments'],
     datasets: [{
       data: [47.5, 47.5, 5, 0],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#b5ead7', '#ffdac1'],
@@ -88,22 +82,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 네트워크 개요 이해 | Introduction |
-| 2주 | 호스트 간 데이터 전달 학습 | Host-to-Host Delivery |
-| 3주 | 네트워크 계층 이해 | Network Layer Protocols |
-| 4주 | 라우팅 기법 이해 | Unicast and Multicast Routing Protocols |
-| 5주 | 프로세스 간 통신 학습 | Process-to-Process Delivery |
-| 6주 | 혼잡 제어 기법 이해 | Congestion Control |
-| 7주 | 서비스 품질 이해 | Quality of Service |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 클라이언트-서버 모델 학습 | Client-Server Model |
-| 10주 | 도메인 이름 시스템 이해 | Domain Name System |
-| 11주 | 이메일 및 파일 전송 프로토콜 | SMTP, FTP |
-| 12주 | 웹 프로토콜 학습 | HTTP, WWW |
-| 13주 | 멀티미디어 네트워크 | Multimedia |
-| 14주 | 암호화와 보안 | Cryptography |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Overview of networks | Introduction |
+| 2 | Host-to-host delivery | Host-to-Host Delivery |
+| 3 | Network layer fundamentals | Network Layer Protocols |
+| 4 | Routing techniques | Unicast and Multicast Routing Protocols |
+| 5 | Process-to-process communication | Process-to-Process Delivery |
+| 6 | Congestion control | Congestion Control |
+| 7 | Quality of service | Quality of Service |
+| 8 | Midterm exam | Examination |
+| 9 | Client-server model | Client-Server Model |
+| 10 | Domain Name System | Domain Name System |
+| 11 | Email and file transfer protocols | SMTP, FTP |
+| 12 | Web protocols | HTTP, WWW |
+| 13 | Multimedia networking | Multimedia |
+| 14 | Cryptography and security | Cryptography |
+| 15 | Final exam | Examination |
+
+---
