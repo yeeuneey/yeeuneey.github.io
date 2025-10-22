@@ -1049,6 +1049,13 @@ body.dark .outline-card:focus-within .outline-card__cta {
   border-color: rgba(94, 234, 212, 0.4);
   box-shadow: 0 26px 56px -28px rgba(45, 212, 191, 0.45);
 }
+.page-body > .max-w-prose:first-child {
+  margin-top: clamp(3.5rem, 6vw, 5.5rem) !important;
+  margin-bottom: clamp(2.75rem, 5vw, 4.5rem) !important;
+}
+.outline-stack {
+  margin-top: clamp(2.25rem, 4vw, 3.5rem);
+}
 #intro ul li a,
 #intro ul li a strong {
   display: inline-block;
