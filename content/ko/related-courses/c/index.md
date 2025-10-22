@@ -3,7 +3,7 @@ title: "클라우드 관련 과목 ☁️"
 summary: "금융 서비스를 유연하고 안전하게 운영하기 위한 핵심 인프라"
 type: course
 image:
-  filename: "uploads/media/cloud_related.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EA%B7%B8-%EC%9C%84%EC%97%90-%EA%B5%AC%EB%A6%84-%EB%AA%A8%EC%96%91%EC%9D%98-%EB%AC%BC%EC%B2%B4%EA%B0%80-%EC%9E%88%EB%8A%94-%EC%BB%B4%ED%93%A8%ED%84%B0-%ED%99%94%EB%A9%B4-FocSgUZ10JM)'
   focal_point: "Center"
 weight: 2
 ---
