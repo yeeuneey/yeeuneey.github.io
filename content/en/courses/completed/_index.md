@@ -1,6 +1,6 @@
 ---
-title: "수강 완료한 강의"
-summary: "1학년 2학기부터 3학년 1학기까지 수강 완료한 강의 목록"
+title: "Completed Courses"
+summary: "Catalog of all major courses completed from freshman spring through junior spring."
 type: landing
 layout: list
 
@@ -9,21 +9,21 @@ sections:
   - block: markdown
     id: intro
     content:
-      title: "📚 수강 완료한 과목"
+      title: "📚 Courses I've Completed"
       text: |
-        김예은이 전북대학교 컴퓨터인공지능학부에서 1학년 2학기부터 3학년 1학기까지 수강 완료한 전공 과목들입니다.
+        These are the major courses Ye-eun Kim has completed at Jeonbuk National University from freshman spring to junior spring.
 
-        - 수강 완료한 강의 보기
+        - Review completed terms
           <div style="margin-left: 24px; margin-top: 6px;">
             <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
-                각 학기를 클릭하면 과목 목록을 볼 수 있고, <br>
-                과목 카드를 클릭하면 과목의 상세 페이지로 이동합니다.
+                Click a term to view its course list.<br>
+                Selecting a course card opens its detailed page.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.1em;">
-              <li><a href="/courses/completed/1-2/"><strong>1학년 2학기</strong></a></li>
-              <li><a href="/courses/completed/2-1/"><strong>2학년 1학기</strong></a></li>
-              <li><a href="/courses/completed/2-2/"><strong>2학년 2학기</strong></a></li>
-              <li><a href="/courses/completed/3-1/"><strong>3학년 1학기</strong></a></li>
+              <li><a href="/en/courses/completed/1-2/"><strong>Freshman · Fall</strong></a></li>
+              <li><a href="/en/courses/completed/2-1/"><strong>Sophomore · Spring</strong></a></li>
+              <li><a href="/en/courses/completed/2-2/"><strong>Sophomore · Fall</strong></a></li>
+              <li><a href="/en/courses/completed/3-1/"><strong>Junior · Spring</strong></a></li>
             </ul>
           </div>
     design:

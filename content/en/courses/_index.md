@@ -29,9 +29,9 @@ sections:
                 Select a term to open its detailed page.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.1em;">
-              <li><a href="/en/courses/completed/1-2/"><strong>Freshman · Spring</strong></a></li>
-              <li><a href="/en/courses/completed/2-1/"><strong>Sophomore · Fall</strong></a></li>
-              <li><a href="/en/courses/completed/2-2/"><strong>Sophomore · Spring</strong></a></li>
+              <li><a href="/en/courses/completed/1-2/"><strong>Freshman · Fall</strong></a></li>
+              <li><a href="/en/courses/completed/2-1/"><strong>Sophomore · Spring</strong></a></li>
+              <li><a href="/en/courses/completed/2-2/"><strong>Sophomore · Fall</strong></a></li>
               <li><a href="/en/courses/completed/3-1/"><strong>Junior · Spring</strong></a></li>
             </ul>
           </div>
