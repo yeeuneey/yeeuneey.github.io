@@ -1,5 +1,5 @@
 ---
-title: "선형대수학"
+title: "Linear Algebra"
 summary: ""
 type: course
 tags: ["2-1"]
@@ -11,14 +11,14 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 선형대수학의 기본 요소인 벡터, 행렬, 선형 변환 등의 개념을 이해한다."
-  - "Goal 2️⃣ : 관련 분야의 문제를 해결하는 방법을 학습하여 응용 능력을 기른다."
-  - "Goal 3️⃣ : 실제 응용 문제를 해결할 수 있는 수학적 사고력과 문제 해결 능력을 함양한다."
+  - "Goal 1️⃣: Understand core linear algebra concepts such as vectors, matrices, and linear transformations."
+  - "Goal 2️⃣: Learn methods for solving problems in related fields and build practical application skills."
+  - "Goal 3️⃣: Develop mathematical thinking and problem-solving abilities that enable real-world applications."
 
-instructor: "김지승 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 6호관 B15호"
-language: "한국어"
+instructor: "Prof. Ji-Seung Kim"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 6, Room B15"
+language: "Korean"
 credit: 3
 
 textbook:
@@ -30,34 +30,34 @@ textbook:
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 선형대수학 |
-| **담당교수** | 김지승 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 6호관 B15호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 선형대수학의 기본 요소인 벡터, 행렬, 선형 변환 등의 개념을 이해한다.  
-2️⃣ 관련 분야의 문제를 해결하는 방법을 학습하여 응용 능력을 기른다.  
-3️⃣ 실제 응용 문제를 해결할 수 있는 수학적 사고력과 문제 해결 능력을 함양한다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Linear Algebra |
+| **Instructor** | Prof. Ji-Seung Kim |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 6, Room B15 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
+
+1️⃣ Grasp the foundational elements of linear algebra, including vectors, matrices, and linear transformations.  
+2️⃣ Practice solving problems in related disciplines to strengthen applied skills.  
+3️⃣ Cultivate mathematical reasoning and problem-solving capabilities for real-world scenarios.
+
+---
+
+## 📖 Textbook
 
 > *Introduction to Linear Algebra (International Fourth Edition)*  
-> Gilbert Strang 저 · Wellesley-Cambridge Press (2009)
+> Gilbert Strang · Wellesley-Cambridge Press (2009)
 
 ---
 
-## 🧮 평가 비율
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +67,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '과제', '출석'],
+    labels: ['Midterm Exam', 'Final Exam', 'Assignments', 'Attendance'],
     datasets: [{
       data: [45, 45, 10, 0],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#b5ead7', '#ffdac1'],
@@ -85,24 +85,27 @@ new Chart(ctx, {
   }
 });
 </script>
+
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 강의 소개 및 벡터 개념 이해 | Course Overview, Vectors and Linear Combinations |
-| 2주 | 벡터의 내적 및 행렬 이해 | Lengths and Dot Products, Matrices |
-| 3주 | 선형 방정식과 소거법 이해 | Vectors and Linear Equations, Elimination Using Matrices |
-| 4주 | 행렬 연산 및 역행렬 학습 | Matrix Operations, Inverse Matrices, LU 분해 |
-| 5주 | 전치행렬과 벡터공간 이해 | Transposes and Permutations, Spaces of Vectors |
-| 6주 | 계수(rank)와 연립방정식 해법 | The Rank, Row Reduced Form, Ax=b의 해 |
-| 7주 | 기저와 차원 개념 학습 | Independence, Basis, Dimension, Four Subspaces |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 직교성 및 최소제곱법 | Orthogonality, Projections, Least Squares |
-| 10주 | 행렬식 및 그 특성 | Determinants, Permutations, Cofactors |
-| 11주 | 고유값과 대각화 이해 | Eigenvalues, Diagonalization |
-| 12주 | 미분방정식 응용 및 대칭행렬 | Applications to Differential Equations, Symmetric Matrices |
-| 13주 | 유사행렬과 SVD | Similar Matrices, Singular Value Decomposition |
-| 14주 | 선형변환과 의사역행렬 | Matrix of a Linear Transformation, Pseudoinverse |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Course introduction and vector fundamentals | Course overview; vectors and linear combinations |
+| 2 | Inner products and matrices | Lengths, dot products, and matrix basics |
+| 3 | Linear equations and elimination | Vector equations, linear systems, and matrix elimination |
+| 4 | Matrix operations and inverses | Matrix operations, inverse matrices, LU factorization |
+| 5 | Transposes and vector spaces | Transposes, permutations, and spaces of vectors |
+| 6 | Rank and solving linear systems | Rank, row-reduced form, solutions to `Ax = b` |
+| 7 | Bases and dimensions | Linear independence, bases, dimension, and the four subspaces |
+| 8 | Midterm exam | Examination |
+| 9 | Orthogonality and least squares | Orthogonality, projections, and least-squares solutions |
+| 10 | Determinants | Determinants, permutations, cofactors |
+| 11 | Eigenvalues and diagonalization | Eigenvalues and diagonalization techniques |
+| 12 | Differential equations and symmetric matrices | Applications to differential equations; symmetric matrices |
+| 13 | Similar matrices and SVD | Similarity transforms and singular value decomposition |
+| 14 | Linear transformations and pseudoinverses | Matrices of linear transformations; pseudoinverses |
+| 15 | Final exam | Examination |
+
+---
