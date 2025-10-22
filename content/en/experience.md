@@ -1,5 +1,5 @@
 ---
-title: '경험'
+title: 'Experience'
 date: 2023-10-24
 type: landing
 
@@ -12,7 +12,7 @@ design:
 sections:
   - block: resume-experience
     content:
-      title: 경험
+      title: Experience
       username: admin
     design:
       # Hugo date format
@@ -21,7 +21,7 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: 기술 & 취미
+      title: Skills & Hobbies
       username: admin
     design:
       show_skill_percentage: false
@@ -31,6 +31,6 @@ sections:
   #     username: admin
   - block: resume-languages
     content:
-      title: 언어
+      title: Languages
       username: admin
 ---

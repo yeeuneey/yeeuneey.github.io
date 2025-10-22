@@ -1,2 +1,16 @@
+about: 
+  other: 소개
+education:
+  other: 학위
 experience:
   other: 경험
+interests:
+  other: 관심 분야
+skills:
+  other: 기술
+hobbies:
+  other: 취미
+languages: 
+  other: 언어
+awards:
+  other: 수상

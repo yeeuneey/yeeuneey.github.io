@@ -18,16 +18,16 @@ sections:
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image:url(/media/slider1.jpg)">
-              <h3>김예은의 포트폴리오</h3>
-              <p>WELCOME TO Yeeun-Kim's PORTFOLIO!</p>
+              <h3>Ye-eun Kim's Portfolio</h3>
+              <p>WELCOME TO Ye-eun Kim's PORTFOLIO!</p>
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider2.jpg)">
-              <h3>연구</h3>
-              <p>핵심 기술 & 관련 과목을 확인하세요.</p>
+              <h3>Research</h3>
+              <p>Explore core technologies and related courses.</p>
             </div>
             <div class="swiper-slide" style="background-image:url(/media/slider3.jpg)">
-              <h3>프로젝트</h3>
-              <p>프로젝트와 github 링크를 함께 확인하세요.</p>
+              <h3>Projects</h3>
+              <p>Discover projects alongside their GitHub links.</p>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -71,17 +71,17 @@ sections:
       username: admin
       text: ''
       button:
-        text: 이력서 다운로드
+        text: Download Resumé
         url: uploads/resume.pdf
       headings:
-        about: '소개'
-        education: '학위'
-        experience: '경험'
-        interests: '관심 분야'
-        skills: '기술'
-        hobbies: '취미'
-        languages: '언어'
-        awards: '수상'
+        about: 'About Me'
+        education: 'Education'
+        experience: 'Experience'
+        interests: 'Interests'
+        skills: 'Skills'
+        hobbies: 'Hobbies'
+        languages: 'Languages'
+        awards: 'Awards'
     design:
       css_class: 'custom-hero'
       avatar:
@@ -91,9 +91,9 @@ sections:
   - block: collection
     id: tech
     content:
-      title: "금융 IT를 이끄는 핵심 기술"
-      subtitle: "금융 산업의 디지털 혁신을 주도하는 6가지 핵심 기술 역량을 소개합니다."
-      text: "각 항목을 클릭해 해당 기술의 세부 연구 내용을 확인하세요."
+      title: "Core Technologies Driving Financial IT"
+      subtitle: "Meet the six key technical competencies powering digital innovation in finance."
+      text: "Select each item to explore detailed insights on the technology."
       count: 0
       filters:
         folders:
@@ -107,9 +107,9 @@ sections:
   - block: collection
     id: related-courses
     content:
-      title: "역량의 발판이 되는 핵심 전공 과목"
-      subtitle: "금융 산업의 디지털 혁신을 주도하는 6가지 핵심 기술 역량을 소개합니다."
-      text: "각 카드를 클릭해 해당 과목과 기술의 연결고리 설명을 확인하세요."
+      title: "Essential Courses Behind My Expertise"
+      subtitle: "Discover the six major courses underpinning my finance-focused skill set."
+      text: "Open each card to learn how the course connects to the highlighted technology."
       count: 0
       filters:
         folders:
@@ -120,5 +120,3 @@ sections:
       view: showcase
       columns: 3
 ---
-
-
