@@ -684,9 +684,10 @@ body.dark .showcase-card__summary {
   color: #0f172a;
   padding: 0.85rem 1.45rem;
   border-radius: 999px;
-  background: white;
-  box-shadow: 0 18px 40px -24px rgba(15, 118, 110, 0.65);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(241, 245, 249, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  box-shadow: 0 18px 32px -24px rgba(15, 23, 42, 0.22);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
   text-decoration: none;
 }
 .showcase-card__cta-link svg {
@@ -697,15 +698,31 @@ body.dark .showcase-card__summary {
 }
 .showcase-card__cta-link:hover {
   transform: translateX(4px);
-  box-shadow: 0 18px 32px -22px rgba(14, 165, 233, 0.65);
+  background: rgba(226, 232, 240, 0.96);
+  border-color: rgba(14, 165, 233, 0.35);
+  box-shadow: 0 20px 36px -22px rgba(14, 165, 233, 0.35);
 }
 .showcase-card__cta-link:hover svg {
   transform: translateX(4px);
 }
-[data-theme="dark"] .showcase-card__cta-link {
-  background: #ffffff;
-  color: #0f172a;
-  box-shadow: 0 18px 44px -24px rgba(15, 23, 42, 0.55);
+[data-theme="dark"] .showcase-card__cta-link,
+html[data-theme="dark"] .showcase-card__cta-link,
+body[data-theme="dark"] .showcase-card__cta-link,
+html.dark .showcase-card__cta-link,
+body.dark .showcase-card__cta-link {
+  background: rgba(30, 41, 59, 0.75);
+  color: #e2e8f0;
+  border-color: rgba(148, 163, 184, 0.28);
+  box-shadow: 0 18px 40px -24px rgba(15, 23, 42, 0.65);
+}
+[data-theme="dark"] .showcase-card__cta-link:hover,
+html[data-theme="dark"] .showcase-card__cta-link:hover,
+body[data-theme="dark"] .showcase-card__cta-link:hover,
+html.dark .showcase-card__cta-link:hover,
+body.dark .showcase-card__cta-link:hover {
+  background: rgba(51, 65, 85, 0.85);
+  border-color: rgba(94, 234, 212, 0.45);
+  box-shadow: 0 22px 44px -24px rgba(45, 212, 191, 0.42);
 }
 .related-course-card__cta svg {
   transition: transform 0.3s ease;
