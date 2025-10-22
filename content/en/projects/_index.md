@@ -1,5 +1,5 @@
 ---
-title: '프로젝트'
+title: 'Projects'
 date: 2025-10-11
 type: landing
 image:
@@ -15,8 +15,8 @@ design:
 sections:
   - block: collection
     content:
-      title: 프로젝트
-      text: 각 프로젝트 카드를 누르면 상세 페이지로 이동합니다.
+      title: Projects
+      text: Select any project card to view more details.
       filters:
         folders:
           - projects
