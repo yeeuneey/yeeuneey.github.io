@@ -3,7 +3,7 @@
 title: Ye-eun Kim
 
 # Name pronunciation
-name_pronunciation: Kim Ye-eun
+name_pronunciation: ''
 
 # Full name (for SEO)
 first_name: Ye-eun
@@ -24,7 +24,7 @@ role: Undergraduate Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: School of Computer & Artificial Intelligence, Jeonbuk National University
+  - name: Computer Science & Artificial Intelligence, Jeonbuk National University
     url: https://cs.jbnu.ac.kr/
 
 # Social network links
@@ -49,7 +49,7 @@ interests:
   - '[Cloud Computing](https://www.google.com/search?q=cloud+computing)'
   - '[Web Development (Front-end & Back-end)](https://www.google.com/search?q=web+development+Front-end+Back-end)'
   - '[Artificial Intelligence](https://www.google.com/search?q=artificial+intelligence)'
-  - '[Cybersecurity](https://www.google.com/search?q=cybersecurity)'
+  - '[Security](https://www.google.com/search?q=cybersecurity)'
 
 education:
   - area: Computer Science & Artificial Intelligence
@@ -58,7 +58,7 @@ education:
 
 work:
   - position: Planning Team Member, 2nd Department Student Council
-    company_name: Department of Computer S& Artificial Intelligence, School of Jeonbuk National University
+    company_name: Department of Computer Science & Artificial Intelligence, School of Jeonbuk National University
     company_url: ''
     company_logo: ''
     date_start: 2023-12-01
@@ -67,7 +67,7 @@ work:
       Oversaw the planning and execution of departmental programs and events.
 
   - position: WHO Club
-    company_name: Computer & Artificial Intelligence, Jeonbuk National University
+    company_name: Computer Science & Artificial Intelligence, Jeonbuk National University
     company_url: ''
     company_logo: ''
     date_start: 2023-03-02
@@ -115,7 +115,7 @@ languages:
     percent: 44
 ---
 
-Hello! I'm Ye-eun Kim, a third-year student in the School of Computer and Artificial Intelligence at Jeonbuk National University. I aspire to become a next-generation developer who drives innovation in the financial IT sector, grounded in a deep passion and knowledge of cloud computing, web development, artificial intelligence, and security technologies. I enjoy learning and applying new technologies, and I find great fulfillment in the process of solving complex problems.
+Hello! I'm Ye-eun Kim, a third-year student in the Department of Computer Science and Artificial Intelligence at Jeonbuk National University. I aspire to become a next-generation developer who drives innovation in the financial IT sector, grounded in a deep passion and knowledge of cloud computing, web development, artificial intelligence, and security technologies. I enjoy learning and applying new technologies, and I find great fulfillment in the process of solving complex problems.
 
 As a planning team member of the department's student council, I have planned and managed events of various scales, strengthening my collaboration and communication skills. In the department's WHO club, which focuses on study activities for server implementation and app development, I keep up with the latest technology trends while sharpening my practical abilities. Through these activities, I have learned that beyond coding skills, achieving shared goals together with teammates is invaluable.
 
