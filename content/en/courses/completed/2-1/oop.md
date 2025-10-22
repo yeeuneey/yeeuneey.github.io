@@ -1,5 +1,5 @@
 ---
-title: "객체지향프로그래밍"
+title: "Object-Oriented Programming"
 summary: ""
 type: course
 tags: ["2-1"]
@@ -11,53 +11,53 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 객체지향 프로그래밍의 개념을 이해하고 Java 언어를 기반으로 객체지향 프로그램을 설계할 수 있는 능력을 기른다."
-  - "Goal 2️⃣ : 클래스, 객체, 상속, 다형성 등 객체지향의 핵심 개념을 학습한다."
-  - "Goal 3️⃣ : 실습 중심의 학습을 통해 Java 기반 응용 프로그램을 개발할 수 있는 실무 능력을 배양한다."
+  - "Goal 1️⃣: Understand the principles of object-oriented programming and design object-oriented solutions using Java."
+  - "Goal 2️⃣: Master core OOP concepts such as classes, objects, inheritance, and polymorphism."
+  - "Goal 3️⃣: Build practical skills for creating Java-based applications through hands-on exercises."
 
-instructor: "강동기 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 204호"
-language: "한국어"
+instructor: "Prof. Dong-Gi Kang"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 204"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "Do it! 자바 완전 정복"
-  author: "김동형"
-  publisher: "이지스퍼블리싱"
-  year: "2021"
+  title: "Do it! Mastering Java"
+  author: "Dong-Hyung Kim"
+  publisher: "EZ Publisher"
+  year: 2021
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 객체지향프로그래밍 |
-| **담당교수** | 강동기 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 204호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 객체지향 프로그래밍의 개념을 이해하고 Java 언어를 기반으로 객체지향 프로그램을 설계할 수 있는 능력을 기른다.  
-2️⃣ 클래스, 객체, 상속, 다형성 등 객체지향의 핵심 개념을 학습한다.  
-3️⃣ 실습 중심의 학습을 통해 Java 기반 응용 프로그램을 개발할 수 있는 실무 능력을 배양한다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Object-Oriented Programming |
+| **Instructor** | Prof. Dong-Gi Kang |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 204 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> Do it! 자바 완전 정복
-> 김동형 저 · 이지스퍼블리싱 (2021)
+1️⃣ Grasp the fundamentals of object-oriented programming and design solutions in Java.  
+2️⃣ Learn and apply key OOP elements including classes, objects, inheritance, and polymorphism.  
+3️⃣ Strengthen real-world development abilities by building Java applications through labs and projects.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Do it! Mastering Java*  
+> Dong-Hyung Kim · EZ Publisher (2021)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +67,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '출석', '과제', '팀플'],
+    labels: ['Midterm Exam', 'Attendance', 'Assignments', 'Team Project'],
     datasets: [{
       data: [30, 10, 30, 30],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#b5ead7', '#ffdac1'],
@@ -88,22 +88,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 자바 개발 환경 이해 | 자바 소개, 환경 구축, 이클립스 설치 |
-| 2주 | 자바 기초 문법 학습Ⅰ | 변수, 자료형, 연산자 |
-| 3주 | 자바 기초 문법 학습Ⅱ | 선택문, 반복문, 배열 |
-| 4주 | 객체지향 개념 및 클래스 학습 | 클래스, 메소드, 오버로딩 |
-| 5주 | 객체 생성 및 접근자 학습 | 생성자, 접근자·설정자, 내부 클래스 |
-| 6주 | 상속과 다형성 이해 | 상속, 오버라이딩, 추상 클래스 |
-| 7주 | GUI 프로그래밍 기초 | 자바 그래픽 컴포넌트 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 인터페이스와 람다식 | 인터페이스, 패키지, 람다식 |
-| 10주 | 이벤트 처리 | 이벤트 기반 응용 개발 |
-| 11주 | 그래픽 프로그래밍 | 이벤트 및 GUI 응용 |
-| 12주 | 스윙 컴포넌트 활용 | 스윙을 이용한 응용 프로그램 개발 |
-| 13주 | 예외 처리 학습 | try-catch 문, 디버깅 |
-| 14주 | 팀 프로젝트 수행 | 자바 프로젝트 진행 |
-| 15주 | 프로젝트 발표 및 평가 | 팀별 발표 및 결과물 평가 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Understand the Java development environment | Introduction to Java, environment setup, installing Eclipse |
+| 2 | Learn Java fundamentals I | Variables, data types, operators |
+| 3 | Learn Java fundamentals II | Conditionals, loops, arrays |
+| 4 | Explore OOP concepts and classes | Classes, methods, overloading |
+| 5 | Work with objects and accessors | Constructors, getters/setters, inner classes |
+| 6 | Understand inheritance and polymorphism | Inheritance, overriding, abstract classes |
+| 7 | Intro to GUI programming | Java graphical components |
+| 8 | Midterm exam | Examination |
+| 9 | Interfaces and lambdas | Interfaces, packages, lambda expressions |
+| 10 | Event handling | Event-driven application development |
+| 11 | Graphics programming | Event handling and GUI applications |
+| 12 | Using Swing components | Building applications with Swing |
+| 13 | Exception handling | `try-catch`, debugging |
+| 14 | Team project execution | Developing the semester Java project |
+| 15 | Project presentation & evaluation | Team presentations and final assessment |
+
+---
