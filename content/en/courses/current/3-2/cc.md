@@ -1,63 +1,57 @@
 ---
-title: "클라우드컴퓨팅"
+title: "Cloud Computing"
 summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/cloud_computing.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
-  - "Goal 1️⃣ : 가상화 기술 및 클라우드 서비스의 기본 개념을 이해한다."
-  - "Goal 2️⃣ : AWS 기반의 가상 서버, 네트워크, 스토리지 등 주요 클라우드 인프라 서비스를 학습한다."
-  - "Goal 3️⃣ : 클라우드 환경에서 응용 서비스를 설계·구현·배포할 수 있는 능력을 기른다."
+  - "Goal 1️⃣: Understand core concepts of virtualization technologies and cloud services."
+  - "Goal 2️⃣: Learn major cloud infrastructure services on AWS, including virtual servers, networking, and storage."
+  - "Goal 3️⃣: Build the capability to design, implement, and deploy applications in cloud environments."
 
-instructor: "강동기 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 204호"
-language: "한국어"
+instructor: "Prof. Dong-Gi Kang"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 204"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "아마존 웹 서비스 AWS Discovery Book"
-  author: "권영한"
-  publisher: "정보문화사"
+  title: "Amazon Web Services: AWS Discovery Book"
+  author: "Young-Han Kwon"
+  publisher: "Information & Culture Press"
   year: 2020
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 클라우드컴퓨팅 |
-| **담당교수** | 강동기 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 204호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 가상화 기술 및 클라우드 서비스의 기본 개념을 이해한다.  
-2️⃣ AWS 기반의 가상 서버, 네트워크, 스토리지 등 주요 클라우드 인프라 서비스를 학습한다.  
-3️⃣ 클라우드 환경에서 응용 서비스를 설계·구현·배포할 수 있는 능력을 기른다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Cloud Computing |
+| **Instructor** | Prof. Dong-Gi Kang |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 204 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> 아마존 웹 서비스 AWS Discovery Book  
-> 권영한 저 · 정보문화사 (2020)
+1️⃣ Understand the fundamentals of virtualization and cloud service models.  
+2️⃣ Practice provisioning AWS-based compute, networking, and storage services.  
+3️⃣ Gain the skills to architect, deploy, and manage applications in the cloud.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Amazon Web Services: AWS Discovery Book*  
+> Young-Han Kwon · Information & Culture Press (2020)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="chart-cloud" width="400" height="400"></canvas>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -66,7 +60,7 @@ const ctxC = document.getElementById('chart-cloud');
 new Chart(ctxC, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '출석', '과제', '팀플'],
+    labels: ['Midterm Exam', 'Attendance', 'Assignments', 'Team Project'],
     datasets: [{
       data: [30, 10, 30, 30],
       backgroundColor: ['#9ad0f5', '#ffdac1', '#b5ead7', '#ffb7b2'],
@@ -79,22 +73,24 @@ new Chart(ctxC, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 수업 소개 | 강의 운영 및 평가 안내 |
-| 2주 | 클라우드 기본 개념 학습 | 클라우드 개념, 가상 자원 이해 |
-| 3주 | AWS 가상 서버 이해 | EC2 및 Lambda 실습 |
-| 4주 | AWS 스토리지 활용 | S3, Glacier 등 스토리지 서비스 실습 |
-| 5주 | AWS VPC 구성Ⅰ | 가상 네트워크 기초 실습 |
-| 6주 | AWS VPC 구성Ⅱ | 보안 그룹 및 라우팅 실습 |
-| 7주 | AWS 데이터베이스 서비스 학습 | RDS 활용 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 로드밸런싱 이해 | 트래픽 분산 실습 |
-| 10주 | 오토스케일링 학습 | 서버 확장 및 자원 관리 실습 |
-| 11주 | 가용성 보장 방법 학습 | 모니터링 및 복구 실습 |
-| 12주 | AWS Lambda 실습 | 서버리스 컴퓨팅 구현 |
-| 13주 | 팀 프로젝트Ⅰ | 프로젝트 설계 및 구현 |
-| 14주 | 팀 프로젝트Ⅱ | 구현 및 테스트 |
-| 15주 | 팀 프로젝트 발표 | 발표 및 피드백 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Course introduction | Overview of course operations and evaluation |
+| 2 | Cloud fundamentals | Cloud concepts and understanding virtual resources |
+| 3 | AWS compute services | Hands-on with EC2 and Lambda |
+| 4 | AWS storage services | Practice with S3, Glacier, and related services |
+| 5 | AWS VPC configuration I | Introductory virtual networking lab |
+| 6 | AWS VPC configuration II | Security groups and routing exercises |
+| 7 | AWS database services | Working with RDS |
+| 8 | Midterm exam | Examination |
+| 9 | Load balancing | Traffic distribution lab |
+| 10 | Auto scaling | Resource scaling and management exercises |
+| 11 | High availability strategies | Monitoring and recovery practice |
+| 12 | AWS Lambda deep dive | Implementing serverless computing |
+| 13 | Team project I | Project design and initial implementation |
+| 14 | Team project II | Implementation and testing |
+| 15 | Team project presentations | Final presentation and feedback |
+
+---
