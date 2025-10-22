@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/object_oriented_programming.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Understand the principles of object-oriented programming and design object-oriented solutions using Java."
   - "Goal 2️⃣: Master core OOP concepts such as classes, objects, inheritance, and polymorphism."

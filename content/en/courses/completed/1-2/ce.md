@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["1-2"]
 
-image:
-  filename: "uploads/media/comeng_intro.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Present the core topics that computer engineering majors study across four years and illustrate how those areas connect."
   - "Goal 2️⃣: Examine emerging trends—especially in AI and big data—to spark curiosity and cultivate the mindset needed to keep learning."

@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/linux_programming.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Develop proficiency with the command-line interface (CLI) in a Linux environment."
   - "Goal 2️⃣: Understand Linux system administration concepts and the structure of the operating system."

@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/logic_design.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Understand the core concepts and operating principles of digital systems to approach digital design with a broad perspective."
   - "Goal 2️⃣: Learn the fundamentals of combinational and sequential circuits, along with the devices that compose logic circuits."

@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/datastructure.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Study the characteristics and use cases of diverse data structures to write efficient programs."
   - "Goal 2️⃣: Understand multiple data structures—arrays, stacks, queues, lists, trees, graphs—and learn how to apply them."

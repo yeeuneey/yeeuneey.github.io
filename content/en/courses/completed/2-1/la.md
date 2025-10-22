@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["2-1"]
 
-image:
-  filename: "uploads/media/linear_algebra.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Understand core linear algebra concepts such as vectors, matrices, and linear transformations."
   - "Goal 2️⃣: Learn methods for solving problems in related fields and build practical application skills."

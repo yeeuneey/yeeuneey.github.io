@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["1-2"]
 
-image:
-  filename: "uploads/media/cpp.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Teach C++ syntax to students who have already studied the fundamentals of programming."
   - "Goal 2️⃣: Build a solid understanding of object-oriented programming (OOP) and the ability to design and implement OOP solutions in C++."

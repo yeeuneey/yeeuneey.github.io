@@ -4,12 +4,6 @@ summary: ""
 type: course
 tags: ["1-2"]
 
-image:
-  filename: "uploads/media/discrete.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
   - "Goal 1️⃣: Provide the mathematical foundations—propositions, proofs, sets, matrices, relations, functions, graphs, trees, Boolean algebra, permutations/combinations/probability, and introductory algorithms—needed for later computer engineering courses."
 
