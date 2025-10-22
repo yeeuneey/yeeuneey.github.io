@@ -1,26 +1,26 @@
 ---
-title: "고성능 컴퓨팅의 기반 ⚡"
-summary: "대규모 금융 연산을 위한 자료구조와 알고리즘 최적화"
+title: "Foundations of High-Performance Computing ⚡"
+summary: "Optimizing data structures and algorithms for large-scale financial computation"
 type: tech
 image:
-  filename: "featured.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EC%98%81%ED%99%94-%EC%8A%A4%ED%8B%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-iar-afB0QQw)'
 weight: 5
 ---
 
 <br>
 
-## 📌 개요  
-실시간 주식 거래, 대규모 결제 처리, 복잡한 파생상품 계산 등  
-금융 IT 핵심 서비스는 엄청난 연산 속도와 안정성을 요구합니다.  
-이를 위해서는 효율적인 자료구조 설계와 최적의 알고리즘 선택이 필수입니다.  
+## 📌 Overview  
+Real-time stock trading, large-scale payment processing, and complex derivatives pricing all  
+demand exceptional computational speed and stability.  
+Achieving this requires efficient data structures and carefully chosen algorithms.  
 
 ---
 
-## 💡 주요 응용 사례  
-- 알고리즘 효율성 분석 및 최적화  
-- 멀티스레드 프로그래밍  
-- 실시간 트랜잭션 처리  
-- 대규모 데이터 병렬 연산  
+## 💡 Key Use Cases  
+- Algorithm efficiency analysis and optimization  
+- Multithreaded programming  
+- Real-time transaction processing  
+- Large-scale data parallelism  
 
 <style>
   .article-container h1,

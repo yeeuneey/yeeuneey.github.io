@@ -3,7 +3,7 @@ title: "고성능 컴퓨팅의 기반 ⚡"
 summary: "대규모 금융 연산을 위한 자료구조와 알고리즘 최적화"
 type: tech
 image:
-  filename: "featured.jpg"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%A7%A4%ED%8A%B8%EB%A6%AD%EC%8A%A4-%EC%98%81%ED%99%94-%EC%8A%A4%ED%8B%B8-%EC%9D%B4%EB%AF%B8%EC%A7%80-iar-afB0QQw)'
 weight: 5
 ---
 
