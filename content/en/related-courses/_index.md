@@ -1,3 +1,3 @@
 ---
-title: 관련 강의
+title: related courses
 ---
