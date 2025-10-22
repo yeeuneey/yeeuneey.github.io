@@ -1,6 +1,6 @@
 ---
-title: "전체 강의"
-summary: "1학년 2학기부터 3학년 2학기까지 수강한 전공 강의 목록"
+title: "All Courses"
+summary: "List of major courses taken from sophomore fall through junior fall."
 type: landing
 layout: list
 image:
@@ -13,26 +13,26 @@ sections:
   - block: markdown
     id: intro
     content:
-      title: "📚 수강 과목"
+      title: "📚 Course Overview"
       text: |
-        김예은이 전북대학교 컴퓨터인공지능학부에 재학하면서 수강한 3학년 2학기까지의 모든 전공 과목들을 한눈에 볼 수 있습니다.  
+        Explore every major course Ye-eun Kim has completed up to junior fall in the School of Computer and Artificial Intelligence at Jeonbuk National University.
 
-        - <a href="/courses/current/"><strong>수강 중인 강의 보기</strong></a>
+        - <a href="/en/courses/current/"><strong>View Current Courses</strong></a>
           <div style="margin-left: 24px; margin-top: 6px;">
             <ul style="margin: 0; padding-left: 20px; font-size:1.1em;">
-              <li><a href="/courses/current/3-2/"><strong>3학년 2학기</strong></a></li>
+              <li><a href="/en/courses/current/3-2/"><strong>Junior · Fall</strong></a></li>
             </ul>
           </div>
-        - <a href="/courses/completed/"><strong>수강 완료한 강의 보기</strong></a>
+        - <a href="/en/courses/completed/"><strong>View Completed Courses</strong></a>
           <div style="margin-left: 24px; margin-top: 6px;">
             <p style="color:#666; font-size:0.8em; margin-bottom:6px;">
-                학기를 클릭하면 상세 페이지로 이동합니다.
+                Select a term to open its detailed page.
             </p>
             <ul style="margin: 0; padding-left: 20px; font-size:1.1em;">
-              <li><a href="/courses/completed/1-2/"><strong>1학년 2학기</strong></a></li>
-              <li><a href="/courses/completed/2-1/"><strong>2학년 1학기</strong></a></li>
-              <li><a href="/courses/completed/2-2/"><strong>2학년 2학기</strong></a></li>
-              <li><a href="/courses/completed/3-1/"><strong>3학년 1학기</strong></a></li>
+              <li><a href="/en/courses/completed/1-2/"><strong>Freshman · Spring</strong></a></li>
+              <li><a href="/en/courses/completed/2-1/"><strong>Sophomore · Fall</strong></a></li>
+              <li><a href="/en/courses/completed/2-2/"><strong>Sophomore · Spring</strong></a></li>
+              <li><a href="/en/courses/completed/3-1/"><strong>Junior · Spring</strong></a></li>
             </ul>
           </div>
     design:
