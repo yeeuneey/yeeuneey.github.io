@@ -1,5 +1,5 @@
 ---
-title: "자료구조"
+title: "Data Structures"
 summary: ""
 type: course
 tags: ["2-1"]
@@ -11,53 +11,53 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 효율적인 프로그램을 작성하기 위해 다양한 자료구조의 특징과 사용 방법에 대해 학습한다."
-  - "Goal 2️⃣ : 여러 자료구조(배열, 스택과 큐, 리스트, 트리, 그래프 등)를 이해하고 이를 적용할 수 있다."
-  - "Goal 3️⃣ : 문제 상황에 맞는 적절한 자료구조를 사용하여 C++ 프로그램을 구현할 수 있다."
+  - "Goal 1️⃣: Study the characteristics and use cases of diverse data structures to write efficient programs."
+  - "Goal 2️⃣: Understand multiple data structures—arrays, stacks, queues, lists, trees, graphs—and learn how to apply them."
+  - "Goal 3️⃣: Implement C++ programs that employ the most suitable data structure for a given problem."
 
-instructor: "류금한 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 3호관 311호"
-language: "한국어"
+instructor: "Prof. Geum-Han Ryu"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 3, Room 311"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "C++로 쉽게 풀어쓴 자료구조"
-  author: "천인국, 최영규"
-  publisher: "생능출판"
+  title: "Data Structures Made Easy with C++"
+  author: "In-Guk Cheon, Young-Gyu Choi"
+  publisher: "Saengneung Publishing"
   year: 2016
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 자료구조 |
-| **담당교수** | 류금한 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 3호관 311호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 효율적인 프로그램을 작성하기 위해 다양한 자료구조의 특징과 사용 방법에 대해 학습한다.  
-2️⃣ 여러 자료구조(배열, 스택과 큐, 리스트, 트리, 그래프 등)를 이해하고 이를 적용할 수 있다.  
-3️⃣ 문제 상황에 맞는 적절한 자료구조를 사용하여 C++ 프로그램을 구현할 수 있다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Data Structures |
+| **Instructor** | Prof. Geum-Han Ryu |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 3, Room 311 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> C++로 쉽게 풀어쓴 자료구조  
-> 천인국, 최영규 저 · 생능출판 (2016)
+1️⃣ Learn the features and usage patterns of various data structures in order to develop efficient software.  
+2️⃣ Gain hands-on experience with arrays, stacks, queues, lists, trees, graphs, and more.  
+3️⃣ Solve problems by selecting appropriate data structures and implementing the solution in C++.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Data Structures Made Easy with C++*  
+> In-Guk Cheon & Young-Gyu Choi · Saengneung Publishing (2016)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +67,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '과제', '출석'],
+    labels: ['Midterm Exam', 'Final Exam', 'Assignments', 'Attendance'],
     datasets: [{
       data: [35, 35, 25, 5],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#b5ead7', '#ffdac1'],
@@ -88,22 +88,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 강의 소개 및 기본 개념 | 자료구조의 분류, 추상 자료형, 알고리즘과 효율성 |
-| 2주 | 배열과 클래스 | 배열과 클래스의 활용 *(프로그래밍 과제 1)* |
-| 3주 | 스택 | 스택의 개념, 구현, 응용 |
-| 4주 | 큐 | 큐의 개념, 구현, 응용 *(프로그래밍 과제 2)* |
-| 5주 | 포인터와 연결 리스트 | 포인터, 동적 메모리, 연결 리스트 |
-| 6주 | 리스트 | 리스트의 개념, 구현, 응용 *(프로그래밍 과제 3)* |
-| 7주 | 재귀 | 재귀 알고리즘과 성능, 재귀 활용 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 트리 | 이진 트리 개념, 구현, 순회, 응용 |
-| 10주 | 이진 탐색 트리 | 개념, 연산, 구현 *(프로그래밍 과제 4)* |
-| 11주 | 우선순위 큐 | 힙의 개념, 구현, 응용 |
-| 12주 | 그래프 I | 그래프의 개념, 표현, 구현 *(프로그래밍 과제 5)* |
-| 13주 | 그래프 II | 그래프 탐색(BFS/DFS), 가중치 그래프 *(프로그래밍 과제 6)* |
-| 14주 | 정렬과 탐색 | 정렬, 탐색, 해싱 |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Course introduction and fundamentals | Data-structure taxonomy, abstract data types, algorithms and efficiency |
+| 2 | Arrays and classes | Using arrays and classes *(Programming Assignment 1)* |
+| 3 | Stacks | Concepts, implementations, and applications of stacks |
+| 4 | Queues | Concepts, implementations, and applications of queues *(Programming Assignment 2)* |
+| 5 | Pointers and linked lists | Pointers, dynamic memory, linked lists |
+| 6 | Lists | Concepts, implementations, and applications of lists *(Programming Assignment 3)* |
+| 7 | Recursion | Recursive algorithms, performance, and applications |
+| 8 | Midterm exam | Examination |
+| 9 | Trees | Binary tree concepts, implementations, traversals, and applications |
+| 10 | Binary search trees | Concepts, operations, implementations *(Programming Assignment 4)* |
+| 11 | Priority queues | Heaps: concepts, implementations, applications |
+| 12 | Graphs I | Graph concepts, representations, implementations *(Programming Assignment 5)* |
+| 13 | Graphs II | Graph traversal (BFS/DFS), weighted graphs *(Programming Assignment 6)* |
+| 14 | Sorting and searching | Sorting, searching, hashing |
+| 15 | Final exam | Examination |
+
+---
