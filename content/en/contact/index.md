@@ -14,8 +14,15 @@ sections:
     content:
       title: "📞 연락처"
       text: |
-        {{< icon name="envelope" pack="fas" >}} [202312632@jbnu.ac.kr](mailto:202312632@jbnu.ac.kr)  
+        {{< icon name="envelope" pack="fas" >}} [202312632@jbnu.ac.kr](mailto:202312632@jbnu.ac.kr)
+        
         {{< icon name="phone" pack="fas" >}} [+82-10-3370-7588](tel:+821033707588)
+
+        {{< icon name="brands/github" pack="fab" >}} [yeeuneey](https://github.com/yeeuneey)
+
+        {{< icon name="brands/discord" pack="fab" >}} [yeeuneey](https://discord.com/users/yeeuneey) 
+
+        {{< icon name="brands/instagram" pack="fab" >}} [imyezlv](https://instagram.com/imyezlv)
     design:
       spacing:
         padding: [30, 0, 10, 0]
