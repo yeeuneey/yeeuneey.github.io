@@ -71,7 +71,7 @@ sections:
       username: admin
       text: ''
       button:
-        text: Download Resumé
+        text: Download CV
         url: uploads/resume.pdf
       headings:
         about: 'About Me'
@@ -109,7 +109,7 @@ sections:
     content:
       title: "Essential Courses Behind My Expertise"
       subtitle: "Discover the six major courses underpinning my finance-focused skill set."
-      text: "Open each card to learn how the course connects to the highlighted technology."
+      text: "Open card to learn how the course connects to the highlighted technology."
       count: 0
       filters:
         folders:
