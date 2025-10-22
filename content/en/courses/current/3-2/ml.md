@@ -1,24 +1,18 @@
 ---
-title: "기계학습"
+title: "Machine Learning"
 summary: ""
 type: course
 tags: ["3-2"]
 
-image:
-  filename: "uploads/media/machine_learning.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
-  - "Goal 1️⃣ : 기계학습의 정의와 한계를 포함한 기본 개념과 이론을 이해한다."
-  - "Goal 2️⃣ : 의사결정나무, 최근접, 퍼셉트론, 선형·확률모형, SVM, 앙상블, GMM 등 핵심 알고리즘을 학습한다."
-  - "Goal 3️⃣ : 신경망, 커널 방법, 학습이론, 비지도학습 등을 통해 실제 데이터 문제에 기계학습을 적용하는 능력을 기른다."
+  - "Goal 1️⃣: Understand fundamental concepts and theory in machine learning, including its definition and limitations."
+  - "Goal 2️⃣: Study key algorithms such as decision trees, nearest neighbors, perceptrons, linear and probabilistic models, SVMs, ensembles, and GMMs."
+  - "Goal 3️⃣: Apply machine learning to real datasets through neural networks, kernel methods, learning theory, and unsupervised learning."
 
-instructor: "송현제 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / 컴퓨터인공지능학부"
-room: "공대 7호관 534호"
-language: "한국어"
+instructor: "Prof. Hyun-Je Song"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 7, Room 534"
+language: "Korean"
 credit: 3
 
 textbook:
@@ -30,34 +24,34 @@ textbook:
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 기계학습 |
-| **담당교수** | 송현제 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 7호관 534호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 기계학습의 정의와 한계를 포함한 기본 개념과 이론을 이해한다.  
-2️⃣ 의사결정나무, 최근접, 퍼셉트론, 선형·확률모형, SVM, 앙상블, GMM 등 핵심 알고리즘을 학습한다.  
-3️⃣ 신경망, 커널 방법, 학습이론, 비지도학습 등을 통해 실제 데이터 문제에 기계학습을 적용하는 능력을 기른다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Machine Learning |
+| **Instructor** | Prof. Hyun-Je Song |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 7, Room 534 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> A Course in Machine Learning  
-> Hal Daumé III 저 · (2015)
+1️⃣ Grasp foundational machine-learning concepts and limitations.  
+2️⃣ Master algorithms including decision trees, nearest neighbors, perceptrons, linear/probabilistic models, SVMs, ensembles, and GMMs.  
+3️⃣ Build competency applying machine learning to real problems using neural networks, kernel methods, learning theory, and unsupervised techniques.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *A Course in Machine Learning*  
+> Hal Daumé III · (2015)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="chart-ml" width="400" height="400"></canvas>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -66,7 +60,7 @@ const cML = document.getElementById('chart-ml');
 new Chart(cML, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments'],
     datasets: [{ data: [30, 30, 10, 30], backgroundColor: ['#9ad0f5','#ffb7b2','#ffdac1','#b5ead7'], borderColor:'#222', borderWidth:2 }]
   },
   options: { plugins:{ legend:{ position:'bottom' } } }
@@ -75,22 +69,24 @@ new Chart(cML, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 과목 소개 및 ML 개요 | Introduction to Machine Learning |
-| 2주 | 결정트리·학습 한계 이해 | Decision Trees, Limits of Learning |
-| 3주 | 기하와 최근접 | Geometry and Nearest Neighbors |
-| 4주 | 퍼셉트론 | The Perceptron |
-| 5주 | 다중분류로 확장 | Beyond Binary Classification |
-| 6주 | 선형모형 | Linear Models |
-| 7주 | 확률모형 | Probabilistic Modeling |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 신경망 | Neural Networks |
-| 10주 | 커널 방법 | Kernel Methods |
-| 11주 | 학습이론 | Learning Theory |
-| 12주 | 앙상블 | Ensemble Methods |
-| 13주 | 비지도학습 | Unsupervised Learning (Clustering, PCA) |
-| 14주 | 구조적 예측 | Structured Prediction |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Course introduction & ML overview | Introduction to Machine Learning |
+| 2 | Decision trees & limits of learning | Decision Trees, Limits of Learning |
+| 3 | Geometry and nearest neighbors | Geometry and Nearest Neighbors |
+| 4 | Perceptron | The Perceptron |
+| 5 | Beyond binary classification | Beyond Binary Classification |
+| 6 | Linear models | Linear Models |
+| 7 | Probabilistic modeling | Probabilistic Modeling |
+| 8 | Midterm exam | Examination |
+| 9 | Neural networks | Neural Networks |
+| 10 | Kernel methods | Kernel Methods |
+| 11 | Learning theory | Learning Theory |
+| 12 | Ensemble methods | Ensemble Methods |
+| 13 | Unsupervised learning | Unsupervised Learning (Clustering, PCA) |
+| 14 | Structured prediction | Structured Prediction |
+| 15 | Final exam | Examination |
+
+---
