@@ -1,24 +1,18 @@
 ---
-title: "데이터통신"
+title: "Data Communications"
 summary: ""
 type: course
 tags: ["2-2"]
 
-image:
-  filename: "uploads/media/data_communication.jpg"
-  focal_point: "Center"
-  preview_only: true
-featured: true
-
 goals:
-  - "Goal 1️⃣ : 서로 다른 컴퓨터 간 데이터 전송에 필요한 전송매체, 신호, 전송장비 등의 기술 요소를 학습한다."
-  - "Goal 2️⃣ : 데이터의 손실 없는 전송을 위해 통신 과정과 네트워크 구성 원리를 이해한다."
-  - "Goal 3️⃣ : 컴퓨터 네트워크의 기반 이론과 실무적 응용을 이해하고 분석할 수 있는 능력을 기른다."
+  - "Goal 1️⃣: Learn the technical elements—transmission media, signals, and equipment—required to transfer data between heterogeneous computers."
+  - "Goal 2️⃣: Understand communication procedures and network configuration principles that enable reliable, loss-free transmission."
+  - "Goal 3️⃣: Build the ability to analyze the theoretical foundations and practical applications of computer networks."
 
-instructor: "조기환 교수님"
-department: "전북대학교 컴퓨터공학부 / IT정보공학과 / IT지능정보공학과 / 컴퓨터인공지능학부"
-room: "공대 3호관 311호"
-language: "한국어"
+instructor: "Prof. Ki-Hwan Cho"
+department: "School of Computer Engineering / School of IT Information Engineering / School of Intelligent IT Engineering / School of Computer & Artificial Intelligence, JBNU"
+room: "College of Engineering Building 3, Room 311"
+language: "Korean"
 credit: 3
 
 textbook:
@@ -30,34 +24,34 @@ textbook:
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 데이터통신 |
-| **담당교수** | 조기환 교수님 |
-| **소속** | 전북대학교 컴퓨터공학부 외 |
-| **강의실** | 공대 3호관 311호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-1️⃣ 서로 다른 컴퓨터 간 데이터 전송에 필요한 전송매체, 신호, 전송장비 등의 기술 요소를 학습한다.  
-2️⃣ 데이터의 손실 없는 전송을 위해 통신 과정과 네트워크 구성 원리를 이해한다.  
-3️⃣ 컴퓨터 네트워크의 기반 이론과 실무적 응용을 이해하고 분석할 수 있는 능력을 기른다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Data Communications |
+| **Instructor** | Prof. Ki-Hwan Cho |
+| **Affiliation** | Jeonbuk National University, School of Computer Engineering (and related departments) |
+| **Classroom** | Engineering Building 3, Room 311 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> Data & Computer Communications (10th Edition)  
-> William Stallings 저 · Prentice Hall (2014)
+1️⃣ Study the media, signals, and network devices necessary for transferring data across computers.  
+2️⃣ Understand the end-to-end communication process and how networks are structured to prevent data loss.  
+3️⃣ Gain competency in analyzing both the theoretical underpinnings and practical usage of computer networks.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Data & Computer Communications (10th Edition)*  
+> William Stallings · Prentice Hall (2014)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -67,7 +61,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제', '기타'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments', 'Other'],
     datasets: [{
       data: [35, 35, 10, 16, 4],
       backgroundColor: ['#9ad0f5', '#ffb7b2', '#ffdac1', '#b5ead7', '#c7ceea'],
@@ -88,22 +82,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 데이터통신의 개요 이해 | 데이터 통신 개념, 컴퓨터통신과 네트워크 관계 |
-| 2주 | 프로토콜 구조 이해 | OSI와 TCP/IP 프로토콜 비교, 역할 및 기능 |
-| 3주 | 데이터 전송 기초 개념 이해 | 전송매체의 종류와 물리적 특성 |
-| 4주 | 데이터 전송 매체 이해 | 유선/무선 매체의 특성 및 응용 *(퀴즈 1)* |
-| 5주 | 신호 코딩 기법 이해Ⅰ | 아날로그·디지털 신호의 종류와 변환 |
-| 6주 | 신호변환 및 에러 처리 이해 | PCM, 오류 검출·수정 기법 |
-| 7주 | 데이터 링크 제어Ⅰ | 플로우 제어 개념, 슬라이딩 윈도우 알고리즘 |
-| 8주 | 중간고사 | 시험 |
-| 9주 | 데이터 링크 제어Ⅱ | HDLC 구조, 에러 종류 및 대응 방안 |
-| 10주 | 멀티플렉싱 이해 | FDMA, TDMA, CDMA 방식의 특징 |
-| 11주 | LAN의 기본 원리 이해Ⅰ | LAN 토폴로지와 프로토콜 구조 |
-| 12주 | LAN의 기본 원리 이해Ⅱ | CSMA/CD 알고리즘과 허브, 스위치 개념 |
-| 13주 | 고속 LAN 이해 | Ethernet의 구조와 동작 *(퀴즈 2)* |
-| 14주 | 무선 LAN 이해 | Wi-Fi, CSMA/CA 알고리즘과 응용 |
-| 15주 | 기말고사 | 시험 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Introduce data communications | Concepts of data communication; computer communication vs. networking |
+| 2 | Understand protocol architectures | Compare OSI and TCP/IP models; roles and functions |
+| 3 | Grasp transmission fundamentals | Types of transmission media and their physical properties |
+| 4 | Explore transmission media | Characteristics and use cases of wired/wireless media *(Quiz 1)* |
+| 5 | Learn signal coding techniques I | Analog and digital signal types and conversions |
+| 6 | Study modulation & error control | PCM; error detection and correction schemes |
+| 7 | Master data link control I | Flow control concepts and sliding-window algorithms |
+| 8 | Midterm exam | Examination |
+| 9 | Master data link control II | HDLC structure; error types and countermeasures |
+| 10 | Understand multiplexing | Characteristics of FDMA, TDMA, CDMA |
+| 11 | Learn LAN fundamentals I | LAN topologies and protocol architectures |
+| 12 | Learn LAN fundamentals II | CSMA/CD algorithm; hubs and switches |
+| 13 | Examine high-speed LANs | Structure and operation of Ethernet *(Quiz 2)* |
+| 14 | Explore wireless LANs | Wi-Fi, CSMA/CA algorithm, and applications |
+| 15 | Final exam | Examination |
+
+---
