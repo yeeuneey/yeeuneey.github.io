@@ -746,17 +746,32 @@ body.dark .showcase-card__cta-link:hover {
 }
 .outline-card {
   position: relative;
-  border-radius: 22px;
-  background-color: #ffffff;
-  border: 1px solid rgba(148, 163, 184, 0.32);
-  box-shadow: 0 18px 44px -28px rgba(15, 23, 42, 0.28);
-  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 22px 58px -32px rgba(15, 23, 42, 0.32);
+  overflow: hidden;
+  transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.32s ease;
+}
+.outline-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.18), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
 }
 .outline-card:hover,
 .outline-card:focus-within {
-  transform: translateY(-4px);
-  border-color: rgba(45, 212, 191, 0.55);
-  box-shadow: 0 26px 60px -32px rgba(45, 212, 191, 0.45);
+  transform: translateY(-6px);
+  border-color: rgba(14, 165, 233, 0.42);
+  box-shadow: 0 32px 80px -36px rgba(14, 165, 233, 0.4);
+}
+.outline-card:hover::after,
+.outline-card:focus-within::after {
+  opacity: 1;
 }
 .outline-card__link {
   display: flex;
@@ -768,7 +783,7 @@ body.dark .showcase-card__cta-link:hover {
   text-decoration: none;
 }
 .outline-card__link:focus-visible {
-  outline: 3px solid var(--hb-color-primary, #2dd4bf);
+  outline: 3px solid var(--hb-color-primary, #0ea5e9);
   outline-offset: 6px;
 }
 .outline-card__header {
@@ -809,7 +824,7 @@ body.dark .outline-card__title a {
 }
 .outline-card:hover .outline-card__title,
 .outline-card:focus-within .outline-card__title {
-  color: var(--hb-color-primary, #2dd4bf) !important;
+  color: var(--hb-color-primary, #0ea5e9) !important;
 }
 .outline-card__meta {
   margin: 0;
@@ -828,7 +843,7 @@ body.dark .outline-card__title a {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--hb-color-primary, #2dd4bf);
+  color: var(--hb-color-primary, #0ea5e9);
   opacity: 0.82;
 }
 .outline-card__summary {
@@ -875,7 +890,7 @@ body.light .outline-card__summary {
   flex-shrink: 0;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--hb-color-primary, #2dd4bf);
+  color: var(--hb-color-primary, #0ea5e9);
   opacity: 0.75;
 }
 .outline-card__goals-more {
@@ -883,7 +898,7 @@ body.light .outline-card__summary {
   padding-left: 0;
   padding-left: 1.6rem;
   margin-left: 0;
-  color: var(--hb-color-primary, #2dd4bf);
+  color: var(--hb-color-primary, #0ea5e9);
   font-size: 0.9rem;
   font-weight: 600;
   opacity: 0.85;
@@ -912,33 +927,64 @@ body.light .outline-card__summary {
 .outline-card:hover .outline-card__cta,
 .outline-card:focus-within .outline-card__cta {
   transform: translateX(4px);
-  color: var(--hb-color-primary, #2dd4bf) !important;
+  color: var(--hb-color-primary, #0ea5e9) !important;
   background: rgba(226, 232, 240, 0.96);
-  border-color: rgba(45, 212, 191, 0.35);
-  box-shadow: 0 20px 36px -22px rgba(45, 212, 191, 0.35);
+  border-color: rgba(14, 165, 233, 0.35);
+  box-shadow: 0 20px 36px -22px rgba(14, 165, 233, 0.35);
 }
 .outline-card:hover .outline-card__cta svg,
 .outline-card:focus-within .outline-card__cta svg {
   transform: translateX(4px);
 }
-[data-theme="dark"] .outline-card {
-  background-color: #101827;
-  border-color: rgba(56, 189, 248, 0.35);
-  box-shadow: 0 26px 58px -30px rgba(2, 6, 23, 0.85);
+[data-theme="dark"] .outline-card,
+html[data-theme="dark"] .outline-card,
+body[data-theme="dark"] .outline-card,
+html.dark .outline-card,
+body.dark .outline-card {
+  background: #0b1120 !important;
+  border-color: rgba(96, 165, 250, 0.35);
+  box-shadow: 0 34px 82px -36px rgba(15, 23, 42, 0.65);
 }
-[data-theme="dark"] .outline-card:hover,
-[data-theme="dark"] .outline-card:focus-within {
-  border-color: rgba(45, 212, 191, 0.7);
-  box-shadow: 0 32px 70px -34px rgba(45, 212, 191, 0.55);
+[data-theme="dark"] .outline-card::after,
+html[data-theme="dark"] .outline-card::after,
+body[data-theme="dark"] .outline-card::after,
+html.dark .outline-card::after,
+body.dark .outline-card::after {
+  background: radial-gradient(circle at top right, rgba(96, 165, 250, 0.26), transparent 60%);
 }
-[data-theme="dark"] .outline-card__title {
+[data-theme="dark"] .outline-card__link,
+html[data-theme="dark"] .outline-card__link,
+body[data-theme="dark"] .outline-card__link,
+html.dark .outline-card__link,
+body.dark .outline-card__link {
+  color: rgba(248, 250, 252, 0.95);
+  text-shadow: 0 2px 6px rgba(2, 6, 23, 0.45);
+}
+[data-theme="dark"] .outline-card__title,
+[data-theme="dark"] .outline-card__title a,
+html[data-theme="dark"] .outline-card__title,
+html[data-theme="dark"] .outline-card__title a,
+body[data-theme="dark"] .outline-card__title,
+body[data-theme="dark"] .outline-card__title a,
+html.dark .outline-card__title,
+html.dark .outline-card__title a,
+body.dark .outline-card__title,
+body.dark .outline-card__title a {
   color: #ffffff !important;
 }
-[data-theme="dark"] .outline-card__meta {
+[data-theme="dark"] .outline-card__meta,
+html[data-theme="dark"] .outline-card__meta,
+body[data-theme="dark"] .outline-card__meta,
+html.dark .outline-card__meta,
+body.dark .outline-card__meta {
   color: rgba(203, 213, 225, 0.75);
 }
-[data-theme="dark"] .outline-card__section-title {
-  color: rgba(45, 212, 191, 0.7);
+[data-theme="dark"] .outline-card__section-title,
+html[data-theme="dark"] .outline-card__section-title,
+body[data-theme="dark"] .outline-card__section-title,
+html.dark .outline-card__section-title,
+body.dark .outline-card__section-title {
+  color: rgba(125, 211, 252, 0.9);
   opacity: 1;
 }
 [data-theme="dark"] .outline-card__summary,
@@ -946,20 +992,36 @@ html[data-theme="dark"] .outline-card__summary,
 body[data-theme="dark"] .outline-card__summary,
 html.dark .outline-card__summary,
 body.dark .outline-card__summary {
-  color: #ffffff !important;
+  color: rgba(226, 232, 240, 0.9) !important;
 }
-[data-theme="dark"] .outline-card__goals {
+[data-theme="dark"] .outline-card__goals,
+html[data-theme="dark"] .outline-card__goals,
+body[data-theme="dark"] .outline-card__goals,
+html.dark .outline-card__goals,
+body.dark .outline-card__goals {
   color: rgba(203, 213, 225, 0.9);
 }
-[data-theme="dark"] .outline-card__goal-icon {
-  color: rgba(45, 212, 191, 0.7);
+[data-theme="dark"] .outline-card__goal-icon,
+html[data-theme="dark"] .outline-card__goal-icon,
+body[data-theme="dark"] .outline-card__goal-icon,
+html.dark .outline-card__goal-icon,
+body.dark .outline-card__goal-icon {
+  color: rgba(125, 211, 252, 0.95);
 }
-[data-theme="dark"] .outline-card__goal-more {
-  color: rgba(45, 212, 191, 0.7);
+[data-theme="dark"] .outline-card__goal-more,
+html[data-theme="dark"] .outline-card__goal-more,
+body[data-theme="dark"] .outline-card__goal-more,
+html.dark .outline-card__goal-more,
+body.dark .outline-card__goal-more {
+  color: rgba(125, 211, 252, 0.9);
   opacity: 0.9;
 }
-[data-theme="dark"] .outline-card__goals-more {
-  color: rgba(45, 212, 191, 0.7);
+[data-theme="dark"] .outline-card__goals-more,
+html[data-theme="dark"] .outline-card__goals-more,
+body[data-theme="dark"] .outline-card__goals-more,
+html.dark .outline-card__goals-more,
+body.dark .outline-card__goals-more {
+  color: rgba(125, 211, 252, 0.9);
   opacity: 0.95;
 }
 [data-theme="dark"] .outline-card__cta,
@@ -967,10 +1029,10 @@ html[data-theme="dark"] .outline-card__cta,
 body[data-theme="dark"] .outline-card__cta,
 html.dark .outline-card__cta,
 body.dark .outline-card__cta {
-  background: rgba(30, 41, 59, 0.75);
+  background: rgba(30, 41, 59, 0.8);
   color: #e2e8f0;
-  border-color: rgba(148, 163, 184, 0.28);
-  box-shadow: 0 18px 40px -24px rgba(15, 23, 42, 0.65);
+  border-color: rgba(148, 163, 184, 0.3);
+  box-shadow: 0 22px 48px -28px rgba(15, 23, 42, 0.6);
 }
 [data-theme="dark"] .outline-card:hover .outline-card__cta,
 [data-theme="dark"] .outline-card:focus-within .outline-card__cta,
@@ -982,10 +1044,10 @@ html.dark .outline-card:hover .outline-card__cta,
 html.dark .outline-card:focus-within .outline-card__cta,
 body.dark .outline-card:hover .outline-card__cta,
 body.dark .outline-card:focus-within .outline-card__cta {
-  background: rgba(51, 65, 85, 0.85);
-  color: rgba(45, 212, 191, 0.7) !important;
-  border-color: rgba(94, 234, 212, 0.45);
-  box-shadow: 0 22px 44px -24px rgba(45, 212, 191, 0.42);
+  background: rgba(51, 65, 85, 0.88);
+  color: rgba(125, 211, 252, 0.9) !important;
+  border-color: rgba(94, 234, 212, 0.4);
+  box-shadow: 0 26px 56px -28px rgba(45, 212, 191, 0.45);
 }
 #intro ul li a,
 #intro ul li a strong {
@@ -1001,9 +1063,6 @@ body.dark .outline-card:focus-within .outline-card__cta {
 #intro ul li a:focus-visible strong {
   color: inherit !important;
 }
-
-
-
 
 #intro ul li a {
   display: inline-block;
