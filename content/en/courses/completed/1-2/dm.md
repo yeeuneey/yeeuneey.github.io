@@ -1,5 +1,5 @@
 ---
-title: "이산수학"
+title: "Discrete Mathematics"
 summary: ""
 type: course
 tags: ["1-2"]
@@ -11,51 +11,50 @@ image:
 featured: true
 
 goals:
-  - "Goal 1️⃣ : 이산수학은 향후 컴퓨터공학의 여러 전공 과목들에서 사용될 기초적인 수학이며 구체적으로 명제, 증명, 집합, 행렬, 관계, 함수, 그래프, 트리, 부울대수, 순열/조합/확률, 알고리즘의 기초와 컴퓨터공학의 응용/활용을 다룬다."
+  - "Goal 1️⃣: Provide the mathematical foundations—propositions, proofs, sets, matrices, relations, functions, graphs, trees, Boolean algebra, permutations/combinations/probability, and introductory algorithms—needed for later computer engineering courses."
 
-instructor: "김민철 교수님"
-department: "전북대학교 컴퓨터인공지능학부"
-room: "공과대학 3호관 311호"
-language: "한국어"
+instructor: "Prof. Min-Cheol Kim"
+department: "School of Computer & Artificial Intelligence, Jeonbuk National University"
+room: "College of Engineering Building 3, Room 311"
+language: "Korean"
 credit: 3
 
 textbook:
-  title: "컴퓨팅 사고력을 키우는 이산수학"
-  author: "박주미"
-  publisher: "한빛아카데미"
+  title: "Discrete Mathematics for Computational Thinking"
+  author: "Ju-Mi Park"
+  publisher: "Hanbit Academy"
   year: 2021
 ---
 
 <!--more-->
 
-## 📘 강의 개요
+## 📘 Course Overview
 
-| 항목 | 내용 |
-|------|------|
-| **교과목명** | 이산수학 |
-| **담당교수** | 김민철 |
-| **소속** | 전북대학교 컴퓨터인공지능학부 |
-| **강의실** | 공과대학 3호관 311호 |
-| **강의언어** | 한국어 |
-
----
-
-## 🎯 강의 목표
-
-이산수학은 향후 컴퓨터공학의 여러 전공과목들에서 사용될 기초적인 수학이며,  
-구체적으로 명제, 증명, 집합, 행렬, 관계, 함수, 그래프, 트리, 부울대수, 순열·조합·확률,  
-알고리즘의 기초와 컴퓨터공학에의 응용·활용을 다룬다.
+| Item | Details |
+|------|---------|
+| **Course Title** | Discrete Mathematics |
+| **Instructor** | Prof. Min-Cheol Kim |
+| **Affiliation** | School of Computer & Artificial Intelligence, JBNU |
+| **Classroom** | Engineering Building 3, Room 311 |
+| **Language** | Korean |
 
 ---
 
-## 📖 교재
+## 🎯 Course Objectives
 
-> 컴퓨팅 사고력을 키우는 이산수학
-> 박주미 저 · 한빛아카데미 (2021)
+Discrete mathematics forms the foundational toolkit for many upper-level computer engineering courses.  
+The lecture covers propositions, proofs, sets, matrices, relations, functions, graphs, trees, Boolean algebra, permutations, combinations, probability, and algorithm fundamentals, along with their applications to computing.
 
 ---
 
-## 🧮 평가 비율
+## 📖 Textbook
+
+> *Discrete Mathematics for Computational Thinking*  
+> Ju-Mi Park · Hanbit Academy (2021)
+
+---
+
+## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart" width="400" height="400"></canvas>
 
@@ -65,7 +64,7 @@ const ctx = document.getElementById('evaluationChart');
 new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['중간고사', '기말고사', '출석', '과제물'],
+    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments'],
     datasets: [{
       data: [40, 40, 10, 10],
       backgroundColor: ['#ff9aa2', '#9ad0f5', '#b5ead7', '#ffdac1'],
@@ -86,22 +85,24 @@ new Chart(ctx, {
 
 ---
 
-## 📆 주차별 강의 내용
+## 📆 Weekly Topics
 
-| 주차 | 수업목표 | 수업내용 |
-|------|-----------|-----------|
-| 1주 | 수의 표현과 연산 | - 수의 체계/연산<br>- 진법 표현/변환/연산<br>- 컴퓨터에서의 수의 표현/연산 |
-| 2주 | 명제와 논리 | - 조건/합성명제<br>- 논리적 동치<br>- 명제함수/한정자, 추론 |
-| 3주 | 증명 | - 직접/간접 증명<br>- 수학적 귀납법 |
-| 4주 | 집합 | - 개념/종류/연산/대수법칙/분할 |
-| 5주 | 행렬 | - 개념/연산/종류<br>- 행렬식, 역행렬<br>- 연립일차방정식 |
-| 6주 | 관계 | - 개념/표현/성질<br>- 합성관계, 폐포<br>- 동치관계, 부분순서관계 |
-| 7주 | 함수 | - 개념/성질/종류<br>- 합성함수 |
-| 8주 | 중간고사 | 질의응답 및 중간고사 |
-| 9주 | 그래프 | - 개념/종류/표현/활용 |
-| 10주 | 트리 | - 개념/활용<br>- 이진트리 |
-| 11주 | 부울대수 | - 개념/표현<br>- 논리 게이트 |
-| 12주 | 순열·조합·확률 | - 합/곱의 법칙<br>- 순열, 조합, 확률 |
-| 13주 | 알고리즘 I | - 개념/표현/효율성<br>- 다양한 알고리즘 |
-| 14주 | 알고리즘 II | - 개념/표현/효율성<br>- 다양한 알고리즘 |
-| 15주 | 기말고사 | 질의응답 및 기말고사 |
+| Week | Learning Goal | Outline |
+|------|---------------|---------|
+| 1 | Representing and operating on numbers | Number systems/operations; base conversions; numeric representation in computers |
+| 2 | Propositions and logic | Conditional/compound statements; logical equivalence; predicates and quantifiers |
+| 3 | Proof techniques | Direct/indirect proofs; mathematical induction |
+| 4 | Sets | Concepts, types, operations, algebraic laws, partitions |
+| 5 | Matrices | Definitions, operations, types; determinants, inverses; systems of linear equations |
+| 6 | Relations | Definitions, representations, properties; composition, closures; equivalence and partial orders |
+| 7 | Functions | Definitions, properties, types; composition of functions |
+| 8 | Midterm exam | Q&A and exam |
+| 9 | Graphs | Concepts, types, representations, applications |
+| 10 | Trees | Concepts and applications; binary trees |
+| 11 | Boolean algebra | Concepts, representations; logic gates |
+| 12 | Permutations · combinations · probability | Sum/product rules; permutations, combinations, probability |
+| 13 | Algorithms I | Concepts, representations, efficiency; representative algorithms |
+| 14 | Algorithms II | Concepts, representations, efficiency; representative algorithms |
+| 15 | Final exam | Q&A and exam |
+
+---
