@@ -10,6 +10,17 @@ design:
 
 # Page sections
 sections:
+  - block: markdown
+    id: courses-banner
+    content:
+      text: |
+        <figure class="page-banner">
+          <img src="/media/resume-banner.jpg" alt="Courses page banner" loading="lazy">
+        </figure>
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+
   - block: resume-experience
     content:
       title: 경험
@@ -19,16 +30,14 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
+
   - block: resume-skills
     content:
       title: 기술 & 취미
       username: admin
     design:
       show_skill_percentage: false
-  # - block: resume-awards
-  #   content:
-  #     title: Awards
-  #     username: admin
+
   - block: resume-languages
     content:
       title: 언어

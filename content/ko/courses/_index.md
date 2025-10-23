@@ -11,6 +11,17 @@ image:
 sections:
 
   - block: markdown
+    id: courses-banner
+    content:
+      text: |
+        <figure class="page-banner">
+          <img src="/media/courses-banner.jpg" alt="전체 강의 배너" loading="lazy">
+        </figure>
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+
+  - block: markdown
     id: intro
     content:
       title: "📚 수강 과목"

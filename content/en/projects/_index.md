@@ -13,6 +13,16 @@ design:
 
 # Page sections
 sections:
+  - block: markdown
+    id: projects-banner
+    content:
+      text: |
+        <figure class="page-banner">
+          <img src="/media/projects-banner.jpg" alt="Projects page banner" loading="lazy">
+        </figure>
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
   - block: collection
     content:
       title: Projects

@@ -10,6 +10,16 @@ image:
 
 sections:
   - block: markdown
+    id: contact-banner
+    content:
+      text: |
+        <figure class="page-banner">
+          <img src="/media/contact-banner.jpg" alt="Contact 페이지 배너" loading="lazy">
+        </figure>
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+  - block: markdown
     id: contact-info
     content:
       title: "📞 연락처"

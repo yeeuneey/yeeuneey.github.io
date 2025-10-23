@@ -11,6 +11,17 @@ image:
 sections:
 
   - block: markdown
+    id: courses-banner
+    content:
+      text: |
+        <figure class="page-banner">
+          <img src="/media/courses-banner.jpg" alt="Courses page banner" loading="lazy">
+        </figure>
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
+
+  - block: markdown
     id: intro
     content:
       title: "📚 Course Overview"
