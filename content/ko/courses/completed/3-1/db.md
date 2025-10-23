@@ -54,6 +54,7 @@ textbook:
 ## 🧮 평가 비율
 
 <canvas id="evaluationChart2" width="400" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx2 = document.getElementById('evaluationChart2');
 new Chart(ctx2, {

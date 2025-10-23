@@ -54,6 +54,7 @@ textbook:
 ## 🧮 Evaluation Breakdown
 
 <canvas id="evaluationChart4" width="400" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx4 = document.getElementById('evaluationChart4');
 new Chart(ctx4, {

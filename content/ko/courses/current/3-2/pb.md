@@ -54,6 +54,7 @@ textbook:
 ## 🧮 평가 비율
 
 <canvas id="chart-introproj" width="400" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const cIP = document.getElementById('chart-introproj');
 new Chart(cIP, {

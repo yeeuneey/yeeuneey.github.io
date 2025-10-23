@@ -54,13 +54,14 @@ textbook:
 ## 🧮 Evaluation Breakdown
 
 <canvas id="chart-web" width="400" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const cWEB = document.getElementById('chart-web');
 new Chart(cWEB, {
   type: 'pie',
   data: {
-    labels: ['Midterm Exam', 'Final Exam', 'Attendance', 'Assignments', 'Presentation/Discussion', 'Participation', 'Other'],
-    datasets: [{ data: [0, 0, 5, 80, 5, 0, 10], backgroundColor: ['#9ad0f5','#ffb7b2','#ffdac1','#b5ead7','#c7ceea','#f6a5c0','#cfd8dc'], borderColor:'#222', borderWidth:2 }]
+    labels: ['Attendance', 'Assignments', 'Presentation/Discussion', 'Other'],
+    datasets: [{ data: [5, 80, 5, 10], backgroundColor: ['#9ad0f5','#ffb7b2','#ffdac1','#b5ead7'], borderColor:'#222', borderWidth:2 }]
   },
   options: { plugins:{ legend:{ position:'bottom' } } }
 });
