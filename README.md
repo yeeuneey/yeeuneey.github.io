@@ -25,8 +25,11 @@
   * 다크/라이트 모드 스타일 조정, 슬라이더 및 히어로 섹션 오버레이, 네비게이션 바 호버 효과, 카드 그림자 및 호버 효과, 본문 텍스트 양쪽 정렬(.article-container p 등), 버튼(.hb-btn) 호버 효과 등을 직접 정의했습니다.
 * **다국어 및 네비게이션** - config/_default/menus.{ko,en}.yaml, config/_default/languages.yaml, i18n/
   -한국어(기본)와 영어 2개 국어를 지원하며, 6개 메인 메뉴와 하위 메뉴(연구, 강의 하위)를 구성했습니다. UI 텍스트는 i18n/ 파일에서 관리합니다.
-* **SEO & 검증 파일** — config/_default/params.yaml, static/googlef2929d6ee638ba1a.html
+* **SEO(검색 엔진)** — config/_default/params.yaml, static/googlef2929d6ee638ba1a.html
   * 사이트 제목(hugo.yaml), 설명, 키워드, Open Graph 대표 이미지(params.yaml 내 marketing.seo)를 설정하고, Google Search Console 소유권 확인 파일(static/google*.html)을 추가했습니다.
+* **Pagefind 검색 기능** - config/_default/params.yaml, .github/workflows/deploy.yml
+  * Hugo Blox 테마의 Pagefind 검색 기능을 활성화 (params.yaml 내 features.search)하여 사이트 내 콘텐츠 검색을 지원합니다.
+  * GitHub Actions 배포 과정에 Pagefind 인덱싱 단계 (pagefind --source 'public')를 포함하여, 배포 시 자동으로 최신 콘텐츠 기반의 검색 인덱스를 생성합니다.
 * **자동 배포** - .github/workflows/deploy.yml
   * GitHub Actions를 사용하여 main 브랜치 푸시 시 Hugo 빌드, Pagefind 인덱싱, GitHub Pages 배포를 자동화했습니다.
 
@@ -67,14 +70,19 @@
 
 ## 🛠️ 콘텐츠 구조 및 코드 설명
 
-### 1. 설정 파일 (`config/_default/`)
-* `hugo.yaml`: Hugo 사이트의 기본 설정을 정의합니다 (사이트 제목, 기본 URL, 언어 설정, 마크다운 처리 방식 등).
-* `languages.yaml`: 다국어 지원 설정을 담당합니다 (한국어 'ko', 영어 'en'). 각 언어별 사이트 제목, 설명 등을 설정합니다.
-* `menus.ko.yaml` / `menus.en.yaml`: 각 언어별 네비게이션 메뉴 구조를 정의합니다. 메뉴 이름, URL, 순서, 하위 메뉴 등을 설정할 수 있습니다.
-* `module.yaml`: Hugo 모듈 설정을 관리합니다. Hugo Blox 테마 및 플러그인을 가져옵니다.
-* `params.yaml`: 테마의 상세 파라미터를 설정합니다 (디자인 모드, 색상 테마, 파비콘, SEO 정보, 저작권 등).
+### 1. 설정 파일 (config/_default/)
 
-### 2. 콘텐츠 (`content/`)
+* hugo.yaml: Hugo 사이트 기본 설정 (사이트 제목, URL, 기본 언어 등)입니다.
+* languages.yaml: 다국어(ko, en) 설정하였습니다.
+* menus.*.yaml: 언어별 네비게이션 메뉴 구조를 정의합니다.
+* module.yaml: Hugo Blox 테마 모듈을 로드합니다.
+* params.yaml: 테마 상세 설정하였스비다.
+  * appearance: 다크/라이트 모드, 테마 색상(teal).
+  * marketing.seo: 검색 엔진 최적화를 위한 사이트 설명, 키워드, 대표 이미지 경로 설정하였습니다.
+  * features.search: Pagefind 검색 기능 활성화 (provider: pagefind, enable: true)하였습니다.
+  * header.navbar: 로고, 검색 아이콘, 테마/언어 선택 아이콘 표시를 설정하였습니다.
+
+### 2. 콘텐츠 (content/)
 
 * 언어별 디렉토리 (`en/`, `ko/`)로 구분됩니다.
 * 각 디렉토리 내부는 페이지 종류별(authors, courses, projects, tech 등)로 구성됩니다.
